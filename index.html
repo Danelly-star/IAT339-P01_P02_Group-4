@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <title>P01 - Style Guide Template</title>
+    <title>P01 GROUP 4 - Style Guide</title>
 
     <link href="css/main.css" rel="stylesheet">
 
@@ -13,7 +13,7 @@
   <body>
 
     <header>
-      <h1>P01 - Style Guide Template</h1>
+      <h1>P01 GROUP 4 - Style Guide</h1>
 
       <p>A template you can use to start building out your own style guides with.</p>
 
@@ -63,16 +63,46 @@
 
       <section class="element">
         <h3>Text Input Field with Label</h3>
+        <h4>Sample code:</h4>
+          <code>&lt;form&gt;<br>
+            &lt;label&gt;Text Input Field with Label: &lt;/label&gt;<br>
+            &lt;input type="text"&gt;&lt;/input&gt;<br>
+            &lt;/form&gt;
+          </code>
+        <h4>Rendered element:</h4>
+        <form>
+          <label>Text Input Field with Label: </label>
+          <input type="text"></input>
+        </form>
       </section>
 
 
       <section class="element">
         <h3>Radio Button with Label</h3>
+        <h4>Sample code:</h4>
+          <code>&lt;form&gt;<br>
+            &lt;label&gt;Radio Button with Label: &lt;/label&gt;<br>
+            &lt;input type="radio"&gt;&lt;/input&gt;<br>
+            &lt;/form&gt;
+          </code>
+        <h4>Rendered element:</h4>
+        <!-- referenced from here: https://www.w3schools.com/tags/att_input_type_radio.asp -->
+        <form>
+          <label>Radio Button with Label: </label>
+          <input type="radio"></input>
+        </form>
       </section>
 
 
       <section class="element">
         <h3>Image as a Link</h3>
+        <h4>Sample code:</h4>
+          <code>
+            &lt;a href="https://google.com" target="_blank"&gt;&lt;img src="img/greenKeyboard.png" alt="image of green keyboard"&gt;&lt;/a&gt;
+          </code>
+        <h4>Rendered element:</h4>
+        <!-- image is from https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP"-->
+        <a href="https://google.com" target="_blank"><img src="img/greenKeyboard.png" alt="image of green keyboard"></a>
       </section>
 
 
@@ -87,6 +117,18 @@
 
       <section class="element">
         <h3>Headings</h3>
+        <h4>Sample code:</h4>
+          <code>
+            &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+            &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+            &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+            &lt;h4&gt;Heading 4&lt;/h4&gt;<br>
+          </code>
+        <h4>Rendered element:</h4>
+        <h1> Heading 1 </h1>
+        <h2> Heading 2 </h2>
+        <h3> Heading 3 </h3>
+        <h4> Heading 4 </h4>
       </section>
 
       <section class="element">
@@ -108,10 +150,41 @@
 
       <section class="element">
         <h3>Main Navigation</h3>
+        <h4>Sample code:</h4>
+          <code>
+            &lt;nav&gt; <br>
+            &lt;a href="#combined_elements"&gt;Section 1&lt;/a&gt;<br>
+            &lt;a href="#combined_elements"&gt;Section 2&lt;/a&gt;<br>
+            &lt;a href="#combined_elements"&gt;Section 3&lt;/a&gt;<br>
+            &lt;/nav&gt;
+          </code>
+        <h4>Rendered element:</h4>
+        <!-- temporarily have it linked to this section -->
+        <nav> 
+          <a href="#combined_elements"> Section 1</a>
+          <a href="#combined_elements"> Section 2</a>
+          <a href="#combined_elements"> Section 3</a>
+        </nav>
       </section>
 
       <section class="element">
         <h3>Product/Service Listing</h3>
+      <h4>Sample code:</h4>
+          <code>
+            &lt;section&gt; <br>
+            &lt;a href="https://google.com" target="_blank"&gt;&lt;img src="img/greenKeyboard.png" alt="image of green keyboard"&gt;&lt;/a&gt;<br>
+            &lt;h3&gt; Product Name &lt;/h3&gt;<br>
+            &lt;h4&gt;$100&lt;/h4&gt;<br>
+            &lt;p&gt;product description&lt;/p&gt;<br>
+            &lt;/section&gt;
+          </code>
+        <h4>Rendered element:</h4>
+        <section>
+          <a href="https://google.com" target="_blank"><img src="img/greenKeyboard.png" alt="image of green keyboard"></a>
+          <h3> Product Name </h3>
+          <h4>$100</h4>
+          <p>product description</p>
+        </section>
       </section>
 
       <section class="element">
@@ -123,8 +196,18 @@
       </section>
 
     </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-
+    <section id="branding">
+      <h2>P01 Branding</h2>
+      <!-- branding ideas below here -->
+      <p>
+        [What does the company do offer?] 
+        The companies potential customers are people looking to purchase accessories for their computer and gaming setups. 
+        This includes keyboards, keyboard covers, desk mats, wrist cushions, controller stands, and more.
+        This company may entice people into purchasing its products because it contains items that serve a similar and specific consumer base (that is, people who play video games or use their computers often).
+      </p>
+      <h3>Brand Components</h3>
+      <!-- photos, fonts, etc below here-->
+    </section>
 
 
     <section id="citations">
