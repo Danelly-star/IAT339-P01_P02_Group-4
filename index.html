@@ -13,7 +13,7 @@
   <body>
 
     <header>
-      <h1>P01 GROUP 4 - Style Guide</h1>
+      <h1>P01 GROUP 4 - Gaming Accessories Style Guide</h1>
 
       <p>A template you can use to start building out your own style guides with.</p>
 
@@ -36,7 +36,24 @@
 
       <section class="element">
         <h3>In-text link</h3>
+
+
+        <h4>Sample code:</h4>
+          <code>&lt;p&gt;<br>Explore our &lt;a href="#product_listings"&gt;gaming accessories&lt;/a&gt; to build your setup today!.<br>&lt;/p&gt;</code>
+
+
+        <h4>Rendered element:</h4>
+        <p>
+          Explore our <a href="#product_listings">gaming accessories</a>
+          to build your setup today!.
+        </p>
+
+          <!--
+            Reference: https://www.w3schools.com/html/html_links.asp
+          -->
       </section>
+
+
 
 
       <!-- Default Button styling section -->
@@ -55,9 +72,36 @@
 
       </section>
 
+    
+
 
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
+
+        <h4>Sample code:</h4>
+        <code>
+
+          &lt;form action="#" method="get"&gt;<br>
+            &lt;button type="submit">Submit&lt;/button&gt;<br>
+            &lt;button type="reset">Reset&lt;/button&gt;<br>
+          &lt;/form&gt;
+        
+        </code>
+
+
+        <h4>Rendered element:</h4>
+
+        <form action="#" method="get">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+
+
+        <!--
+          Reference: W3Schools, HTML Input Types (submit/reset).
+          https://www.w3schools.com/html/html_form_input_types.asp
+        -->
+
       </section>
 
 
@@ -79,19 +123,47 @@
 
       <section class="element">
         <h3>Radio Button with Label</h3>
+
         <h4>Sample code:</h4>
-          <code>&lt;form&gt;<br>
-            &lt;label&gt;Radio Button with Label: &lt;/label&gt;<br>
-            &lt;input type="radio"&gt;&lt;/input&gt;<br>
-            &lt;/form&gt;
-          </code>
+        <code>
+
+          &lt;fieldset&gt;<br>
+            &lt;legend&gt;Choose a colour:&lt;/legend&gt;<br>
+
+
+            &lt;input type="radio" id="cloud" name="colour-example" value="pink"&gt;<br>
+            &lt;label for="pink"&gt;Pink&lt;/label&gt;<br>
+
+
+            &lt;input type="radio" id="midnight" name="colour-example" value="blue"&gt;<br>
+            &lt;label for="blue"&gt;Blue&lt;/label&gt;<br>
+          &lt;/fieldset&gt; 
+        </code>
+
+
         <h4>Rendered element:</h4>
-        <!-- referenced from here: https://www.w3schools.com/tags/att_input_type_radio.asp -->
-        <form>
-          <label>Radio Button with Label: </label>
-          <input type="radio"></input>
-        </form>
+        <fieldset>
+          <legend>Choose a colour:</legend>
+
+
+          <input type="radio" id="cloud" name="colour-example" value="pink">
+          <label for="pink">Pink</label>
+
+
+          <input type="radio" id="midnight" name="colour-example" value="blue">
+          <label for="blue">Blue</label>
+        </fieldset>
+
+
+        <!--
+          Reference used: W3Schools, HTML Input Types - Radio.
+          https://www.w3schools.com/html/html_form_input_types.asp
+        -->
+
       </section>
+
+
+
 
 
       <section class="element">
@@ -131,12 +203,47 @@
         <h4> Heading 4 </h4>
       </section>
 
+      
+      
+      
       <section class="element">
         <h3>Paragraphs</h3>
+
+        <h4>Sample Code:</h4>
+        <code>
+          &lt;p&gt;Build your gaming setup that combines comfort, performance and personal style.&lt;/p&gt;
+        </code>
+
+
+        <h4>Rendered Element</h4>
+        <p>Build your gaming setup that combines comfort, performance and personal style.</p>
       </section>
+
+
+
+
 
       <section class="element">
         <h3>Numbered Lists</h3>
+
+        
+        <h4>Sample Code:</h4>
+        <code>
+          &lt;ol&gt;<br>
+           &lt;li&gt;Choose your gaming accessory&lt;/li&gt;<br>
+           &lt;li&gt;Pick the right option/color&lt;/li&gt;<br>
+           &lt;li&gt;Add to Cart&lt;/li&gt;<br>
+          &lt;/ol&gt;
+        </code>
+
+
+        <h4>Rendered Element:</h4>
+        <ol>
+          <li>Choose your gaming accessory</li>
+          <li>Pick the right option/color</li>
+          <li>Add to Cart</li>
+        </ol>
+
       </section>
 
     </section>
@@ -189,27 +296,215 @@
 
       <section class="element">
         <h3>Payment Form</h3>
+        <h4>Sample code:</h4>
+        
+        
+        <code>
+          &lt;form action="#" method="post"&gt;<br>
+          
+           &lt;label for="card-holder">Cardholder:&lt;/label&gt;<br>
+           &lt;input type="text" id="card-holder" holder="card-holder"&gt;<br>
+           
+
+
+           
+           &lt;label for="card-number">Card Number:&lt;/label&gt;<br>
+           &lt;input<br>
+             type="text"<br>
+             id="card-number"<br>
+             name="card-number"<br>
+             inputmode="numeric"<br>
+             autocomplete="cc-number"<br>
+           &gt;<br>
+           
+
+
+           &lt;fieldset&gt;<br>
+             &lt;legend&gt;Payment Method:&lt;/legend&gt;<br>
+
+
+             &lt;input<br>
+               type="radio"<br>
+               id="credit"<br>
+               name="payment-method"<br>
+               value="credit"<br>
+             &gt;<br>
+             &lt;label for="credit"&gt;Credit Card&lt;/label&gt;<br>
+
+
+             &lt;input<br>
+               type="radio"<br>
+               id="paypal"<br>
+               name="payment-method"<br>
+               value="paypal"<br>
+             &gt;<br>
+             &lt;label for="paypal"&gt;PayPal&lt;/label&gt;<br>
+           &lt;/fieldset&gt;<br>
+
+
+           &lt;button type="submit">Place Order&lt;/button&gt;<br>
+           &lt;button type="reset">Reset Form&lt;/button&gt;<br>
+         &lt;/form&gt;<br>
+        </code>
+
+
+        <h4>Rendered Element:</h4>
+        <form action="#" method="post">
+          
+          <label for="card-holder">Cardholder:</label>
+          <input type="text" id="card-holder" holder="card-holder">
+           
+
+
+           
+          <label for="card-number">Card Number:</label>
+          <input
+            type="text"
+            id="card-number"
+            name="card-number"
+            inputmode="numeric"
+            autocomplete="cc-number"
+          >
+           
+
+
+          <fieldset>
+            <legend>Payment Method:</legend>
+
+
+            <input
+              type="radio"
+              id="credit"
+              name="payment-method"
+              value="credit"
+            >
+            <label for="credit">Credit Card</label>
+
+
+            <input
+              type="radio"
+              id="paypal"
+              name="payment-method"
+              value="paypal"
+            >
+            <label for="paypal">PayPal</label>
+          </fieldset>
+
+
+          <button type="submit">Place Order</button>
+          <button type="reset">Reset Form</button>
+        </form>
+
+
+        <!--
+          References Used: W3Schools, Radio Buttons, HTML Forms and HTML Input Types.
+          https://www.w3schools.com/html/html_forms.asp
+          https://www.w3schools.com/html/html_form_input_types.asp
+        -->
+
+
       </section>
+
 
       <section class="element">
         <h3>Checkout Cart</h3>
+
+        <h4>Sample Code:</h4>
+
+        <h4>Rendered Element:</h4>
+
+          <div>
+            <h4>Your Cart</h4>
+
+
+            <ol>
+              <li>
+                <h4>Compact Mechanical Keyboard</h4>
+                <p>Quantity: 1</p>
+                <p>Color: Sage Green</p>
+                <p>$99.00 CAD</p>
+              </li>
+           
+              <li>
+                <h4>LED Gaming Desk Mat</h4>
+                <p>Quantity: 1</p>
+                <p>Color: Navy Blue</p>
+                <p>$35.00 CAD</p>
+              </li>
+            </ol>
+
+
+            <p><strong>Total: $134.00 CAD</strong></p>
+          </div>
+
       </section>
 
     </section>
-    <section id="branding">
-      <h2>P01 Branding</h2>
+   
+   
+   
+   
+   
+   
+    <section id="branding_definition">
+      <h2>P01 Branding Definitions</h2>
       <!-- branding ideas below here -->
-      <p>
-        [What does the company do offer?] 
-        The companies potential customers are people looking to purchase accessories for their computer and gaming setups. 
-        This includes keyboards, keyboard covers, desk mats, wrist cushions, controller stands, and more.
-        This company may entice people into purchasing its products because it contains items that serve a similar and specific consumer base (that is, people who play video games or use their computers often).
-      </p>
-      <h3>Brand Components</h3>
-      <!-- photos, fonts, etc below here-->
+
+
+
+      <section class = "element">
+        <h3>What does company do or offer?</h3>
+        <p>
+          The companies potential customers are people looking to purchase accessories for their computer and gaming setups. 
+          This includes keyboards, keyboard covers, desk mats, wrist cushions, controller stands, and more.
+          This company may entice people into purchasing its products because it contains items that serve a similar and specific consumer base (that is, people who play video games or use their computers often).
+        </p>
+      </section>
+
+      
+      <section class = "element">
+        <h3>Who is the company to potential customers?</h3>
+        <p>
+          As a person, the company would be the friendly gaming ethusiast, who would know a lot about gaming
+          setups, but would never make someone amateur feel inexperienced for asking questions.
+          They would be welcoming, passionate and knowledgable about gaming technology while also caring about
+          personal expression and style of the customer's dream gaming setup. Futhermore, their goal
+          would be to help both casual and experienced gamers find accessories that compliments their needs,
+          preferences and individual style/aesthetic without making the shopping experience feel unnecessarily
+          complex. 
+        </p>
+      </section>
+
+
+      <section class = "element">
+        <h3>Why might this company entice someone to purchase a product or service?</h3>
+        <p>
+          Customers might be enticed to purchase a product from our gaming accessories company
+          because, it combines gaming performance with personalization to enhance their set up,
+          while still providing the functionality they need for the best gaming experience.
+          The website, will consist of clear product information, coordinated accessories of different
+          visual styles, and beginner friendly information about the products to make customers 
+          purchase with a more confident understanding, without having to risk their money feeling uncertain.
+       
+        </p>
+      </section>
+     
     </section>
 
 
+    
+    <section id="brand_components">
+       
+      <h2>P01 Brand Components</h2>
+      <!-- photos, fonts, etc below here-->
+
+
+
+
+    </section>
+    
+    
+    
     <section id="citations">
       <h2>Citations</h2>
 
