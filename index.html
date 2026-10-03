@@ -51,7 +51,7 @@
         <h4>Rendered element:</h4>
         <p>
           Explore our <a href="#product_listings">gaming accessories</a>
-          to build your setup today!.
+          to build your setup today!
         </p>
 
           <!--
@@ -88,6 +88,8 @@
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
 
+        <h4>.submit-button, .reset-button</h4>
+
         <h4>Sample code:</h4>
         <code>
 
@@ -102,8 +104,8 @@
         <h4>Rendered element:</h4>
 
         <form action="#" method="get">
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+          <button class="submit-button" type="submit">Submit</button>
+          <button class="reset-button" type="reset">Reset</button>
         </form>
 
 
@@ -324,11 +326,18 @@
 
       <section class="element">
         <h3>Payment Form</h3>
+        
+        
+        <h4>CSS Selector:</h4>
+        <p>.payment-form</p>
+        
+        
+        
         <h4>Sample code:</h4>
         
         
         <code>
-          &lt;form action="#" method="post"&gt;<br>
+          &lt;class="payment-form" form action="#" method="post"&gt;<br>
           
            &lt;label for="card-holder">Cardholder:&lt;/label&gt;<br>
            &lt;input type="text" id="card-holder" holder="card-holder"&gt;<br>
@@ -370,20 +379,20 @@
            &lt;/fieldset&gt;<br>
 
 
-           &lt;button type="submit">Place Order&lt;/button&gt;<br>
-           &lt;button type="reset">Reset Form&lt;/button&gt;<br>
+           &lt;button class="submit-button" type="submit">Place Order&lt;/button&gt;<br>
+           &lt;button class="reset-button" type="reset">Reset Form&lt;/button&gt;<br>
          &lt;/form&gt;<br>
         </code>
 
 
         <h4>Rendered Element:</h4>
-        <form action="#" method="post">
+        
+        
+        
+        <form class="payment-form" action="#" method="post">
           
           <label for="card-holder">Cardholder:</label>
           <input type="text" id="card-holder" holder="card-holder">
-           
-
-
            
           <label for="card-number">Card Number:</label>
           <input
@@ -395,10 +404,8 @@
           >
            
 
-
           <fieldset>
             <legend>Payment Method:</legend>
-
 
             <input
               type="radio"
@@ -407,7 +414,6 @@
               value="credit"
             >
             <label for="credit">Credit Card</label>
-
 
             <input
               type="radio"
@@ -419,8 +425,8 @@
           </fieldset>
 
 
-          <button type="submit">Place Order</button>
-          <button type="reset">Reset Form</button>
+          <button class="submit-button" type="submit">Place Order</button>
+          <button class="reset-button" type="reset">Reset Form</button>
         </form>
 
 
