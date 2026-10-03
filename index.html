@@ -117,6 +117,8 @@
 
       <section class="element">
         <h3>Text Input Field with Label</h3>
+        <h4>CSS selector:</h4>
+          <p>.searchField</p>
         <h4>Sample code:</h4>
           <code>&lt;form&gt;<br>
             &lt;label&gt;Text Input Field with Label: &lt;/label&gt;<br>
@@ -124,7 +126,7 @@
             &lt;/form&gt;
           </code>
         <h4>Rendered element:</h4>
-        <form>
+        <form class="searchField">
           <label>Text Input Field with Label: </label>
           <input type="text"></input>
         </form>
@@ -133,12 +135,12 @@
 
       <section class="element">
         <h3>Radio Button with Label</h3>
-
+        <h4>CSS selector:</h4>
+          <p>.chooseOptions</p>
         <h4>Sample code:</h4>
         <code>
-
           &lt;fieldset&gt;<br>
-            &lt;legend&gt;Choose a colour:&lt;/legend&gt;<br>
+            &lt;legend&gt;Colour:&lt;/legend&gt;<br>
 
 
             &lt;input type="radio" id="pink" name="colour-example" value="pink"&gt;<br>
@@ -147,13 +149,15 @@
 
             &lt;input type="radio" id="blue" name="colour-example" value="blue"&gt;<br>
             &lt;label for="blue"&gt;Blue&lt;/label&gt;<br>
+
+            &lt;input type="radio" id="white" name="colour-example" value="white"&gt;<br>
+            &lt;label for="white"&gt;White&lt;/label&gt;<br>
           &lt;/fieldset&gt; 
         </code>
 
-
         <h4>Rendered element:</h4>
-        <fieldset>
-          <legend>Choose a colour:</legend>
+        <fieldset class="chooseOptions">
+          <legend>Colour:</legend>
 
 
           <input type="radio" id="pink" name="colour-example" value="pink">
@@ -162,6 +166,9 @@
 
           <input type="radio" id="blue" name="colour-example" value="blue">
           <label for="blue">Blue</label>
+
+          <input type="radio" id="white" name="colour-example" value="white">
+          <label for="blue">White</label>
         </fieldset>
 
 
@@ -267,20 +274,31 @@
 
       <section class="element">
         <h3>Main Navigation</h3>
+        <h4>CSS selector:</h4>
+          <p>#mainNavigation, .button-nav, .searchInput</p>
         <h4>Sample code:</h4>
           <code>
-            &lt;nav&gt; <br>
-            &lt;a href="#combined_elements"&gt;Section 1&lt;/a&gt;<br>
-            &lt;a href="#combined_elements"&gt;Section 2&lt;/a&gt;<br>
-            &lt;a href="#combined_elements"&gt;Section 3&lt;/a&gt;<br>
+            &lt;nav id="mainNavigation"&gt; <br>
+              &lt;a class="button-nav" href="#"&gt;Home&lt;/a&gt;<br>
+              &lt;a class="button-nav" href="#"&gt;About&lt;/a&gt;<br>
+              &lt;a class="button-nav" href="#"&gt;Products&lt;/a&gt;<br>
+              &lt;form class="searchField"&gt;<br>
+                &lt;input type="text"&gt;&lt;/input&gt;<br>
+                &lt;label&gt;&lt;a href="" target="blank"&gt;&lt;img src="img/search_icon.webp" alt="icon of search magnifying glass"&gt;&lt;/a&gt;&lt;/label&gt;<br>
+              &lt;/form&gt;<br>
             &lt;/nav&gt;
+
           </code>
         <h4>Rendered element:</h4>
         <!-- temporarily have it linked to this section -->
-        <nav> 
-          <a href="#combined_elements"> Section 1</a>
-          <a href="#combined_elements"> Section 2</a>
-          <a href="#combined_elements"> Section 3</a>
+        <nav id="mainNavigation"> 
+          <a class="button-nav" href="#">Home</a>
+          <a class="button-nav" href="#">About</a>
+          <a class="button-nav" href="#">Products</a>
+          <form class="searchField">
+            <input type="text"></input>
+            <label><a href="" target="blank"><img src="img/search_icon.webp" alt="icon of search magnifying glass"></a></label>
+        </form>
         </nav>
       </section>
 
@@ -296,7 +314,7 @@
             &lt;/section&gt;
           </code>
         <h4>Rendered element:</h4>
-        <section>
+        <section id="productsListing">
           <a href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP" target="_blank"><img src="img/greenKeyboard.png" alt="image of green keyboard"></a>
           <h3> Product Name </h3>
           <h4>$100</h4>
