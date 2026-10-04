@@ -456,9 +456,14 @@ code {
 }
 .productsListing:hover {
   outline: none;
-  border-color: #08fffb;
-  box-shadow: 0 0 5px #08fffb84;
+  box-shadow: 0 2px 3px 0 #08fffb;
+  transition-duration: 0.5s;
 }
+
+
+
+
+
 
 /* PAYMENT FORM */
 
