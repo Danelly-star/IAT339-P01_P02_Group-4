@@ -329,7 +329,6 @@ code {
   flex-direction: row;
   align-items: center;
   gap: 0.75em;
-  margin: 1em;
   border: #6c90c3, 1px, solid;
   padding-left: 1em;
   padding-right: 1em;
@@ -427,6 +426,7 @@ code {
   flex-direction: row;
   align-items: center;
   margin-left: auto;
+  gap: 1em;
 }
 
 .productsListing {
