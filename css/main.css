@@ -8,24 +8,12 @@ body {
   /*background-color: #0d1443;*/
   /*background: linear-gradient(95deg, #111b44, #000000);*/
 
-
   background:
-    radial-gradient(
-      circle at 20% 30%,
-      #171f55 0%,
-      transparent 40%
-    ),
-    radial-gradient(
-      circle at 80% 70%,
-      #4e0b56 0%,
-      transparent 50%
-    ),
-    #0d1433;
+    radial-gradient(circle at 20% 30%, #171f55 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, #4e0b56 0%, transparent 50%), #0d1433;
 
   background-attachment: fixed;
 }
-
-
 
 /* ANIMATED LUNAR BACKGROUND */
 
@@ -40,7 +28,6 @@ body {
   position: relative;
   overflow-x: hidden;
 }
-
 
 /* General styling for both glowing lights */
 body::before,
@@ -58,7 +45,6 @@ body::after {
   z-index: -1;
 }
 
-
 /* FIRST FLOATING LIGHT */
 body::before {
   background: #274272;
@@ -70,7 +56,6 @@ body::before {
 
   animation: glow-one 10s ease-in-out infinite alternate;
 }
-
 
 /* SECOND FLOATING LIGHT */
 body::after {
@@ -84,10 +69,8 @@ body::after {
   animation: glow-two 10s ease-in-out infinite alternate;
 }
 
-
 /* Movement for first light */
 @keyframes glow-one {
-
   from {
     transform: translate(0, 0);
     opacity: 0.3;
@@ -97,13 +80,10 @@ body::after {
     transform: translate(400px, 150px);
     opacity: 0.5;
   }
-
 }
-
 
 /* Movement for second light */
 @keyframes glow-two {
-
   from {
     transform: translate(0, 0);
     opacity: 0.2;
@@ -113,20 +93,7 @@ body::after {
     transform: translate(-350px, -100px);
     opacity: 0.4;
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .element {
   padding-bottom: 2rem;
@@ -314,20 +281,14 @@ code {
   top: 0;
   border-radius: 10px;
   z-index: -1;
-
 }
 
 .button-nav2:hover,
 .button-nav2:focus {
-
   box-shadow: 0 2px 5px 0 #08fffb84;
   background-color: #6c90c3;
   color: #0d1433;
 }
-
-
-
-
 
 /* SUBMIT AND RESET BUTTONS */
 
@@ -362,57 +323,38 @@ code {
   box-shadow: 0 2px 5px #08fffb84;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* text input with label item*/
 .searchField {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 0.75em;
-  align-content: center;
   margin: 1em;
   border: #6c90c3, 1px, solid;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
+  padding-left: 1em;
+  padding-right: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  max-width: 30%;
+  max-width: fit-content;
   border-radius: 10px;
+  background-color: #171f55;
 }
 .searchField label {
   color: #eee;
 }
 .searchField img {
   max-width: 1em;
+  display: block;
 }
 .searchField img:hover {
   filter: brightness(0) invert(1);
 }
 .searchField input {
   color: #171f55;
-  max-height: 1em;
-  border-radius: 1em;
+  max-height: 1.5em;
+  border-radius: 0.5em;
+  font-family: "Outfit", sans-serif;
+  padding-left: 0.5em;
 }
 
 /* radio input */
@@ -448,6 +390,13 @@ code {
   cursor: pointer;
 }
 
+/* */
+.imgLink {
+  display: block;
+  max-width: 15em;
+  border-radius: 10px;
+}
+
 /* 
   TEXT ELEMENTS -------------------
 */
@@ -458,34 +407,58 @@ code {
 
 #mainNavigation {
   display: flex;
-  gap: 1em;
+  flex-direction: row;
   align-items: center;
-  padding: 0.5em;
+  padding: 0.25em;
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: #6c90c3;
-  max-width: fit-content;
+  max-width: 100%;
   border-radius: 5px;
 }
-
-#productsListing {
+#mainNavigation .leftAlignedNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+#mainNavigation .rightAlignedNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.productsListing {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #274272;
+  padding: 1em;
+  max-width: 15em;
+  border-radius: 20px;
+  background-color: #0c102c;
+}
+.productImage {
+  /*the rest of the changes are in the imgLink class*/
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.productsListing a {
+  text-decoration: none;
+}
+.productsListing p {
+  color: #6c90c3;
+}
+.productsListing h4 {
+  font-width: black;
+  text-wrap: balance;
+}
+.productsListing:hover {
+  outline: none;
+  border-color: #08fffb;
+  box-shadow: 0 0 5px #08fffb84;
+}
 
 /* PAYMENT FORM */
 

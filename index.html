@@ -182,18 +182,17 @@
       </section>
 
 
-
-
-
       <section class="element">
         <h3>Image as a Link</h3>
+        <h4>CSS selector:</h4>
+          <p>.imgLink</p>
         <h4>Sample code:</h4>
           <code>
-            &lt;a href=https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP" target="_blank"&gt;&lt;img src="img/greenKeyboard.png" alt="image of green keyboard"&gt;&lt;/a&gt;
+            &lt;a href="" target="_blank"&gt;&lt;img src="img/greenKeyboard.png" alt="image of green keyboard"&gt;&lt;/a&gt;
           </code>
         <h4>Rendered element:</h4>
         <!-- image is from https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP"-->
-        <a href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP" target="_blank"><img src="img/greenKeyboard.png" alt="image of green keyboard"></a>
+        <a href="" target="_blank"><img class="imgLink" src="img/greenKeyboard.png" alt="image of green keyboard"></a>
       </section>
 
 
@@ -281,47 +280,68 @@
         <h4>Sample code:</h4>
           <code>
             &lt;nav id="mainNavigation"&gt; <br>
-              &lt;a class="button-nav" href="#"&gt;Home&lt;/a&gt;<br>
-              &lt;a class="button-nav" href="#"&gt;About&lt;/a&gt;<br>
-              &lt;a class="button-nav" href="#"&gt;Products&lt;/a&gt;<br>
-              &lt;form class="searchField"&gt;<br>
-                &lt;input type="text"&gt;&lt;/input&gt;<br>
-                &lt;label&gt;&lt;a href="" target="blank"&gt;&lt;img src="img/search_icon.webp" alt="icon of search magnifying glass"&gt;&lt;/a&gt;&lt;/label&gt;<br>
-              &lt;/form&gt;<br>
-            &lt;/nav&gt;
-
+              &lt;div class="leftAlignedNav"&gt; <br>
+                &lt;h1&gt;LunarTech&lt;/h1&gt; <br>
+                &lt;a class="button-nav" href="#"&gt;Home&lt;/a&gt; <br>
+                &lt;a class="button-nav" href="#"&gt;About&lt;/a&gt; <br>
+                &lt;a class="button-nav" href="#"&gt;Products&lt;/a&gt; <br>
+              &lt;/div&gt; <br>
+              &lt;div class="rightAlignedNav"&gt; <br>
+                &lt;form class="searchField"&gt; <br>
+                  &lt;input type="text" placeholder="Search"&gt;&lt;/input&gt; <br>
+                  &lt;label&gt;&lt;a href="" target="blank"&gt;&lt;img src="img/search_icon.webp" alt="icon of search magnifying glass"&gt;&lt;/a&gt;&lt;/label&gt; <br>
+                &lt;/form&gt; <br>
+                &lt;a class="button-nav" href="#"&gt;Cart&lt;/a&gt; <br>
+              &lt;/div&gt; <br>
+            &lt;/nav&gt; <br>
           </code>
         <h4>Rendered element:</h4>
         <!-- temporarily have it linked to this section -->
         <nav id="mainNavigation"> 
-          <a class="button-nav" href="#">Home</a>
-          <a class="button-nav" href="#">About</a>
-          <a class="button-nav" href="#">Products</a>
-          <form class="searchField">
-            <input type="text"></input>
-            <label><a href="" target="blank"><img src="img/search_icon.webp" alt="icon of search magnifying glass"></a></label>
-        </form>
+          <div class="leftAlignedNav">
+            <h1>LunarTech</h1>
+            <a class="button-nav" href="#">Home</a>
+            <a class="button-nav" href="#">About</a>
+            <a class="button-nav" href="#">Products</a>
+          </div>
+          <div class="rightAlignedNav">
+            <form class="searchField">
+              <input type="text" placeholder="Search"></input>
+              <label><a href="" target="blank"><img src="img/search_icon.webp" alt="icon of search magnifying glass"></a></label>
+            </form>
+            <a class="button-nav" href="#">Cart</a>
+          </div>
         </nav>
       </section>
 
       <section class="element">
         <h3>Product/Service Listing</h3>
-      <h4>Sample code:</h4>
-          <code>
-            &lt;section&gt;<br>
-            &lt;a href=https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP" target="_blank"&gt;&lt;img src="img/greenKeyboard.png" alt="image of green keyboard"&gt;&lt;/a&gt;<br>
-            &lt;h3&gt; Product Name &lt;/h3&gt;<br>
-            &lt;h4&gt;$100&lt;/h4&gt;<br>
-            &lt;p&gt;product description&lt;/p&gt;<br>
-            &lt;/section&gt;
-          </code>
-        <h4>Rendered element:</h4>
-        <section id="productsListing">
-          <a href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP" target="_blank"><img src="img/greenKeyboard.png" alt="image of green keyboard"></a>
-          <h3> Product Name </h3>
-          <h4>$100</h4>
-          <p>product description</p>
-        </section>
+        <h4>CSS selector:</h4>
+          <p>.productsListing</p>
+        <h4>Sample code:</h4>
+            <code>
+              &lt;section class="productsListing"&gt; <br>
+                &lt;a href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP" target="_blank"&gt;<br>
+                &lt;div class="productImage"&gt;<br>
+                  &lt;img class="imgLink" src="img/greenKeyboard.png" alt="image of green keyboard"&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;h4&gt;Green Keyboard&lt;/h4&gt;<br>
+                &lt;p&gt;Keyboards&lt;/p&gt;<br>
+                &lt;h4&gt;$100&lt;/h4&gt;<br>
+                &lt;/a&gt;<br>
+              &lt;/section&gt;
+            </code>
+          <h4>Rendered element:</h4>
+          <section class="productsListing">
+            <a href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP" target="_blank">
+              <div class="productImage">
+                <img class="imgLink" src="img/greenKeyboard.png" alt="image of green keyboard">
+              </div>
+              <h4>Green Keyboard</h4>
+              <p>Keyboards</p>
+              <h4>$100</h4>
+            </a>
+          </section>
       </section>
 
       <section class="element">
