@@ -512,3 +512,114 @@ code {
   color: #6c90c3;
   font-family: "Lunasima", sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CHECKOUT CART */
+
+.checkout-cart {
+  max-width: 40rem;
+  padding: 1.5em;
+
+  background-color: #0c102c;
+  border: 1px solid #274272;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 5px #08fffb84;
+}
+
+
+
+.checkout-cart > h4 {
+  font-size: 1.2rem;
+  color: #6c90c3;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+  padding: 1em 0;
+
+  border-bottom: 1px solid #274272;
+}
+
+
+
+
+.cart-image {
+  width: 90px;
+  height: 90px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+  border: 1px solid #274272;
+}
+
+
+
+
+.cart-info {
+  flex: 1;
+}
+
+
+.cart-info h4 {
+  margin-top: 0;
+  margin-bottom: 0.4em;
+  color: #eee;
+}
+
+
+.cart-info p {
+  margin: 0.2em 0;
+  color: #6c90c3;
+}
+
+
+
+
+.cart-price {
+  color: #eee;
+  font-weight: 600;
+
+  margin-left: auto;
+}
+
+
+
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 1em;
+}
+
+
+.cart-total p {
+  margin: 0;
+  color: #eee;
+  font-size: 1.1rem;
+}

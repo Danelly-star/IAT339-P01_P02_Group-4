@@ -463,56 +463,116 @@
       <section class="element">
         <h3>Checkout Cart</h3>
 
+
+
+
+        <h4>CSS Selectors</h4>
+        <p>.checkout-cart, .cart-item, .cart-info, .cart-price</p>
+
         <h4>Sample Code:</h4>
-        <code>
-          &lt;div&gt;<br>
-            &lt;h4&gt;Your Cart&lt;/h4&gt;<br>
-            &lt;ol&gt;<br>
-              &lt;li&gt;<br>
-                &lt;h4&gt;Compact Mechanical Keyboard&lt;/h4&gt;<br>
-                &lt;p&gt;Quantity: 1&lt;/p&gt;<br>
-                &lt;p&gt;Color: Sage Green&lt;/p&gt;<br>
-                &lt;p&gt;$99.00 CAD&lt;/p&gt;<br>
-              &lt;/li&gt;<br>
-           
-              &lt;li&gt;<br>
-                &lt;h4&gt;LED Gaming Desk Mat&lt;/h4&gt;<br>
-                &lt;p&gt;Quantity: 1&lt;/p&gt;<br>
-                &lt;p&gt;Color: Navy Blue&lt;/p&gt;<br>
-                &lt;p&gt;$35.00 CAD&lt;/p&gt;<br>
-              &lt;/li&gt;<br>
-            &lt;/ol&gt;<br>
+       <code>
+          &lt;div class="checkout-cart"&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;h4&gt;Your Cart&lt;/h4&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;div class="cart-item"&gt;<br><br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;img<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src="img/greenKeyboard.png"<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt="Sage green mechanical keyboard"<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class="cart-image"<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&gt;<br><br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-info"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Compact Mechanical Keyboard&lt;/h4&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Quantity: 1&lt;/p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Color: Sage Green&lt;/p&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="cart-price"&gt;$99.00 CAD&lt;/p&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;/div&gt;<br><br>
 
 
-            &lt;p>&lt;strong&gt;Total: $134.00 CAD&lt;/strong>&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;div class="cart-item"&gt;<br><br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;img<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src="img/ledmat.png"<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt="LED gaming desk mat"<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class="cart-image"<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&gt;<br><br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-info"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;LED Gaming Desk Mat&lt;/h4&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Quantity: 1&lt;/p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Color: Navy Blue&lt;/p&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="cart-price"&gt;$35.00 CAD&lt;/p&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;/div&gt;<br><br>
+
+
+            &nbsp;&nbsp;&lt;div class="cart-total"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;strong&gt;Total:&lt;/strong&gt;&lt;/p&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;strong&gt;$134.00 CAD&lt;/strong&gt;&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/div&gt;<br><br>
+
           &lt;/div&gt;
         </code>
-        
 
         <h4>Rendered Element:</h4>
 
-          <div>
-            <h4>Your Cart</h4>
-            <ol>
-              <li>
-                <h4>Compact Mechanical Keyboard</h4>
-                <p>Quantity: 1</p>
-                <p>Color: Sage Green</p>
-                <p>$99.00 CAD</p>
-              </li>
-           
-              <li>
-                <h4>LED Gaming Desk Mat</h4>
-                <p>Quantity: 1</p>
-                <p>Color: Navy Blue</p>
-                <p>$35.00 CAD</p>
-              </li>
-            </ol>
+          <!-- CHECKOUT CART -->
+
+        <div class="checkout-cart">
+
+  <h4>Your Cart</h4>
+
+  <div class="cart-item">
+
+    <img
+      src="img/mechkeyboard.jpg"
+      alt="White LED mechanical keyboard"
+      class="cart-image"
+    >
+
+    <div class="cart-info">
+      <h4>Compact Mechanical Keyboard</h4>
+      <p>Quantity: 1</p>
+      <p>Color: Sage Green</p>
+    </div>
+
+    <p class="cart-price">$99.00 CAD</p>
+
+  </div>
 
 
-            <p><strong>Total: $134.00 CAD</strong></p>
-          </div>
+  <div class="cart-item">
 
+    <img
+      src="img/ledmat.jpg"
+      alt="Pink LED gaming desk mat"
+      class="cart-image"
+    >
+
+    <div class="cart-info">
+      <h4>LED Gaming Desk Mat</h4>
+      <p>Quantity: 1</p>
+      <p>Color: Pink</p>
+    </div>
+
+    <p class="cart-price">$35.00 CAD</p>
+
+  </div>
+
+
+  <div class="cart-total">
+    <p><strong>Total:</strong></p>
+    <p><strong>$134.00 CAD</strong></p>
+  </div>
+
+</div>
       </section>
 
     </section>
@@ -583,12 +643,12 @@
       <section class = "element">
         <h3>Fonts and Colours</h3>
 
-        <h4>Heading Font: Montserrat</h4>
+        <h4>Heading Font: Lunasima</h4>
         <p>
-          Montserrat will be used as the heading typeface for LunarTech.
+          Lunasima will be used as the heading typeface for LunarTech.
         </p>
 
-        <img src="img/MonserratFontPic.png" alt="A picture to show the font of Montserrat" width = "300px" height = "100px">
+        <img src="img/lunasimafont.png" alt="A picture to show the font of Lunasima" width = "300px" height = "100px">
 
         <p>
           <a href="https://fonts.google.com/specimen/Montserrat">View Montserrat on Google Fonts</a>
