@@ -408,12 +408,32 @@ code {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0.25em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  padding-left: 2em;
+  padding-right: 2em;
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: #6c90c3;
   max-width: 100%;
   border-radius: 5px;
+  background-color: #171f55;
+  /*reference for drop shadow https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Add_a_shadow*/
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+#mainNavigation a {
+  text-decoration: none;
+}
+#mainNavigation .icons {
+  max-width: auto;
+  height: 1.5em;
+  display: block;
+}
+#mainNavigation .icons:hover {
+  filter: brightness(0) invert(1);
+}
+#mainNavigation h1:hover {
+  color: #e4e5e7;
 }
 #mainNavigation .leftAlignedNav {
   display: flex;
@@ -437,6 +457,7 @@ code {
   max-width: 15em;
   border-radius: 20px;
   background-color: #0c102c;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .productImage {
   /*the rest of the changes are in the imgLink class*/
@@ -459,11 +480,6 @@ code {
   box-shadow: 0 2px 3px 0 #08fffb;
   transition-duration: 0.5s;
 }
-
-
-
-
-
 
 /* PAYMENT FORM */
 
@@ -513,22 +529,6 @@ code {
   font-family: "Lunasima", sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CHECKOUT CART */
 
 .checkout-cart {
@@ -542,17 +542,12 @@ code {
   box-shadow: 0 2px 5px #08fffb84;
 }
 
-
-
 .checkout-cart > h4 {
   font-size: 1.2rem;
   color: #6c90c3;
   margin-top: 0;
   margin-bottom: 1em;
 }
-
-
-
 
 .cart-item {
   display: flex;
@@ -564,9 +559,6 @@ code {
   border-bottom: 1px solid #274272;
 }
 
-
-
-
 .cart-image {
   width: 90px;
   height: 90px;
@@ -577,13 +569,9 @@ code {
   border: 1px solid #274272;
 }
 
-
-
-
 .cart-info {
   flex: 1;
 }
-
 
 .cart-info h4 {
   margin-top: 0;
@@ -591,14 +579,10 @@ code {
   color: #eee;
 }
 
-
 .cart-info p {
   margin: 0.2em 0;
   color: #6c90c3;
 }
-
-
-
 
 .cart-price {
   color: #eee;
@@ -607,16 +591,12 @@ code {
   margin-left: auto;
 }
 
-
-
-
 .cart-total {
   display: flex;
   justify-content: space-between;
 
   padding-top: 1em;
 }
-
 
 .cart-total p {
   margin: 0;
