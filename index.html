@@ -302,8 +302,10 @@
           <div class="leftAlignedNav">
             <!--the site logo/title sends back to home-->
             <a href="" target="blank"><h1>LunarTech</h1></a>
-            <a class="button-nav" href="#">About</a>
-            <a class="button-nav" href="#">Products</a>
+            <div id="buttonsInNav">
+              <a class="button-nav" href="#">About</a>
+              <a class="button-nav" href="#">Products</a>
+            </div>
           </div>
           <div class="rightAlignedNav">
             <form class="searchField">
@@ -334,14 +336,56 @@
             </code>
           <h4>Rendered element:</h4>
           <section class="productsListing">
-            <a href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP" target="_blank">
-              <div class="productImage">
-                <img class="imgLink" src="img/greenKeyboard.png" alt="image of green keyboard">
-              </div>
-              <h4>Green Keyboard</h4>
-              <p>Keyboards</p>
-              <h4>$97.00 CAD</h4>
-            </a>
+            <div class="productsCard">
+              <a href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP" target="_blank">
+                <div class="productImage">
+                  <img class="imgLink" src="img/greenKeyboard.png" alt="image of green keyboard">
+                </div>
+                <h4>Green Keyboard</h4>
+                <p>Keyboards</p>
+                <h4 class="productPricing">$97.99 CAD</h4>
+              </a>
+            </div>
+            <div class="productsCard">
+              <a href="" target="_blank">
+                <div class="productImage">
+                  <img class="imgLink" src="img/mechkeyboard.jpg" alt="image of LED keyboard">
+                </div>
+                <h4>Compact Mechanical Keyboard</h4>
+                <p>Keyboards</p>
+                <h4 class="productPricing">$99.99 CAD</h4>
+              </a>
+            </div>
+            <div class="productsCard">
+              <a href="" target="_blank">
+                <div class="productImage">
+                  <img class="imgLink" src="img/ledmat.jpg" alt="image of pink desk mat">
+                </div>
+                <h4>LED Gaming Desk Mat</h4>
+                <p>Desk Mats</p>
+                <h4 class="productPricing">$35.99 CAD</h4>
+              </a>
+            </div>
+            <div class="productsCard">
+              <a href="https://www.gloriousgaming.com/en-ca/products/ghs-eternal-audio-headset" target="_blank">
+                <div class="productImage">
+                  <img class="imgLink" src="img/headsetOrange.webp" alt="image of orange headset">
+                </div>
+                <h4>Eternal Audio Headset</h4>
+                <p>Headphones</p>
+                <h4 class="productPricing">$79.99 CAD</h4>
+              </a>
+            </div>
+            <div class="productsCard">
+              <a href="https://attackshark.ca/products/attack-shark-v5-8khz-wireless-paw3950max-gaming-mouse-with-c06-ultra-cable" target="_blank">
+                <div class="productImage">
+                  <img class="imgLink" src="img/gamingMouseWhite.webp" alt="image of white gaming mouse">
+                </div>
+                <h4>8KHz Wireless Gaming Mouse</h4>
+                <p>Mouse</p>
+                <h4 class="productPricing">$100.99 CAD</h4>
+              </a>
+            </div>
           </section>
       </section>
 
@@ -490,7 +534,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Color: Sage Green&lt;/p&gt;<br>
               &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>
 
-              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="cart-price"&gt;$99.00 CAD&lt;/p&gt;<br><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="cart-price"&gt;$99.99 CAD&lt;/p&gt;<br><br>
 
             &nbsp;&nbsp;&lt;/div&gt;<br><br>
 
@@ -509,7 +553,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Color: Navy Blue&lt;/p&gt;<br>
               &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>
 
-              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="cart-price"&gt;$35.00 CAD&lt;/p&gt;<br><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="cart-price"&gt;$35.99 CAD&lt;/p&gt;<br><br>
 
             &nbsp;&nbsp;&lt;/div&gt;<br><br>
 
@@ -544,7 +588,7 @@
       <p>Color: Sage Green</p>
     </div>
 
-    <p class="cart-price">$99.00 CAD</p>
+    <p class="cart-price">$99.99 CAD</p>
 
   </div>
 
@@ -563,14 +607,14 @@
       <p>Color: Pink</p>
     </div>
 
-    <p class="cart-price">$35.00 CAD</p>
+    <p class="cart-price">$35.99 CAD</p>
 
   </div>
 
 
   <div class="cart-total">
     <p><strong>Total:</strong></p>
-    <p><strong>$134.00 CAD</strong></p>
+    <p><strong>$134.99 CAD</strong></p>
   </div>
 
 </div>
@@ -674,22 +718,41 @@
       <section class="element">
         <h3>Colour Palette</h3>
         <p>
-          LunarTech uses a cool blue palette to support a modern gaming and technology atmosphere. The darker blues can provide strong backgrounds and contrast, while the lighter blue can be used as an accent for interactive elements, highlights, and important information.
+          LunarTech uses a cool blue palette to support a modern gaming and technology atmosphere. The darker blues can provide strong backgrounds and contrast, while the lighter blue is used as an accent for interactive elements, highlights, headings and important information. The bright teal is used as a lit up border when the user hovers over certain interactive elements like a product card. Lastly, the white is used as the main type paragraph colour.
         </p>
 
-        <img src="img/OurColorPalette.png" alt="A picture to show our Palette" width = "560px" height = "600px">
-
+        <!--
         <p>
-        <a href="https://ca.pinterest.com/pin/581879214395675325/">View the Color Palette on Pinterest</a>
-         </p>
+          <a href="https://ca.pinterest.com/pin/581879214395675325/">View the Color Palette on Pinterest</a>
+        </p>
+        -->
 
-
-        <ul>
-          <li><strong>#0D1433</strong> — very dark navy</li>
-          <li><strong>#171F55</strong> — deep blue</li>
-          <li><strong>#274272</strong> — medium blue</li>
-          <li><strong>#6C90C3</strong> — light blue</li>
-        </ul>
+        <div id="colourPalette">
+          <div id="colour1">
+           <p>#6c90c3</p>
+          </div>
+          <div id="colour2">
+            <p>#586c8e</p>
+          </div>
+          <div id="colour3">
+            <p>#274272</p>
+          </div>
+          <div id="colour4">
+            <p>#171f55</p>
+          </div>
+          <div id="colour5">
+            <p>#0c102c</p>
+          </div>
+          <div id="colour6">
+            <p>gradient</p>
+          </div>
+          <div id="colour7">
+            <p>#08fffb</p>
+          </div>
+          <div id="colour8">
+            <p>#eee</p>
+          </div>
+        </div>
       </section>
 
 
@@ -708,37 +771,39 @@
         <p>
           We agreed on a lunar and space theme when deciding on the company's name and plan to base the website around it. 
           We looked into various websites that also sell computer accessories for inspiration. Among them were...
-          <li>
-            <a href="https://www.goodcart.design/websites/logitech">Logitech</a>
-          </li>
-          <li>
-            <a href="https://www.goodcart.design/websites/logitech-gaming">Logitech Gaming</a>
-          </li>
-          <li>
-            <a href="https://www.goodcart.design/websites/anker">Anker</a>
-          </li>
-          <li>
-            <a href="https://www.goodcart.design/websites/corsair">Corsair</a>
-          </li>
+        </p>
+        <li>
+          <p> <a href="https://www.goodcart.design/websites/logitech">Logitech</a> </p>
+        </li>
+        <li>
+          <p> <a href="https://www.goodcart.design/websites/logitech-gaming">Logitech Gaming</a> </p>
+        </li>
+        <li>
+          <p> <a href="https://www.goodcart.design/websites/anker">Anker</a> </p>
+        </li>
+        <li>
+          <p> <a href="https://www.goodcart.design/websites/corsair">Corsair</a> </p>
+        </li>
+        <p>
           We took inspiration from them for fonts, and plan to do so for layouts and such.
         </p>
         <p>
           We were particularly interested in having categories on the home page displayed like these with each box being a category.
-          <img src="img/logitechSite.png" alt="categories on the logitech website">
-          <img src="img/logitechCategories.png" alt="categories on the logitech website">
+          <img class="screenshots" src="img/logitechSite.png" alt="categories on the logitech website">
+          <img class="screenshots" src="img/logitechCategories.png" alt="categories on the logitech website">
         </p>
         <p>
           As for the products and listings, we were inspired by how these looked and want to use the layouts of the content as guidance on which components to include and where to place them.
-          <img src="img/productsListingsLogitech.png" alt="product listings on the logitech website">
-          <img src="img/productsPageLogitech.png" alt="product page on the logitech website">
+          <img class="screenshots" src="img/productsListingsLogitech.png" alt="product listings on the logitech website">
+          <img class="screenshots" src="img/productsPageLogitech.png" alt="product page on the logitech website">
         </p>
 
         <p>
           For the products themselves, we decided to keep consistency by using photos of the products in an environment (as opposed to being in a blank background). 
           As stock images of computer accessories were not really what we were looking for, we have decided to source photos elsewhere with proper credits given.
         </p>
-        <img src="img/greenKeyboard.png" alt="image of green keyboard">
-        <img src="img/pinkKeyboard.png" alt="image of pink keyboard">
+        <img class="screenshots" src="img/greenKeyboard.png" alt="image of green keyboard">
+        <img class="screenshots" src="img/pinkKeyboard.png" alt="image of pink keyboard">
        
         
       </section>

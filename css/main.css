@@ -118,7 +118,7 @@ h1 {
 h2 {
   font-size: 2rem;
   margin-top: 6rem;
-  color: #274272;
+  color: #586c8e;
   font-weight: 600;
 }
 
@@ -408,7 +408,7 @@ code {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 0.25em;
+  padding-top: 1em;
   padding-bottom: 0.25em;
   padding-left: 2em;
   padding-right: 2em;
@@ -420,6 +420,7 @@ code {
   background-color: #171f55;
   /*reference for drop shadow https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Add_a_shadow*/
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap-reverse;
 }
 #mainNavigation a {
   text-decoration: none;
@@ -439,7 +440,12 @@ code {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1em;
+  column-gap: 1em;
+  flex-wrap: wrap;
+}
+#mainNavigation #buttonsInNav {
+  margin: 0;
+  display: block;
 }
 #mainNavigation .rightAlignedNav {
   display: flex;
@@ -450,6 +456,15 @@ code {
 }
 
 .productsListing {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  padding: 1%;
+  max-width: fit-content;
+  border-radius: 30px;
+}
+
+.productsCard {
   display: flex;
   flex-direction: column;
   border: 1px solid #274272;
@@ -465,20 +480,24 @@ code {
   justify-content: center;
   margin-bottom: 0;
 }
-.productsListing a {
+.productsCard a {
   text-decoration: none;
 }
-.productsListing p {
+.productsCard p {
   color: #6c90c3;
 }
-.productsListing h4 {
+.productsCard h4 {
   font-width: black;
   text-wrap: balance;
 }
-.productsListing:hover {
+.productsCard:hover {
   outline: none;
   box-shadow: 0 2px 3px 0 #08fffb;
   transition-duration: 0.5s;
+}
+
+.productsCard .productPricing {
+  justify-content: flex-end;
 }
 
 /* PAYMENT FORM */
@@ -602,4 +621,54 @@ code {
   margin: 0;
   color: #eee;
   font-size: 1.1rem;
+}
+
+/* branding section */
+
+#colourPalette {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+#colourPalette div {
+  padding: 1em;
+  max-width: 5em;
+  border: 1px solid #eee;
+  justify-content: center;
+}
+#colour1 {
+  background-color: #6c90c3;
+}
+#colour2 {
+  background-color: #586c8e;
+}
+#colour3 {
+  background-color: #274272;
+}
+#colour4 {
+  background-color: #171f55;
+}
+#colour5 {
+  background-color: #0c102c;
+}
+#colour6 {
+  background:
+    radial-gradient(circle at 20% 30%, #171f55 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, #4e0b56 0%, transparent 50%), #0d1433;
+}
+#colour7 {
+  background-color: #08fffb;
+}
+#colour8 {
+  background-color: #eee;
+}
+#colour7 p,
+#colour8 p {
+  color: black;
+}
+
+#brand_components .screenshots {
+  display: block;
+  max-height: 15em;
+  max-width: auto;
 }
