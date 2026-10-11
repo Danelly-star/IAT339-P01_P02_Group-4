@@ -277,24 +277,26 @@
       <section class="element">
         <h3>Main Navigation</h3>
         <h4>CSS selector:</h4>
-          <p>#mainNavigation, .leftAlignedNav, .rightAlignedNav</p>
+          <p>#mainNavigation, .leftAlignedNav, .rightAlignedNav, .navLinks</p>
         <h4>Sample code:</h4>
           <code>
             &lt;nav id="mainNavigation"&gt; <br>
-              &lt;div class="leftAlignedNav"&gt; <br>
-                &lt;h1&gt;LunarTech&lt;/h1&gt; <br>
-                &lt;a class="button-nav" href="#"&gt;Home&lt;/a&gt; <br>
-                &lt;a class="button-nav" href="#"&gt;About&lt;/a&gt; <br>
-                &lt;a class="button-nav" href="#"&gt;Products&lt;/a&gt; <br>
-              &lt;/div&gt; <br>
-              &lt;div class="rightAlignedNav"&gt; <br>
-                &lt;form class="searchField"&gt; <br>
-                  &lt;input type="text" placeholder="Search"&gt;&lt;/input&gt; <br>
-                  &lt;label&gt;&lt;a href="" target="blank"&gt;&lt;img src="img/search_icon.webp" alt="icon of search magnifying glass"&gt;&lt;/a&gt;&lt;/label&gt; <br>
-                &lt;/form&gt; <br>
-                &lt;a href="#"&gt;&lt;img class="icons" src="img/shoppingCart.png" alt="icon of shopping cart"&gt;&lt;/a&gt; <br>
-              &lt;/div&gt; <br>
-            &lt;/nav&gt; <br>
+          &lt;div class="leftAlignedNav"&gt; <br>
+            &lt;!--the site logo/title sends back to home--&gt;<br>
+            &lt;a href="" target="blank"&gt;&lt;h1&gt;LunarTech&lt;/h1&gt;&lt;/a&gt;<br>
+            &lt;div class="navLinks"&gt;<br>
+              &lt;p&gt; &lt;a href="#"&gt;About&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href="#"&gt;Products&lt;/a&gt; &lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;div class="rightAlignedNav"&gt;<br>
+            &lt;form class="searchField"&gt;<br>
+              &lt;input type="text" placeholder="Search"&gt;&lt;/input&gt;<br>
+              &lt;label&gt;&lt;a href="" target="blank"&gt;&lt;img src="img/search_icon.webp" alt="icon of search magnifying glass"&gt;&lt;/a&gt;&lt;/label&gt;<br>
+            &lt;/form&gt;<br>
+            &lt;a href="#"&gt;&lt;img class="icons" src="img/shoppingCart.png" alt="icon of shopping cart"&gt;&lt;/a&gt;<br>
+          &lt;/div&gt;<br>
+        &lt;/nav&gt;<br>
+
           </code>
         <h4>Rendered element:</h4>
         <!-- temporarily have it linked to this section -->
@@ -302,9 +304,8 @@
           <div class="leftAlignedNav">
             <!--the site logo/title sends back to home-->
             <a href="" target="blank"><h1>LunarTech</h1></a>
-            <div id="buttonsInNav">
-              <a class="button-nav" href="#">About</a>
-              <a class="button-nav" href="#">Products</a>
+            <div class="navLinks">
+              <p> <a href="#">About</a> </p> <p> <a href="#">Products</a> </p>
             </div>
           </div>
           <div class="rightAlignedNav">
@@ -320,19 +321,62 @@
       <section class="element">
         <h3>Product/Service Listing</h3>
         <h4>CSS selector:</h4>
-          <p>.productsListing</p>
+          <p>.productsListing, .productsCard</p>
         <h4>Sample code:</h4>
             <code>
-              &lt;section class="productsListing"&gt; <br>
-                &lt;a href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP" target="_blank"&gt;<br>
+              &lt;section class="productsListing"&gt;<br>
+            &lt;div class="productsCard"&gt;<br>
+              &lt;a href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP" target="_blank"&gt;<br>
                 &lt;div class="productImage"&gt;<br>
                   &lt;img class="imgLink" src="img/greenKeyboard.png" alt="image of green keyboard"&gt;<br>
                 &lt;/div&gt;<br>
                 &lt;h4&gt;Green Keyboard&lt;/h4&gt;<br>
                 &lt;p&gt;Keyboards&lt;/p&gt;<br>
-                &lt;h4&gt;$97.00 CAD&lt;/h4&gt;<br>
-                &lt;/a&gt;<br>
-              &lt;/section&gt;
+                &lt;h4 class="productPricing"&gt;$97.99 CAD&lt;/h4&gt;<br>
+              &lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="productsCard"&gt;<br>
+              &lt;a href="" target="_blank"&gt;<br>
+                &lt;div class="productImage"&gt;<br>
+                  &lt;img class="imgLink" src="img/mechkeyboard.jpg" alt="image of LED keyboard"&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;h4&gt;Compact Mechanical Keyboard&lt;/h4&gt;<br>
+                &lt;p&gt;Keyboards&lt;/p&gt;<br>
+                &lt;h4&gt;$99.99 CAD&lt;/h4&gt;<br>
+              &lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="productsCard"&gt;<br>
+              &lt;a href="" target="_blank"&gt;<br>
+                &lt;div class="productImage"&gt;<br>
+                  &lt;img class="imgLink" src="img/ledmat.jpg" alt="image of pink desk mat"&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;h4&gt;LED Gaming Desk Mat&lt;/h4&gt;<br>
+                &lt;p&gt;Desk Mats&lt;/p&gt;<br>
+                &lt;h4&gt;$35.99 CAD&lt;/h4&gt;<br>
+              &lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="productsCard"&gt;<br>
+              &lt;a href="https://www.gloriousgaming.com/en-ca/products/ghs-eternal-audio-headset" target="_blank"&gt;<br>
+                &lt;div class="productImage"&gt;<br>
+                  &lt;img class="imgLink" src="img/headsetOrange.webp" alt="image of orange headset"&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;h4&gt;Eternal Audio Headset&lt;/h4&gt;<br>
+                &lt;p&gt;Headphones&lt;/p&gt;<br>
+                &lt;h4&gt;$79.99 CAD&lt;/h4&gt;<br>
+              &lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="productsCard"&gt;<br>
+              &lt;a href="https://attackshark.ca/products/attack-shark-v5-8khz-wireless-paw3950max-gaming-mouse-with-c06-ultra-cable" target="_blank"&gt;<br>
+                &lt;div class="productImage"&gt;<br>
+                  &lt;img class="imgLink" src="img/gamingMouseWhite.webp" alt="image of white gaming mouse"&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;h4&gt;8KHz Wireless Gaming Mouse&lt;/h4&gt;<br>
+                &lt;p&gt;Mouse&lt;/p&gt;<br>
+                &lt;h4&gt;$100.99 CAD&lt;/h4&gt;<br>
+              &lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+          &lt;/section&gt; <br>
+
             </code>
           <h4>Rendered element:</h4>
           <section class="productsListing">
@@ -353,7 +397,7 @@
                 </div>
                 <h4>Compact Mechanical Keyboard</h4>
                 <p>Keyboards</p>
-                <h4 class="productPricing">$99.99 CAD</h4>
+                <h4>$99.99 CAD</h4>
               </a>
             </div>
             <div class="productsCard">
@@ -363,7 +407,7 @@
                 </div>
                 <h4>LED Gaming Desk Mat</h4>
                 <p>Desk Mats</p>
-                <h4 class="productPricing">$35.99 CAD</h4>
+                <h4>$35.99 CAD</h4>
               </a>
             </div>
             <div class="productsCard">
@@ -373,7 +417,7 @@
                 </div>
                 <h4>Eternal Audio Headset</h4>
                 <p>Headphones</p>
-                <h4 class="productPricing">$79.99 CAD</h4>
+                <h4>$79.99 CAD</h4>
               </a>
             </div>
             <div class="productsCard">
@@ -383,7 +427,7 @@
                 </div>
                 <h4>8KHz Wireless Gaming Mouse</h4>
                 <p>Mouse</p>
-                <h4 class="productPricing">$100.99 CAD</h4>
+                <h4>$100.99 CAD</h4>
               </a>
             </div>
           </section>

@@ -336,7 +336,6 @@ code {
   padding-bottom: 0.5em;
   max-width: fit-content;
   border-radius: 10px;
-  background-color: #171f55;
 }
 .searchField label {
   color: #eee;
@@ -408,8 +407,7 @@ code {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 1em;
-  padding-bottom: 0.25em;
+  height: auto;
   padding-left: 2em;
   padding-right: 2em;
   border-bottom-width: 3px;
@@ -417,10 +415,14 @@ code {
   border-bottom-color: #6c90c3;
   max-width: 100%;
   border-radius: 5px;
-  background-color: #171f55;
+  background-color: #0d1433;
   /*reference for drop shadow https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Add_a_shadow*/
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap-reverse;
+}
+#mainNavigation div {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 #mainNavigation a {
   text-decoration: none;
@@ -439,13 +441,20 @@ code {
 #mainNavigation .leftAlignedNav {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  column-gap: 1em;
+  column-gap: 2em;
   flex-wrap: wrap;
+  align-content: flex-end;
+  height: auto;
 }
-#mainNavigation #buttonsInNav {
-  margin: 0;
-  display: block;
+.leftAlignedNav h1,
+p {
+  margin: 0%;
+}
+#mainNavigation .navLinks {
+  display: flex;
+  align-content: flex-end;
+  height: auto;
+  gap: 1em;
 }
 #mainNavigation .rightAlignedNav {
   display: flex;
@@ -494,10 +503,6 @@ code {
   outline: none;
   box-shadow: 0 2px 3px 0 #08fffb;
   transition-duration: 0.5s;
-}
-
-.productsCard .productPricing {
-  justify-content: flex-end;
 }
 
 /* PAYMENT FORM */
