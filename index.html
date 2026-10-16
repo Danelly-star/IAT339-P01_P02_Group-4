@@ -46,12 +46,12 @@
         <h4>CSS selector:</h4>
         <p>#product_listings</p>
         <h4>Sample code:</h4>
-          <code>&lt;p&gt;<br>Explore our &lt;a href="#product_listings"&gt;gaming accessories&lt;/a&gt; to build your setup today!.<br>&lt;/p&gt;</code>
+          <code>&lt;p&gt;<br>Explore our &lt;a href="#combined_elements"&gt;gaming accessories&lt;/a&gt; to build your setup today!.<br>&lt;/p&gt;</code>
 
 
         <h4>Rendered element:</h4>
         <p>
-          Explore our <a href="#product_listings">gaming accessories</a>
+          Explore our <a href="#combined_elements">gaming accessories</a>
           to build your setup today!
         </p>
 
@@ -130,8 +130,8 @@
           </code>
         <h4>Rendered element:</h4>
         <form class="searchField">
-          <label>Text Input Field with Label: </label>
-          <input type="text"></input>
+          <label for="style-search">Text Input Field with Label: </label>
+          <input type="text" id="style-search">
         </form>
       </section>
 
@@ -171,7 +171,7 @@
           <label for="blue">Blue</label>
 
           <input type="radio" id="white" name="colour-example" value="white">
-          <label for="blue">White</label>
+          <label for="white">White</label>
         </fieldset>
 
 
@@ -189,11 +189,11 @@
           <p>.imgLink</p>
         <h4>Sample code:</h4>
           <code>
-            &lt;a href="" target="_blank"&gt;&lt;img src="img/greenKeyboard.png" alt="image of green keyboard"&gt;&lt;/a&gt;
+            &lt;a href="product_listing.html"&gt;&lt;img src="img/greenKeyboard.png" alt="image of green keyboard"&gt;&lt;/a&gt;
           </code>
         <h4>Rendered element:</h4>
         <!-- image is from https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP"-->
-        <a href="" target="_blank"><img class="imgLink" src="img/greenKeyboard.png" alt="image of green keyboard"></a>
+        <a href="product_listing.html"><img class="imgLink" src="img/greenKeyboard.png" alt="image of green keyboard"></a>
       </section>
 
 
@@ -283,7 +283,7 @@
             &lt;nav id="mainNavigation"&gt; <br>
           &lt;div class="leftAlignedNav"&gt; <br>
             &lt;!--the site logo/title sends back to home--&gt;<br>
-            &lt;a href="" target="blank"&gt;&lt;h1&gt;LunarTech&lt;/h1&gt;&lt;/a&gt;<br>
+            &lt;a href="index.html"&gt;&lt;h1&gt;LunarTech&lt;/h1&gt;&lt;/a&gt;<br>
             &lt;div class="navLinks"&gt;<br>
               &lt;p&gt; &lt;a href="#"&gt;About&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href="#"&gt;Products&lt;/a&gt; &lt;/p&gt;<br>
             &lt;/div&gt;<br>
@@ -291,7 +291,7 @@
           &lt;div class="rightAlignedNav"&gt;<br>
             &lt;form class="searchField"&gt;<br>
               &lt;input type="text" placeholder="Search"&gt;&lt;/input&gt;<br>
-              &lt;label&gt;&lt;a href="" target="blank"&gt;&lt;img src="img/search_icon.webp" alt="icon of search magnifying glass"&gt;&lt;/a&gt;&lt;/label&gt;<br>
+              &lt;label&gt;&lt;a href="index.html"&gt;&lt;img src="img/search_icon.webp" alt="icon of search magnifying glass"&gt;&lt;/a&gt;&lt;/label&gt;<br>
             &lt;/form&gt;<br>
             &lt;a href="#"&gt;&lt;img class="icons" src="img/shoppingCart.png" alt="icon of shopping cart"&gt;&lt;/a&gt;<br>
           &lt;/div&gt;<br>
@@ -303,17 +303,17 @@
         <nav id="mainNavigation"> 
           <div class="leftAlignedNav">
             <!--the site logo/title sends back to home-->
-            <a href="" target="blank"><h1>LunarTech</h1></a>
+            <a href="index.html"><h1>LunarTech</h1></a>
             <div class="navLinks">
-              <p> <a href="#">About</a> </p> <p> <a href="#">Products</a> </p>
+              <p> <a href="#">About</a> </p> <p> <a href="product_listing.html">Products</a> </p>
             </div>
           </div>
           <div class="rightAlignedNav">
             <form class="searchField">
               <input type="text" placeholder="Search"></input>
-              <label><a href="" target="blank"><img src="img/search_icon.webp" alt="icon of search magnifying glass"></a></label>
+              <label><a href="index.html"><img src="img/search_icon.webp" alt="icon of search magnifying glass"></a></label>
             </form>
-            <a href="#"><img class="icons" src="img/shoppingCart.png" alt="icon of shopping cart"></a>
+            <a href="checkout.html"><img class="icons" src="img/shoppingCart.png" alt="icon of shopping cart"></a>
           </div>
         </nav>
       </section>
@@ -336,7 +336,7 @@
               &lt;/a&gt;<br>
             &lt;/div&gt;<br>
             &lt;div class="productsCard"&gt;<br>
-              &lt;a href="" target="_blank"&gt;<br>
+              &lt;a href="product_listing.html"&gt;<br>
                 &lt;div class="productImage"&gt;<br>
                   &lt;img class="imgLink" src="img/mechkeyboard.jpg" alt="image of LED keyboard"&gt;<br>
                 &lt;/div&gt;<br>
@@ -346,7 +346,7 @@
               &lt;/a&gt;<br>
             &lt;/div&gt;<br>
             &lt;div class="productsCard"&gt;<br>
-              &lt;a href="" target="_blank"&gt;<br>
+              &lt;a href="product_listing.html"&gt;<br>
                 &lt;div class="productImage"&gt;<br>
                   &lt;img class="imgLink" src="img/ledmat.jpg" alt="image of pink desk mat"&gt;<br>
                 &lt;/div&gt;<br>
@@ -391,7 +391,7 @@
               </a>
             </div>
             <div class="productsCard">
-              <a href="" target="_blank">
+              <a href="product_listing.html">
                 <div class="productImage">
                   <img class="imgLink" src="img/mechkeyboard.jpg" alt="image of LED keyboard">
                 </div>
@@ -401,7 +401,7 @@
               </a>
             </div>
             <div class="productsCard">
-              <a href="" target="_blank">
+              <a href="product_listing.html">
                 <div class="productImage">
                   <img class="imgLink" src="img/ledmat.jpg" alt="image of pink desk mat">
                 </div>
@@ -449,7 +449,7 @@
           &lt;class="payment-form" form action="#" method="post"&gt;<br>
           
            &lt;label for="card-holder">Cardholder:&lt;/label&gt;<br>
-           &lt;input type="text" id="card-holder" holder="card-holder"&gt;<br>
+           &lt;input type="text" id="card-holder" name="card-holder"&gt;<br>
            
 
 
@@ -501,7 +501,7 @@
         <form class="payment-form" action="#" method="post">
           
           <label for="card-holder">Cardholder:</label>
-          <input type="text" id="card-holder" holder="card-holder">
+          <input type="text" id="card-holder" name="card-holder">
            
           <label for="card-number">Card Number:</label>
           <input
@@ -658,7 +658,7 @@
 
   <div class="cart-total">
     <p><strong>Total:</strong></p>
-    <p><strong>$134.99 CAD</strong></p>
+    <p><strong>$135.98 CAD</strong></p>
   </div>
 
 </div>
@@ -952,9 +952,9 @@
 
 
 
-          <li>Matteson, . Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-          <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-        </ul>
+          
+          
+        <li>Newegg. (n.d.). <strong>Green keyboard product image [Image].</strong> <a href="https://www.newegg.ca/p/173-0885-000H6">Source</a>.</li><li>Glorious Gaming. (n.d.). <strong>Eternal Audio Headset [Image].</strong> <a href="https://www.gloriousgaming.com/en-ca/products/ghs-eternal-audio-headset">Source</a>.</li><li>Attack Shark. (n.d.). <strong>Wireless gaming mouse [Image].</strong> <a href="https://attackshark.ca/products/attack-shark-v5-8khz-wireless-paw3950max-gaming-mouse-with-c06-ultra-cable">Source</a>.</li></ul>
 
     </section>
 
