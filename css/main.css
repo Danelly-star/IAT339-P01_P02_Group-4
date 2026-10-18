@@ -118,7 +118,7 @@ h1 {
 h2 {
   font-size: 2rem;
   margin-top: 6rem;
-  color: #586c8e;
+  color: #849dc7;
   font-weight: 600;
 }
 
@@ -497,7 +497,6 @@ p {
   border-radius: 12px;
 }
 
-
 .productsCard a {
   text-decoration: none;
 }
@@ -646,15 +645,16 @@ p {
 }
 #colourPalette div {
   padding: 1em;
-  max-width: 5em;
+  max-width: fit-content;
   border: 1px solid #eee;
   justify-content: center;
+  text-align: center;
 }
 #colour1 {
   background-color: #6c90c3;
 }
 #colour2 {
-  background-color: #586c8e;
+  background-color: #6c90c3;
 }
 #colour3 {
   background-color: #274272;
@@ -687,34 +687,6 @@ p {
   max-width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* NEWLY ADDED RESPONSIVE WEBPAGE TEMPLATES FOR CHECK OUT AND PRODUCT LISTING WEBPAGES */
 
 * {
@@ -729,7 +701,7 @@ p {
 .template-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: .8rem;
+  gap: 0.8rem;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
@@ -749,13 +721,13 @@ p {
 .template-links {
   display: flex;
   flex-wrap: wrap;
-  gap: .75rem;
+  gap: 0.75rem;
 }
 
 .template-links a {
   color: #eee;
   text-decoration: none;
-  padding: .5rem .7rem;
+  padding: 0.5rem 0.7rem;
   border-radius: 8px;
 }
 
@@ -773,7 +745,7 @@ p {
 }
 
 .template-main > h1 {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .template-intro {
@@ -794,7 +766,7 @@ p {
 .template-products .productsCard a {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   height: 100%;
 }
 
@@ -802,13 +774,13 @@ p {
   width: 100%;
   max-width: 100%;
   height: 180px;
- 
+
   border-radius: 1rem;
 }
 
 .template-products .productsCard h3 {
-  font-size: 1.1rem;
-  margin: .5rem 0 0;
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
   color: #eee;
 }
 
@@ -819,11 +791,13 @@ p {
 .template-action {
   display: inline-block;
   margin-top: 1rem;
-  padding: .65rem 1rem;
+  padding: 0.5rem 1rem;
   background: #274272;
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
+  justify-content: flex-end;
+  max-height: fit-content;
 }
 
 .template-action:hover,
@@ -834,7 +808,7 @@ p {
 
 .checkout-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
   gap: 1.5rem;
   align-items: start;
 }
@@ -855,7 +829,7 @@ p {
 
 .checkout-layout .payment-form input:not([type="radio"]) {
   width: 100%;
-  padding: .7rem;
+  padding: 0.7rem;
   border-radius: 8px;
   background: #171f55;
   color: #eee;
@@ -869,7 +843,7 @@ p {
 .checkout-layout .payment-form label:not(fieldset label) {
   display: block;
   margin-top: 1rem;
-  margin-bottom: .35rem;
+  margin-bottom: 0.35rem;
 }
 
 .checkout-layout .payment-form input:focus-visible {
@@ -929,10 +903,9 @@ p {
   }
 
   .template-links a {
-    padding: .4rem;
+    padding: 0.4rem;
   }
 }
-
 
 /*
 
