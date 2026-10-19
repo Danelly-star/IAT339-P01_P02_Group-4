@@ -202,7 +202,7 @@ code {
   display: flex;
   max-width: fit-content;
   flex-wrap: wrap;
-  row-gap: 1em;
+  row-gap: 0.5em;
 }
 
 /* 
