@@ -110,7 +110,7 @@ h4 {
 }
 
 h1 {
-  color: #6c90c3;
+  color: #91b9ff;
   font-weight: 700;
   font-size: 2.5rem;
 }
@@ -702,6 +702,13 @@ p {
   margin-top: 0.5em;
   margin-bottom: 1em;
   gap: 1em;
+}
+
+#citations a {
+  color: #91b9ff;
+}
+#citations a:hover {
+  color: #08fffb;
 }
 
 /* NEWLY ADDED RESPONSIVE WEBPAGE TEMPLATES FOR CHECK OUT AND PRODUCT LISTING WEBPAGES */
