@@ -195,6 +195,7 @@ code {
   color: #eee;
   border-radius: 0.5rem;
   box-shadow: 0 2px 3px 0 #08fffb84;
+  text-wrap: wrap;
 }
 
 /* 
@@ -336,6 +337,7 @@ code {
   padding-bottom: 0.5em;
   max-width: fit-content;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 .searchField label {
   color: #eee;
@@ -641,7 +643,9 @@ p {
 #colourPalette {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.5em;
+  margin-top: 1em;
 }
 #colourPalette div {
   padding: 1em;
