@@ -126,7 +126,7 @@ h3 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 1rem;
-  color: #eeeeeea2;
+  color: #eeeeeedf;
 }
 
 h4 {
@@ -145,7 +145,7 @@ p {
 
 /* In-text link */
 p a {
-  color: #6c90c3;
+  color: #91b9ff;
   text-decoration: none;
   position: relative;
   transition:
@@ -196,6 +196,13 @@ code {
   border-radius: 0.5rem;
   box-shadow: 0 2px 3px 0 #08fffb84;
   text-wrap: wrap;
+}
+
+#styleGuideNav {
+  display: flex;
+  max-width: fit-content;
+  flex-wrap: wrap;
+  row-gap: 1em;
 }
 
 /* 
@@ -393,7 +400,7 @@ code {
 /* */
 .imgLink {
   display: block;
-  max-width: 15em;
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -416,7 +423,7 @@ code {
   border-bottom-style: solid;
   border-bottom-color: #6c90c3;
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   background-color: #0d1433;
   /*reference for drop shadow https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Add_a_shadow*/
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -496,7 +503,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 12px;
+  border-radius: 15px;
 }
 
 .productsCard a {
@@ -578,7 +585,7 @@ p {
 
 .checkout-cart > h4 {
   font-size: 1.2rem;
-  color: #6c90c3;
+  /*color: #6c90c3;*/
   margin-top: 0;
   margin-bottom: 1em;
 }
@@ -610,7 +617,6 @@ p {
 .cart-info h4 {
   margin-top: 0;
   margin-bottom: 0.4em;
-  color: #eee;
 }
 
 .cart-info p {
@@ -634,7 +640,6 @@ p {
 
 .cart-total p {
   margin: 0;
-  color: #eee;
   font-size: 1.1rem;
 }
 
@@ -655,7 +660,7 @@ p {
   text-align: center;
 }
 #colour1 {
-  background-color: #6c90c3;
+  background-color: #91b9ff;
 }
 #colour2 {
   background-color: #6c90c3;
@@ -691,14 +696,27 @@ p {
   max-width: 100%;
 }
 
+.brandingDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  gap: 1em;
+}
+
 /* NEWLY ADDED RESPONSIVE WEBPAGE TEMPLATES FOR CHECK OUT AND PRODUCT LISTING WEBPAGES */
 
 * {
   box-sizing: border-box;
 }
 
+.templateMargins {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .template-header {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto 2rem;
 }
 

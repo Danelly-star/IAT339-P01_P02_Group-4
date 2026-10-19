@@ -1,212 +1,183 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout | LunarTech</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Checkout | LunarTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600&family=Lunasima:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600&family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
 
-  <link href="css/main.css" rel="stylesheet">
-</head>
-
-<body>
-
-  
-  <header class="template-header">
-
-    <nav id="mainNavigation" aria-label="Main navigation">
-
+  <body class="templateMargins">
+    <header class="template-header">
+      <nav id="mainNavigation" aria-label="Main navigation">
         <div class="leftAlignedNav">
-
-        <!-- LunarTech logo links to the style guide -->
-        <a href="index.html">
+          <!-- LunarTech logo links to the style guide -->
+          <a href="index.html">
             <h1>LunarTech</h1>
-        </a>
+          </a>
 
-        <div class="navLinks">
+          <div class="navLinks">
             <p><a href="index.html#branding_definition">About</a></p>
             <p><a href="product_listing.html">Products</a></p>
             <p><a href="index.html">Style Guide</a></p>
-        </div>
-
+          </div>
         </div>
 
         <div class="rightAlignedNav">
-
-        <!-- Search field -->
-        <form class="searchField" role="search">
-            <input type="text" placeholder="Search" aria-label="Search">
+          <!-- Search field -->
+          <form class="searchField" role="search">
+            <input type="text" placeholder="Search" aria-label="Search" />
 
             <a href="product_listing.html" aria-label="View products">
-            <img src="img/search_icon.webp" alt="Search icon">
+              <img src="img/search_icon.webp" alt="Search icon" />
             </a>
-        </form>
+          </form>
 
-        <!-- Shopping cart links to checkout -->
-        <a href="checkout.html" aria-label="View checkout">
-            <img
-            class="icons"
-            src="img/shoppingCart.png"
-            alt="Shopping cart"
-            >
-        </a>
-
-        </div>
-
-    </nav>
-
-  </header>
-
-
-  <main class="template-main">
-
-    <h1>Checkout</h1>
-
-    <p class="template-intro">
-      Review your order and see the payment form. (Template Only).
-    </p>
-
-    <div class="checkout-layout">
-
-      <section aria-labelledby="payment-heading">
-
-        <h2 id="payment-heading">Payment Information</h2>
-
-        <form class="payment-form" action="#" method="get" onsubmit="return false;">
-
-          <label for="card-holder-template">Cardholder Name</label>
-          <input
-            id="card-holder-template"
-            name="cardholder"
-            type="text"
-            autocomplete="cc-name"
-            placeholder="Name on card"
-          >
-
-          <label for="card-number-template">Card Number</label>
-          <input
-            id="card-number-template"
-            name="cardnumber"
-            type="text"
-            inputmode="numeric"
-            autocomplete="off"
-            placeholder="Example only — do not enter real card details"
-          >
-
-          <label for="expiry-template">Expiration Date</label>
-          <input
-            id="expiry-template"
-            name="expiry"
-            type="text"
-            placeholder="MM/YY"
-          >
-
-          <fieldset>
-            <legend>Payment Method</legend>
-
-            <input
-              id="credit-template"
-              type="radio"
-              name="method"
-              value="credit"
-              checked
-            >
-            <label for="credit-template">Credit Card</label>
-
-            <input
-              id="paypal-template"
-              type="radio"
-              name="method"
-              value="paypal"
-            >
-            <label for="paypal-template">PayPal</label>
-
-          </fieldset>
-
-          <button class="submit-button" type="submit">
-            Place Order (Demo)
-          </button>
-
-          <button class="reset-button" type="reset">
-            Reset
-          </button>
-
-        </form>
-
-      </section>
-
-      <section aria-labelledby="cart-heading">
-
-        <h2 id="cart-heading">Order Summary</h2>
-
-        <div class="checkout-cart">
-
-          <h4>Your Cart</h4>
-
-          <div class="cart-item">
-
-            <img
-              class="cart-image"
-              src="img/mechkeyboard.jpg"
-              alt="Compact mechanical keyboard"
-            >
-
-            <div class="cart-info">
-              <h4>Compact Mechanical Keyboard</h4>
-              <p>Quantity: 1</p>
-            </div>
-
-            <p class="cart-price">$99.99 CAD</p>
-
-          </div>
-
-          <div class="cart-item">
-
-            <img
-              class="cart-image"
-              src="img/ledmat.jpg"
-              alt="LED gaming desk mat"
-            >
-
-            <div class="cart-info">
-              <h4>LED Gaming Desk Mat</h4>
-              <p>Quantity: 1</p>
-            </div>
-
-            <p class="cart-price">$35.99 CAD</p>
-
-          </div>
-
-          <div class="cart-total">
-            <p><strong>Subtotal:</strong></p>
-            <p><strong>$135.98 CAD</strong></p>
-          </div>
-
-          <p>Taxes and shipping not included.</p>
-
-          <a class="template-action" href="product_listing.html">
-            Continue Shopping
+          <!-- Shopping cart links to checkout -->
+          <a href="checkout.html" aria-label="View checkout">
+            <img class="icons" src="img/shoppingCart.png" alt="Shopping cart" />
           </a>
-
         </div>
+      </nav>
+    </header>
 
-      </section>
+    <main class="template-main">
+      <h1>Checkout</h1>
 
-    </div>
+      <p class="template-intro">
+        Review your order and see the payment form. (Template Only).
+      </p>
 
-  </main>
+      <div class="checkout-layout">
+        <section aria-labelledby="payment-heading">
+          <h2 id="payment-heading">Payment Information</h2>
 
-  <footer class="template-footer">
-    <p>
-      LunarTech — P01 webpage template ·
-      <a href="index.html#citations">Image and font citations</a>
-    </p>
-  </footer>
+          <form
+            class="payment-form"
+            action="#"
+            method="get"
+            onsubmit="return false;"
+          >
+            <label for="card-holder-template">Cardholder Name</label>
+            <input
+              id="card-holder-template"
+              name="cardholder"
+              type="text"
+              autocomplete="cc-name"
+              placeholder="Name on card"
+            />
 
-</body>
+            <label for="card-number-template">Card Number</label>
+            <input
+              id="card-number-template"
+              name="cardnumber"
+              type="text"
+              inputmode="numeric"
+              autocomplete="off"
+              placeholder="Example only — do not enter real card details"
+            />
+
+            <label for="expiry-template">Expiration Date</label>
+            <input
+              id="expiry-template"
+              name="expiry"
+              type="text"
+              placeholder="MM/YY"
+            />
+
+            <fieldset>
+              <legend>Payment Method</legend>
+
+              <input
+                id="credit-template"
+                type="radio"
+                name="method"
+                value="credit"
+                checked
+              />
+              <label for="credit-template">Credit Card</label>
+
+              <input
+                id="paypal-template"
+                type="radio"
+                name="method"
+                value="paypal"
+              />
+              <label for="paypal-template">PayPal</label>
+            </fieldset>
+
+            <button class="submit-button" type="submit">
+              Place Order (Demo)
+            </button>
+
+            <button class="reset-button" type="reset">Reset</button>
+          </form>
+        </section>
+
+        <section aria-labelledby="cart-heading">
+          <h2 id="cart-heading">Order Summary</h2>
+
+          <div class="checkout-cart">
+            <h4>Your Cart</h4>
+
+            <div class="cart-item">
+              <img
+                class="cart-image"
+                src="img/mechkeyboard.jpg"
+                alt="Compact mechanical keyboard"
+              />
+
+              <div class="cart-info">
+                <h4>Compact Mechanical Keyboard</h4>
+                <p>Quantity: 1</p>
+              </div>
+
+              <p class="cart-price">$99.99 CAD</p>
+            </div>
+
+            <div class="cart-item">
+              <img
+                class="cart-image"
+                src="img/ledmat.jpg"
+                alt="LED gaming desk mat"
+              />
+
+              <div class="cart-info">
+                <h4>LED Gaming Desk Mat</h4>
+                <p>Quantity: 1</p>
+              </div>
+
+              <p class="cart-price">$35.99 CAD</p>
+            </div>
+
+            <div class="cart-total">
+              <p><strong>Subtotal:</strong></p>
+              <p><strong>$135.98 CAD</strong></p>
+            </div>
+
+            <p>Taxes and shipping not included.</p>
+
+            <a class="template-action" href="product_listing.html">
+              Continue Shopping
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="template-footer">
+      <p>
+        LunarTech — P01 webpage template ·
+        <a href="index.html#citations">Image and font citations</a>
+      </p>
+    </footer>
+  </body>
 </html>
