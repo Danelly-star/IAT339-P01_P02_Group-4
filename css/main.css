@@ -285,13 +285,12 @@ code {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #171f55;
+  background: #274272;
   left: 0;
   top: 0;
   border-radius: 10px;
   z-index: -1;
 }
-
 
 .button-nav2:hover::after,
 .button-nav2:focus::after {
