@@ -263,6 +263,7 @@ code {
 .button-nav2:hover::before,
 .button-nav2:focus::before {
   opacity: 1;
+  color: #08fffb;
 }
 
 @keyframes glowing-button {
@@ -291,6 +292,11 @@ code {
   z-index: -1;
 }
 
+
+.button-nav2:hover::after,
+.button-nav2:focus::after {
+  background: #6c90c3;
+}
 .button-nav2:hover,
 .button-nav2:focus {
   box-shadow: 0 2px 5px 0 #08fffb84;
