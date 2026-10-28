@@ -521,8 +521,8 @@ p {
 .productsCard .productImage img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  border-radius: 15px;
+  object-fit: cover;
+  border-radius: 5%;
 }
 
 .productsCard a {
