@@ -354,6 +354,13 @@ code {
 .searchField label {
   color: #eee;
 }
+.searchField input {
+  color: #171f55;
+  max-height: 1.5em;
+  border-radius: 0.5em;
+  font-family: "Outfit", sans-serif;
+  padding-left: 0.5em;
+}
 .searchField img {
   max-width: 1em;
   display: block;
@@ -361,12 +368,19 @@ code {
 .searchField img:hover {
   filter: brightness(0) invert(1);
 }
-.searchField input {
-  color: #171f55;
-  max-height: 1.5em;
-  border-radius: 0.5em;
-  font-family: "Outfit", sans-serif;
-  padding-left: 0.5em;
+.searchField button {
+  color: #eee;
+  background: none;
+  border: none;
+  text-decoration-line: underline;
+  max-width: 1em;
+  display: block;
+}
+.searchField button:hover {
+  color: #08fffb;
+  background: none;
+  border: none;
+  text-decoration-line: underline;
 }
 
 /* radio input */
