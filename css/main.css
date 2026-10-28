@@ -514,12 +514,27 @@ p {
 .productsCard a {
   text-decoration: none;
 }
-.productsCard p {
-  color: #6c90c3;
+.productsCard h3 {
+  font-size: 1.15em;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-wrap: balance;
 }
 .productsCard h4 {
-  font-weight: 700;
-  text-wrap: balance;
+  color: #6c90c3;
+  margin-top: 0;
+}
+.productsCard .productPricing {
+  display: flex;
+  flex: 1;
+  flex-direction: column-reverse;
+  margin-top: 1em;
+  margin-bottom: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.productsCard p {
+  text-align: left;
 }
 .productsCard:hover {
   outline: none;
@@ -816,10 +831,6 @@ p {
   font-size: 1rem;
   margin: 0.5rem 0 0;
   color: #eee;
-}
-
-.template-products .productPricing {
-  margin-top: auto;
 }
 
 .template-action {
