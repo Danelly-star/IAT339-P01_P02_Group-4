@@ -811,6 +811,15 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.template-main section {
+  padding-top: 0em;
+  margin-top: 0;
+}
+
+.template-main hr {
+  border-color: #91b9ff;
+}
+
 .template-intro {
   margin-bottom: 2rem;
 }
@@ -819,6 +828,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
   gap: 1rem;
+  margin-bottom: 1em;
 }
 
 .template-products .productsCard {
@@ -984,44 +994,10 @@ p {
 
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Main homepage spacing */
 .home-main {
   padding: 1rem;
 }
-
-
-
 
 .homepage-content {
   display: grid;
@@ -1054,9 +1030,6 @@ p {
   object-fit: contain;
   border-radius: 16px;
 }
-
-
-
 
 .home-section {
   margin: 3rem 0;
@@ -1100,9 +1073,6 @@ p {
   margin: 1rem 0 0.5rem;
 }
 
-
-
-
 .home-about {
   padding: 2rem;
   background: #0c102c;
@@ -1114,7 +1084,6 @@ p {
   max-width: 65ch;
   margin: 1rem 0;
 }
-
 
 .home-footer {
   display: flex;
@@ -1133,11 +1102,8 @@ p {
   color: #c5daff;
 }
 
-
-
 @media (max-width: 760px) {
-
-  .homepage-content{
+  .homepage-content {
     grid-template-columns: 1fr;
     padding: 1.5rem;
   }
@@ -1149,10 +1115,7 @@ p {
   .home-categories img {
     height: 220px;
   }
-
 }
-
-
 
 .home-reviews {
   display: grid;
@@ -1165,7 +1128,7 @@ p {
   background: #0c102c;
   box-shadow: 0 2px 3px 0 #08fffb84;
   border-radius: 0.5rem;
-  border-top:7px solid #274272;
+  border-top: 7px solid #274272;
 }
 
 .home-review h3 {
@@ -1181,9 +1144,6 @@ p {
   color: #b8d0f2;
   font-size: 0.9rem;
 }
-
-
-
 
 .home-footer {
   display: block;
@@ -1238,10 +1198,7 @@ p {
   margin: 0;
 }
 
-
-
 @media (max-width: 760px) {
-
   .home-reviews {
     grid-template-columns: 1fr;
   }
@@ -1249,17 +1206,13 @@ p {
   .home-footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
 }
 
 @media (max-width: 420px) {
-
   .home-footer-grid {
     grid-template-columns: 1fr;
   }
-
 }
-
 
 #mainNavigation .nav-brand-name {
   font-family: Lunasima, sans-serif;
@@ -1273,22 +1226,16 @@ p {
   color: #eee;
 }
 
-
-
 .home-hero .button-nav2,
 .home-about .button-nav2 {
- 
   margin-top: 0.75rem;
 }
-
-
 
 #mainNavigation .navLinks {
   flex-wrap: wrap;
 }
 
 @media (max-width: 760px) {
-
   #mainNavigation .leftAlignedNav {
     gap: 0.5rem;
   }
@@ -1296,5 +1243,4 @@ p {
   #mainNavigation .navLinks {
     gap: 0.5rem;
   }
-
 }
