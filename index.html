@@ -2,1081 +2,291 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>P01 GROUP 4 - Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products | LunarTech</title>
 
-    <!-- Google Fonts: Lunasima and Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600&family=Lunasima:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
     <link href="css/main.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <header>
-      <h1>LunarTech</h1>
+  <body class="templateMargins">
+    <header class="template-header">
+      <nav id="mainNavigation" aria-label="Main navigation">
+        <div class="leftAlignedNav">
+          <!-- LunarTech logo links to the style guide -->
+          <a href="index.html">
+            <h1>LunarTech</h1>
+          </a>
 
-      <nav>
-        <div id="styleGuideNav">
-          <a class="button-nav2" href="#interactive_elements"
-            >Interactive Elements</a
-          >
-          <a class="button-nav2" href="#text_elements">Text Elements</a>
-          <a class="button-nav2" href="#combined_elements">Combined Elements</a>
-          <a class="button-nav2" href="product_listing.html"
-            >Product Listing Template</a
-          >
-          <a class="button-nav2" href="checkout.html">Checkout Template</a>
-          <a class="button-nav2" href="#citations">Citations</a>
+          <div class="navLinks">
+            <p><a href="product_listing.html">About</a></p>
+            <p>
+              <a href="product_listing.html" aria-current="page">Products</a>
+            </p>
+            <p><a href="styleguide.html">Style Guide</a></p>
+          </div>
+        </div>
+
+        <div class="rightAlignedNav">
+          <!-- Search field -->
+          <form class="searchField" role="search">
+            <input type="text" placeholder="Search" aria-label="Search" />
+
+            <button type="submit">
+              <img
+                src="img/search_icon.webp"
+                alt="icon of search magnifying glass"
+              />
+            </button>
+          </form>
+
+          <!-- Shopping cart links to checkout -->
+          <a href="checkout.html" aria-label="View checkout">
+            <img class="icons" src="img/shoppingCart.png" alt="Shopping cart" />
+          </a>
         </div>
       </nav>
     </header>
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
+    <!-- MAIN HOMEPAGE CONTENT -->
+  <main class="template-main home-main">
 
-      <section class="element">
-        <h3>In-text link</h3>
+   
+    <section class="homepage-content" aria-labelledby="hero-title">
 
-        <h4>CSS selector:</h4>
-        <p>#product_listings</p>
-        <h4>Sample code:</h4>
-        <code
-          >&lt;p&gt;<br />Explore our &lt;a href="#combined_elements"&gt;gaming
-          accessories&lt;/a&gt; to build your setup today!.<br />&lt;/p&gt;</code
-        >
+      <div>
+        <p class="home-eyebrow">WELCOME TO LUNARTECH</p>
 
-        <h4>Rendered element:</h4>
+        <h1 id="hero-title">Elevate Your Gaming Universe.</h1>
+
         <p>
-          Explore our <a href="#combined_elements">gaming accessories</a>
-          to build your setup today!
+          Gaming accessories designed for comfort, performance,
+          and a touch of lunar glow.
         </p>
 
-        <!--
-            Reference: https://www.w3schools.com/html/html_links.asp
-          -->
-      </section>
+        <a class="button-nav2" href="product_listing.html">
+          Explore Products
+        </a>
+      </div>
 
-      <!-- Default Button styling section -->
-      <section class="element">
-        <h3>Navigation Link</h3>
+      <img
+        src="img/greenKeyboard.png"
+        alt="Placeholder photo of a gaming keyboard"
+      >
 
-        <h4>CSS selector:</h4>
-        <p>.button-nav, .button-nav2</p>
+    </section>
 
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
 
-        <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
-        <a class="button-nav2" href="#">Default Button</a>
-      </section>
+    <!-- PRODUCT CATEGORIES -->
+    <section class="home-section" aria-labelledby="collection-title">
 
-      <section class="element">
-        <h3>Submit/Reset Buttons</h3>
-        <h4>CSS selector:</h4>
-        <p>.submit-button, .reset-button</p>
+      <h2 id="collection-title">Explore Our Collection</h2>
 
-        <h4>Sample code:</h4>
-        <code>
-          &lt;form action="#" method="get"&gt;<br />
-          &lt;button type="submit">Submit&lt;/button&gt;<br />
-          &lt;button type="reset">Reset&lt;/button&gt;<br />
-          &lt;/form&gt;
-        </code>
+      <div class="home-categories">
 
-        <h4>Rendered element:</h4>
-
-        <form action="#" method="get">
-          <button class="submit-button" type="submit">Submit</button>
-          <button class="reset-button" type="reset">Reset</button>
-        </form>
-
-        <!--
-          Reference: W3Schools, HTML Input Types (submit/reset).
-          https://www.w3schools.com/html/html_form_input_types.asp
-        -->
-      </section>
-
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
-        <h4>CSS selector:</h4>
-        <p>.searchField</p>
-        <h4>Sample code:</h4>
-        <code
-          >&lt;form&gt;<br />
-          &lt;label&gt;Text Input Field with Label: &lt;/label&gt;<br />
-          &lt;input type="text"&gt;&lt;/input&gt;<br />
-          &lt;button type="submit"&gt; &lt;img src="img/search_icon.webp"
-          alt="icon of search magnifying glass" /&gt; <br />
-          &lt;/button&gt; <br />
-          &lt;/form&gt;
-        </code>
-        <h4>Rendered element:</h4>
-        <form class="searchField">
-          <label for="style-search">Text Input Field with Label: </label>
-          <input type="text" id="style-search" />
-          <button type="submit">
-            <img
-              src="img/search_icon.webp"
-              alt="icon of search magnifying glass"
-            />
-          </button>
-        </form>
-      </section>
-
-      <section class="element">
-        <h3>Radio Button with Label</h3>
-        <h4>CSS selector:</h4>
-        <p>.chooseOptions</p>
-        <h4>Sample code:</h4>
-        <code>
-          &lt;fieldset&gt;<br />
-          &lt;legend&gt;Colour:&lt;/legend&gt;<br />
-
-          &lt;input type="radio" id="pink" name="colour-example"
-          value="pink"&gt;<br />
-          &lt;label for="pink"&gt;Pink&lt;/label&gt;<br />
-
-          &lt;input type="radio" id="blue" name="colour-example"
-          value="blue"&gt;<br />
-          &lt;label for="blue"&gt;Blue&lt;/label&gt;<br />
-
-          &lt;input type="radio" id="white" name="colour-example"
-          value="white"&gt;<br />
-          &lt;label for="white"&gt;White&lt;/label&gt;<br />
-          &lt;/fieldset&gt;
-        </code>
-
-        <h4>Rendered element:</h4>
-        <fieldset class="chooseOptions">
-          <legend>Colour:</legend>
-
-          <input type="radio" id="pink" name="colour-example" value="pink" />
-          <label for="pink">Pink</label>
-
-          <input type="radio" id="blue" name="colour-example" value="blue" />
-          <label for="blue">Blue</label>
-
-          <input type="radio" id="white" name="colour-example" value="white" />
-          <label for="white">White</label>
-        </fieldset>
-
-        <!--
-          Reference used: W3Schools, HTML Input Types - Radio.
-          https://www.w3schools.com/html/html_form_input_types.asp
-        -->
-      </section>
-
-      <section class="element">
-        <h3>Image as a Link</h3>
-        <h4>CSS selector:</h4>
-        <p>.imgLink</p>
-
-        <h4>Sample code:</h4>
-        <code>
-          &lt;a href="product_listing.html"&gt;&lt;img
-          src="img/greenKeyboard.png" alt="image of green
-          keyboard"&gt;&lt;/a&gt;
-        </code>
-
-        <h4>Rendered element:</h4>
-        <!-- image is from https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP"-->
-        <a href="product_listing.html"
-          ><img
-            class="imgLink"
+        <!-- Keyboards -->
+        <a href="product_listing.html">
+          <img
             src="img/greenKeyboard.png"
-            alt="image of green keyboard"
-        /></a>
-      </section>
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+            alt="Placeholder product category photo"
+          >
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2>Text Elements</h2>
+          <h3>Keyboards</h3>
+          <p>Find your perfect typing setup.</p>
+        </a>
 
-      <section class="element">
-        <h3>Headings</h3>
-        <h4>Sample code:</h4>
-        <code>
-          &lt;h1&gt;Heading 1&lt;/h1&gt;<br />
-          &lt;h2&gt;Heading 2&lt;/h2&gt;<br />
-          &lt;h3&gt;Heading 3&lt;/h3&gt;<br />
-          &lt;h4&gt;Heading 4&lt;/h4&gt;<br />
-        </code>
-        <h4>Rendered element:</h4>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-      </section>
+        <!-- Headsets -->
+        <a href="product_listing.html">
+          <img
+            src="img/headsetOrange.webp"
+            alt="Placeholder product category photo"
+          >
 
-      <section class="element">
-        <h3>Paragraphs</h3>
+          <h3>Headsets</h3>
+          <p>Hear every moment clearly.</p>
+        </a>
 
-        <h4>Sample Code:</h4>
-        <code>
-          &lt;p&gt;Build your gaming setup that combines comfort, performance
-          and personal style.&lt;/p&gt;
-        </code>
+        <!-- Desk Accessories -->
+        <a href="product_listing.html">
+          <img
+            src="img/ledmat.jpg"
+            alt="Placeholder product category photo"
+          >
 
-        <h4>Rendered Element</h4>
-        <p>
-          Build your gaming setup that combines comfort, performance and
-          personal style.
-        </p>
-      </section>
+          <h3>Desk Accessories</h3>
+          <p>Bring your setup to life.</p>
+        </a>
 
-      <section class="element">
-        <h3>Numbered Lists</h3>
-
-        <h4>Sample Code:</h4>
-        <code>
-          &lt;ol&gt;<br />
-          &lt;li&gt;Choose your gaming accessory&lt;/li&gt;<br />
-          &lt;li&gt;Pick the right option/color&lt;/li&gt;<br />
-          &lt;li&gt;Add to Cart&lt;/li&gt;<br />
-          &lt;/ol&gt;
-        </code>
-
-        <h4>Rendered Element:</h4>
-        <ol>
-          <li>Choose your gaming accessory</li>
-          <li>Pick the right option/color</li>
-          <li>Add to Cart</li>
-        </ol>
-      </section>
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-      <h2>Combined Elements</h2>
-
-      <section class="element">
-        <h3>Main Navigation</h3>
-        <h4>CSS selector:</h4>
-        <p>#mainNavigation, .leftAlignedNav, .rightAlignedNav, .navLinks</p>
-        <h4>Sample code:</h4>
-        <code>
-          &lt;nav id="mainNavigation"&gt; <br />
-          &lt;div class="leftAlignedNav"&gt; <br />
-          &lt;!--the site logo/title sends back to home--&gt;<br />
-          &lt;a href="index.html"&gt;&lt;h1&gt;LunarTech&lt;/h1&gt;&lt;/a&gt;<br />
-          &lt;div class="navLinks"&gt;<br />
-          &lt;p&gt; &lt;a href="#"&gt;About&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a
-          href="#"&gt;Products&lt;/a&gt; &lt;/p&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;div class="rightAlignedNav"&gt;<br />
-          &lt;form class="searchField"&gt;<br />
-          &lt;input type="text" placeholder="Search"&gt;&lt;/input&gt;<br />
-          &lt;button type="submit"&gt; <br />
-          &lt;img src="img/search_icon.webp" alt="icon of search magnifying
-          glass" /&gt; <br />
-          &lt;/button&gt; <br />
-          &lt;/form&gt;<br />
-          &lt;a href="#"&gt;&lt;img class="icons" src="img/shoppingCart.png"
-          alt="icon of shopping cart"&gt;&lt;/a&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;/nav&gt;<br />
-        </code>
-        <h4>Rendered element:</h4>
-        <!-- temporarily have it linked to this section -->
-        <nav id="mainNavigation">
-          <div class="leftAlignedNav">
-            <!--the site logo/title sends back to home-->
-            <a href="index.html"><h1>LunarTech</h1></a>
-
-            <div class="navLinks">
-              <p><a href="#branding_definition">About</a></p>
-              <p><a href="product_listing.html">Products</a></p>
-              <p><a href="index.html">Style Guide</a></p>
-            </div>
-          </div>
-          <div class="rightAlignedNav">
-            <form class="searchField">
-              <input type="text" placeholder="Search" />
-              <button type="submit">
-                <img
-                  src="img/search_icon.webp"
-                  alt="icon of search magnifying glass"
-                />
-              </button>
-            </form>
-            <a href="checkout.html"
-              ><img
-                class="icons"
-                src="img/shoppingCart.png"
-                alt="icon of shopping cart"
-            /></a>
-          </div>
-        </nav>
-      </section>
-
-      <section class="element">
-        <h3>Product/Service Listing</h3>
-        <h4>CSS selector:</h4>
-        <p>.productsListing, .productsCard</p>
-        <h4>Sample code:</h4>
-        <code>
-          &lt;section class="productsListing"&gt;<br />
-          &lt;div class="productsCard"&gt;<br />
-          &lt;a
-          href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP"
-          target="_blank" &gt;<br />
-          &lt;div class="productImage"&gt;<br />
-          &lt;img class="imgLink" src="img/greenKeyboard.png" alt="image of
-          green keyboard" /&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;h3&gt;Green Keyboard&lt;/h3&gt;<br />
-          &lt;h4&gt;Keyboards&lt;/h4&gt;<br />
-          &lt;div class="productPricing"&gt;&lt;p&gt;$97.99
-          CAD&lt;/p&gt;&lt;/div&gt;<br />
-          &lt;/a&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;div class="productsCard"&gt;<br />
-          &lt;a href="product_listing.html"&gt;<br />
-          &lt;div class="productImage"&gt;<br />
-          &lt;img class="imgLink" src="img/mechkeyboard.jpg" alt="image of LED
-          keyboard" /&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;h3&gt;Compact Mechanical Keyboard&lt;/h3&gt;<br />
-          &lt;h4&gt;Keyboards&lt;/h4&gt;<br />
-          &lt;div class="productPricing"&gt;&lt;p&gt;$99.99
-          CAD&lt;/p&gt;&lt;/div&gt;<br />
-          &lt;/a&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;div class="productsCard"&gt;<br />
-          &lt;a href="product_listing.html"&gt;<br />
-          &lt;div class="productImage"&gt;<br />
-          &lt;img class="imgLink" src="img/ledmat.jpg" alt="image of pink desk
-          mat" /&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;h3&gt;LED Gaming Desk Mat&lt;/h3&gt;<br />
-          &lt;h4&gt;Desk Mats&lt;/h4&gt;<br />
-          &lt;div class="productPricing"&gt;&lt;p&gt;$35.99
-          CAD&lt;/p&gt;&lt;/div&gt;<br />
-          &lt;/a&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;div class="productsCard"&gt;<br />
-          &lt;a
-          href="https://www.gloriousgaming.com/en-ca/products/ghs-eternal-audio-headset"
-          target="_blank" &gt;<br />
-          &lt;div class="productImage"&gt;<br />
-          &lt;img class="imgLink" src="img/headsetOrange.webp" alt="image of
-          orange headset" /&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;h3&gt;Eternal Audio Headset&lt;/h3&gt;<br />
-          &lt;h4&gt;Headphones&lt;/h4&gt;<br />
-          &lt;div class="productPricing"&gt;&lt;p&gt;$79.99
-          CAD&lt;/p&gt;&lt;/div&gt;<br />
-          &lt;/a&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;div class="productsCard"&gt;<br />
-          &lt;a
-          href="https://attackshark.ca/products/attack-shark-v5-8khz-wireless-paw3950max-gaming-mouse-with-c06-ultra-cable"
-          target="_blank" &gt;<br />
-          &lt;div class="productImage"&gt;<br />
-          &lt;img class="imgLink" src="img/gamingMouseWhite.webp" alt="image of
-          white gaming mouse" /&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;h3&gt;8KHz Wireless Gaming Mouse&lt;/h3&gt;<br />
-          &lt;h4&gt;Mouse&lt;/h4&gt;<br />
-          &lt;div class="productPricing"&gt;&lt;p&gt;$100.99
-          CAD&lt;/p&gt;&lt;/div&gt;<br />
-          &lt;/a&gt;<br />
-          &lt;/div&gt; <br />
-          &lt;/section&gt;
-        </code>
-        <h4>Rendered element:</h4>
-        <section class="productsListing">
-          <div class="productsCard">
-            <a
-              href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP"
-              target="_blank"
-            >
-              <div class="productImage">
-                <img
-                  class="imgLink"
-                  src="img/greenKeyboard.png"
-                  alt="image of green keyboard"
-                />
-              </div>
-              <h3>Green Keyboard</h3>
-              <h4>Keyboards</h4>
-              <div class="productPricing"><p>$97.99 CAD</p></div>
-            </a>
-          </div>
-          <div class="productsCard">
-            <a href="product_listing.html">
-              <div class="productImage">
-                <img
-                  class="imgLink"
-                  src="img/mechkeyboard.jpg"
-                  alt="image of LED keyboard"
-                />
-              </div>
-              <h3>Compact Mechanical Keyboard</h3>
-              <h4>Keyboards</h4>
-              <div class="productPricing"><p>$99.99 CAD</p></div>
-            </a>
-          </div>
-          <div class="productsCard">
-            <a href="product_listing.html">
-              <div class="productImage">
-                <img
-                  class="imgLink"
-                  src="img/ledmat.jpg"
-                  alt="image of pink desk mat"
-                />
-              </div>
-              <h3>LED Gaming Desk Mat</h3>
-              <h4>Desk Mats</h4>
-              <div class="productPricing"><p>$35.99 CAD</p></div>
-            </a>
-          </div>
-          <div class="productsCard">
-            <a
-              href="https://www.gloriousgaming.com/en-ca/products/ghs-eternal-audio-headset"
-              target="_blank"
-            >
-              <div class="productImage">
-                <img
-                  class="imgLink"
-                  src="img/headsetOrange.webp"
-                  alt="image of orange headset"
-                />
-              </div>
-              <h3>Eternal Audio Headset</h3>
-              <h4>Headphones</h4>
-              <div class="productPricing"><p>$79.99 CAD</p></div>
-            </a>
-          </div>
-          <div class="productsCard">
-            <a
-              href="https://attackshark.ca/products/attack-shark-v5-8khz-wireless-paw3950max-gaming-mouse-with-c06-ultra-cable"
-              target="_blank"
-            >
-              <div class="productImage">
-                <img
-                  class="imgLink"
-                  src="img/gamingMouseWhite.webp"
-                  alt="image of white gaming mouse"
-                />
-              </div>
-              <h3>8KHz Wireless Gaming Mouse</h3>
-              <h4>Mouse</h4>
-              <div class="productPricing"><p>$100.99 CAD</p></div>
-            </a>
-          </div>
-        </section>
-      </section>
-
-      <section class="element">
-        <h3>Payment Form</h3>
-
-        <h4>CSS Selector:</h4>
-        <p>.payment-form</p>
-
-        <h4>Sample code:</h4>
-
-        <code>
-          &lt;class="payment-form" form action="#" method="post"&gt;<br />
-
-          &lt;label for="card-holder">Cardholder:&lt;/label&gt;<br />
-          &lt;input type="text" id="card-holder" name="card-holder"&gt;<br />
-
-          &lt;label for="card-number">Card Number:&lt;/label&gt;<br />
-          &lt;input<br />
-          type="text"<br />
-          id="card-number"<br />
-          name="card-number"<br />
-          inputmode="numeric"<br />
-          autocomplete="cc-number"<br />
-          &gt;<br />
-
-          &lt;fieldset&gt;<br />
-          &lt;legend&gt;Payment Method:&lt;/legend&gt;<br />
-
-          &lt;input<br />
-          type="radio"<br />
-          id="credit"<br />
-          name="payment-method"<br />
-          value="credit"<br />
-          &gt;<br />
-          &lt;label for="credit"&gt;Credit Card&lt;/label&gt;<br />
-
-          &lt;input<br />
-          type="radio"<br />
-          id="paypal"<br />
-          name="payment-method"<br />
-          value="paypal"<br />
-          &gt;<br />
-          &lt;label for="paypal"&gt;PayPal&lt;/label&gt;<br />
-          &lt;/fieldset&gt;<br />
-
-          &lt;button class="submit-button" type="submit">Place
-          Order&lt;/button&gt;<br />
-          &lt;button class="reset-button" type="reset">Reset
-          Form&lt;/button&gt;<br />
-          &lt;/form&gt;<br />
-        </code>
-
-        <h4>Rendered Element:</h4>
-
-        <form class="payment-form" action="#" method="post">
-          <label for="card-holder">Cardholder:</label>
-          <input type="text" id="card-holder" name="card-holder" />
-
-          <label for="card-number">Card Number:</label>
-          <input
-            type="text"
-            id="card-number"
-            name="card-number"
-            inputmode="numeric"
-            autocomplete="cc-number"
-          />
-
-          <fieldset>
-            <legend>Payment Method:</legend>
-
-            <input
-              type="radio"
-              id="credit"
-              name="payment-method"
-              value="credit"
-            />
-            <label for="credit">Credit Card</label>
-
-            <input
-              type="radio"
-              id="paypal"
-              name="payment-method"
-              value="paypal"
-            />
-            <label for="paypal">PayPal</label>
-          </fieldset>
-
-          <button class="submit-button" type="submit">Place Order</button>
-          <button class="reset-button" type="reset">Reset Form</button>
-        </form>
-
-        <!--
-          References Used: W3Schools, Radio Buttons, HTML Forms and HTML Input Types.
-          https://www.w3schools.com/html/html_forms.asp
-          https://www.w3schools.com/html/html_form_input_types.asp
-        -->
-      </section>
-
-      <section class="element">
-        <h3>Checkout Cart</h3>
-
-        <h4>CSS Selectors</h4>
-        <p>.checkout-cart, .cart-item, .cart-info, .cart-price</p>
-
-        <h4>Sample Code:</h4>
-        <code>
-          &lt;div class="checkout-cart"&gt;<br /><br />
-
-          &nbsp;&nbsp;&lt;h3&gt;Your Cart&lt;/h3&gt;<br /><br />
-
-          &nbsp;&nbsp;&lt;div class="cart-item"&gt;<br /><br />
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;img<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src="img/greenKeyboard.png"<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt="Sage green mechanical
-          keyboard"<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class="cart-image"<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&gt;<br /><br />
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-info"&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Compact Mechanical
-          Keyboard&lt;/h4&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Quantity: 1&lt;/p&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Color: Sage
-          Green&lt;/p&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br /><br />
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="cart-price"&gt;$99.99
-          CAD&lt;/p&gt;<br /><br />
-
-          &nbsp;&nbsp;&lt;/div&gt;<br /><br />
-
-          &nbsp;&nbsp;&lt;div class="cart-item"&gt;<br /><br />
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;img<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src="img/ledmat.png"<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alt="LED gaming desk mat"<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class="cart-image"<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&gt;<br /><br />
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-info"&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;LED Gaming Desk
-          Mat&lt;/h4&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Quantity: 1&lt;/p&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Color: Navy
-          Blue&lt;/p&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br /><br />
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="cart-price"&gt;$35.99
-          CAD&lt;/p&gt;<br /><br />
-
-          &nbsp;&nbsp;&lt;/div&gt;<br /><br />
-
-          &nbsp;&nbsp;&lt;div class="cart-total"&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;strong&gt;Total:&lt;/strong&gt;&lt;/p&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;strong&gt;$134.00
-          CAD&lt;/strong&gt;&lt;/p&gt;<br />
-          &nbsp;&nbsp;&lt;/div&gt;<br /><br />
-
-          &lt;/div&gt;
-        </code>
-
-        <h4>Rendered Element:</h4>
-
-        <!-- CHECKOUT CART -->
-
-        <div class="checkout-cart">
-          <h3>Your Cart</h3>
-
-          <div class="cart-item">
-            <img
-              src="img/mechkeyboard.jpg"
-              alt="White LED mechanical keyboard"
-              class="cart-image"
-            />
-
-            <div class="cart-info">
-              <h4>Compact Mechanical Keyboard</h4>
-              <p>Quantity: 1</p>
-              <p>Color: Sage Green</p>
-            </div>
-
-            <p class="cart-price">$99.99 CAD</p>
-          </div>
-
-          <div class="cart-item">
-            <img
-              src="img/ledmat.jpg"
-              alt="Pink LED gaming desk mat"
-              class="cart-image"
-            />
-
-            <div class="cart-info">
-              <h4>LED Gaming Desk Mat</h4>
-              <p>Quantity: 1</p>
-              <p>Color: Pink</p>
-            </div>
-
-            <p class="cart-price">$35.99 CAD</p>
-          </div>
-
-          <div class="cart-total">
-            <p><strong>Total:</strong></p>
-            <p><strong>$135.98 CAD</strong></p>
-          </div>
-        </div>
-      </section>
+      </div>
     </section>
 
-    <section id="branding_definition">
-      <h2>P01 Branding Definitions</h2>
-      <!-- branding ideas below here -->
 
-      <section class="element">
-        <h3>What does company do or offer?</h3>
-        <p>
-          LunarTech is a gaming accessories company for people who spend a lot
-          of time gaming or using their computers and want to improve both the
-          function and appearance of their setup. The company offers keyboards,
-          mice, headsets, desk mats, controllers, keyboard covers, wrist
-          cushions, controller stands, and other setup accessories. LunarTech
-          brings these products together for a specific audience of computer and
-          gaming users, making it easier to build a coordinated setup in one
-          place.
-        </p>
-      </section>
+    <!-- ABOUT LUNARTECH -->
+    <section
+      class="home-about"
+      id="about"
+      aria-labelledby="about-title"
+    >
 
-      <section class="element">
-        <h3>Who is the company to potential customers?</h3>
-        <p>
-          If LunarTech were a person, it would be the friendly gaming enthusiast
-          who knows a lot about gaming setups but would never make a beginner
-          feel inexperienced for asking questions. They would be welcoming,
-          passionate, and knowledgeable about gaming technology while also
-          caring about personal expression and the visual style of a customer's
-          dream setup. Their goal would be to help both casual and experienced
-          gamers find accessories that complement their needs, preferences, and
-          individual aesthetic without making the shopping experience feel
-          unnecessarily complicated.
-        </p>
-      </section>
+      <h2 id="about-title">About LunarTech</h2>
 
-      <section class="element">
-        <h3>
-          Why might this company entice someone to purchase a product or
-          service?
-        </h3>
-        <p>
-          LunarTech may entice customers because it combines gaming performance
-          with personalization, helping customers enhance their setup while
-          still getting the functionality they need for an enjoyable gaming or
-          computer experience. The website will provide clear product
-          information, coordinated accessories in different visual styles, and
-          beginner-friendly explanations so customers can understand what they
-          are purchasing and make decisions with greater confidence. By
-          balancing useful gaming gear with a cohesive visual identity,
-          LunarTech aims to make shopping for a complete setup feel approachable
-          and personal.
-        </p>
-      </section>
+      <p>
+        At LunarTech, we believe your gaming setup should feel
+        as good as it looks. Explore accessories with a calming,
+        luminous aesthetic that makes every space your own.
+      </p>
+
+      <a class="button-nav2" href="product_listing.html">
+        Browse the Collection
+      </a>
+
     </section>
 
-    <section id="brand_components">
-      <h2>P01 Brand Components</h2>
-      <!-- photos, fonts, etc below here-->
-      <section class="element">
-        <h3>Fonts and Colours</h3>
 
-        <h4>Heading Font: Lunasima</h4>
-        <p>Lunasima will be used as the heading typeface for LunarTech.</p>
+    <!-- CUSTOMER REVIEWS -->
+    <section class="home-section" aria-labelledby="reviews-title">
 
-        <img
-          src="img/lunasimafont.png"
-          alt="A picture to show the font of Lunasima"
-          width="300"
-          height="100"
-        />
+      <h2 id="reviews-title">From Our Users</h2>
 
-        <p>
-          <a href="https://fonts.google.com/specimen/Lunasima"
-            >View Lunasima on Google Fonts</a
-          >
-        </p>
+     
 
-        <h4>Body Font: Outfit</h4>
-        <p>Outfit will be used for body copy and supporting information.</p>
+      <div class="home-reviews">
 
-        <img
-          src="img/OutfitFontPic.png"
-          alt="A picture to show the font of Outfit"
-          width="300"
-          height="100"
-        />
+        <!-- Review 1 -->
+        <article class="home-review">
 
-        <p>
-          <a href="https://fonts.google.com/specimen/Outfit"
-            >View Outfit on Google Fonts</a
-          >
-        </p>
-      </section>
+          <p class="review-stars" aria-label="5 out of 5 stars">
+            ★★★★★
+          </p>
 
-      <section class="element">
-        <h3>Colour Palette</h3>
-        <p>
-          LunarTech uses a cool blue palette to support a modern gaming and
-          technology atmosphere. The darker blues can provide strong backgrounds
-          and contrast, while the lighter blue is used as an accent for
-          interactive elements, highlights, headings and important information.
-          The bright teal is used as a lit up border when the user hovers over
-          certain interactive elements like a product card. Lastly, the white is
-          used as the main type paragraph colour.
-        </p>
+          <h3>Comfortable setup</h3>
 
-        <!--
-        <p>
-          <a href="https://ca.pinterest.com/pin/581879214395675325/">View the Color Palette on Pinterest</a>
-        </p>
-        -->
+          <p>
+            “The headset looks great and fits my gaming
+            space perfectly.”
+          </p>
 
-        <div id="colourPalette">
-          <div id="colour1">
-            <p>#91b9ff</p>
-          </div>
-          <div id="colour2">
-            <p>#6c90c3</p>
-          </div>
-          <div id="colour3">
-            <p>#274272</p>
-          </div>
-          <div id="colour4">
-            <p>#171f55</p>
-          </div>
-          <div id="colour5">
-            <p>#0c102c</p>
-          </div>
-          <div id="colour6">
-            <p>gradient</p>
-          </div>
-          <div id="colour7">
-            <p>#08fffb</p>
-          </div>
-          <div id="colour8">
-            <p>#eee</p>
-          </div>
-        </div>
-      </section>
+          <p class="review-name">
+            — Alex M. (sample review)
+          </p>
 
-      <section class="element">
-        <h3>Imagery and Art Direction</h3>
-        <p>
-          We agreed on a lunar and space theme when deciding on the company's
-          name and plan to base the website around it. We looked into various
-          websites that also sell computer accessories for inspiration. Among
-          them were...
-        </p>
-        <ul>
-          <li>
-            <p>
-              <a href="https://www.goodcart.design/websites/logitech"
-                >Logitech</a
-              >
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="https://www.goodcart.design/websites/logitech-gaming"
-                >Logitech Gaming</a
-              >
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="https://www.goodcart.design/websites/anker">Anker</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="https://www.goodcart.design/websites/corsair">Corsair</a>
-            </p>
-          </li>
-        </ul>
-        <p>
-          We took inspiration from them for fonts, and plan to do so for layouts
-          and such.
-        </p>
+        </article>
 
-        <p>
-          We were particularly interested in having categories on the home page
-          displayed like these with each box being a category.
-        </p>
-        <div class="brandingDiv">
-          <img
-            class="screenshots"
-            src="img/logitechSite.png"
-            alt="categories on the logitech website"
-          />
-          <img
-            class="screenshots"
-            src="img/logitechCategories.png"
-            alt="categories on the logitech website"
-          />
-        </div>
 
-        <p>
-          As for the products and listings, we were inspired by how these looked
-          and want to use the layouts of the content as guidance on which
-          components to include and where to place them.
-        </p>
-        <div class="brandingDiv">
-          <img
-            class="screenshots"
-            src="img/productsListingsLogitech.png"
-            alt="product listings on the logitech website"
-          />
-          <img
-            class="screenshots"
-            src="img/productsPageLogitech.png"
-            alt="product page on the logitech website"
-          />
-        </div>
+        <!-- Review 2 -->
+        <article class="home-review">
 
-        <p>
-          For the products themselves, we decided to keep consistency by using
-          photos of the products in an environment (as opposed to being in a
-          blank background). As stock images of computer accessories were not
-          really what we were looking for, we have decided to source photos
-          elsewhere with proper credits given.
-        </p>
-        <div class="brandingDiv">
-          <img
-            class="screenshots"
-            src="img/greenKeyboard.png"
-            alt="image of green keyboard"
-          />
-          <img
-            class="screenshots"
-            src="img/pinkKeyboard.png"
-            alt="image of pink keyboard"
-          />
-        </div>
-      </section>
+          <p class="review-stars" aria-label="5 out of 5 stars">
+            ★★★★★
+          </p>
+
+          <h3>Love the lighting</h3>
+
+          <p>
+            “The keyboard adds a soft glow without
+            overwhelming my desk.”
+          </p>
+
+          <p class="review-name">
+            — Sam R. (sample review)
+          </p>
+
+        </article>
+
+
+        <!-- Review 3 -->
+        <article class="home-review">
+
+          <p class="review-stars" aria-label="4 out of 5 stars">
+            ★★★★☆
+          </p>
+
+          <h3>Great desk upgrade</h3>
+
+          <p>
+            “The desk mat makes everything feel
+            more organized.”
+          </p>
+
+          <p class="review-name">
+            — Taylor K. (sample review)
+          </p>
+
+        </article>
+
+      </div>
     </section>
 
-    <section id="citations">
-      <h2>Citations</h2>
-      <ul>
-        <li>
-          W3Schools. (n.d.). <strong>HTML Links.</strong>
-          Retrieved from
-          <a href="https://www.w3schools.com/html/html_links.asp">
-            https://www.w3schools.com/html/html_links.asp
-          </a>
-        </li>
+  </main>
 
-        <li>
-          W3Schools. (n.d.). <strong>HTML Images.</strong>
-          Retrieved from
-          <a href="https://www.w3schools.com/html/html_images.asp">
-            https://www.w3schools.com/html/html_images.asp
-          </a>
-        </li>
 
-        <li>
-          W3Schools. (n.d.). <strong>HTML Forms.</strong>
-          Retrieved from
-          <a href="https://www.w3schools.com/html/html_forms.asp">
-            https://www.w3schools.com/html/html_forms.asp
-          </a>
-        </li>
+  <!-- FOOTER -->
+  <footer class="template-footer home-footer">
 
-        <li>
-          W3Schools. (n.d.). <strong>HTML Input Types.</strong>
-          Retrieved from
-          <a href="https://www.w3schools.com/html/html_form_input_types.asp">
-            https://www.w3schools.com/html/html_form_input_types.asp
-          </a>
-        </li>
+    <div class="home-footer-grid">
 
-        <li>
-          W3Schools. (n.d.). <strong>HTML Ordered Lists.</strong>
-          Retrieved from
-          <a href="https://www.w3schools.com/html/html_lists_ordered.asp">
-            https://www.w3schools.com/html/html_lists_ordered.asp
-          </a>
-        </li>
+      <!-- Company Information -->
+      <section>
+        <h2>LunarTech</h2>
 
-        <li>
-          W3Schools. (n.d.). <strong>HTML Basic.</strong>
-          Retrieved from
-          <a href="https://www.w3schools.com/html/html_basic.asp">
-            https://www.w3schools.com/html/html_basic.asp
-          </a>
-        </li>
-        <li>
-          Google Fonts. (n.d.). <strong>Lunasima [Font].</strong> Retrieved from
-          <a href="https://fonts.google.com/specimen/Lunasima"
-            >https://fonts.google.com/specimen/Lunasima</a
-          >
-        </li>
+        <p>
+          Gaming accessories with a calm, luminous touch.
+        </p>
 
-        <li>
-          Google Fonts. (n.d.). <strong>Outfit [Font].</strong> Retrieved from
-          <a href="https://fonts.google.com/specimen/Outfit"
-            >https://fonts.google.com/specimen/Outfit</a
-          >
-        </li>
+      </section>
 
-        <li>
-          GoodCart. (n.d.).
-          <strong>Logitech website design reference.</strong> Retrieved from
-          <a href="https://www.goodcart.design/websites/logitech/home"
-            >https://www.goodcart.design/websites/logitech/home</a
-          >
-        </li>
 
-        <li>
-          GoodCart. (n.d.).
-          <strong>Anker website design reference.</strong> Retrieved from
-          <a href="https://www.goodcart.design/websites/anker"
-            >https://www.goodcart.design/websites/anker</a
-          >
-        </li>
+      <!-- Explore Links -->
+      <section>
+        <h2>Explore</h2>
 
-        <li>
-          GoodCart. (n.d.).
-          <strong>Corsair website design reference.</strong> Retrieved from
-          <a href="https://www.goodcart.design/websites/corsair"
-            >https://www.goodcart.design/websites/corsair</a
-          >
-        </li>
+        <a href="index.html">Home</a>
+        <a href="product_listing.html">Products</a>
+        <a href="checkout.html">Checkout</a>
+      </section>
 
-        <li>
-          GoodCart. (n.d.).
-          <strong>Logitech Gaming website design reference.</strong> Retrieved
-          from
-          <a href="https://www.goodcart.design/websites/logitech-gaming"
-            >https://www.goodcart.design/websites/logitech-gaming</a
-          >
-        </li>
 
-        <li>
-          MDN Web Docs. (n.d.). <strong>Basic concepts of grid layout.</strong>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Basic_concepts"
-          >
-            CSS Grid Layout
-          </a>
-        </li>
+      <!-- Project Links -->
+      <section>
+        <h2>Project</h2>
 
-        <li>
-          MDN Web Docs. (n.d.). <strong>Basic concepts of flexbox.</strong>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts"
-          >
-            CSS Flexbox
-          </a>
-        </li>
+        <a href="styleguide.html">Style Guide</a>
+        <a href="styleguide.html#citations">Citations</a>
+        <a href="index.html#about">About LunarTech</a>
+      </section>
 
-        <li>
-          MDN Web Docs. (n.d.). <strong>Media query fundamentals.</strong>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries"
-          >
-            CSS Media Queries
-          </a>
-        </li>
 
-        <li>
-          Newegg. (n.d.). <strong>Green keyboard product image [Image].</strong>
-          <a href="https://www.newegg.ca/p/173-0885-000H6">Source</a>
-        </li>
+      <!-- Stay in Touch -->
+      <section>
+        <h2>Stay in Touch</h2>
 
-        <li>
-          Glorious Gaming. (n.d.).
-          <strong>Eternal Audio Headset [Image].</strong>
-          <a
-            href="https://www.gloriousgaming.com/en-ca/products/ghs-eternal-audio-headset"
-            >Source</a
-          >
-        </li>
+        <p>
+          More LunarTech updates coming soon.
+        </p>
 
-        <li>
-          Attack Shark. (n.d.). <strong>Wireless gaming mouse [Image].</strong>
-          <a
-            href="https://attackshark.ca/products/attack-shark-v5-8khz-wireless-paw3950max-gaming-mouse-with-c06-ultra-cable"
-            >Source</a
-          >
-        </li>
+  
+      </section>
 
-        <li>
-          MozDevNet. (n.d.). <strong>How to add a shadow to an element </strong>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Add_a_shadow"
-            >https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Add_a_shadow</a
-          >
-        </li>
-      </ul>
-    </section>
+    </div>
+
+
+    <!-- BOTTOM FOOTER -->
+    <div class="home-footer-bottom">
+
+      <p>© 2026 LunarTech — Group 04</p>
+
+      <p>Designed for IAT 339</p>
+
+    </div>
+
+  </footer>
+
+
   </body>
 </html>
