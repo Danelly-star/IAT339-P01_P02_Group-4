@@ -1165,6 +1165,7 @@ p {
   background: #0c102c;
   box-shadow: 0 2px 3px 0 #08fffb84;
   border-radius: 0.5rem;
+  border-top:7px solid #274272;
 }
 
 .home-review h3 {
