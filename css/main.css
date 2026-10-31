@@ -753,7 +753,9 @@ p {
 
 .templateMargins {
   margin-top: 0;
+  margin-bottom: 0;
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .template-header {
@@ -926,7 +928,7 @@ p {
 
 .template-footer {
   max-width: 1200px;
-  margin: 3rem auto 0;
+  margin: 10rem auto 0;
   padding: 1rem 0;
   border-top: 1px solid #586c8e;
 }
@@ -996,7 +998,8 @@ p {
 
 /* Main homepage spacing */
 .home-main {
-  padding: 1rem;
+  padding: 1rem 1rem 0;
+  margin-bottom: 0;
 }
 
 .homepage-content {
