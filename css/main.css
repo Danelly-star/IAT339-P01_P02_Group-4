@@ -1293,15 +1293,24 @@ p {
   border-radius: 5%;
   align-self: flex-start;
 }
-.productOverview h2 {
+.productOverview h1 {
   color: #eee;
+  font-size: 2em;
   font-weight: 700;
   margin: 0;
   text-wrap: balance;
 }
-.productOverview h3 {
+.productOverview h2 {
   color: #6c90c3;
+  font-size: 1.5em;
+  font-weight: 100;
   margin-top: 0;
+}
+.productOverview h3 {
+  color: #eee;
+  font-size: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 0;
 }
 .productSpecs {
   max-width: 100%;
@@ -1315,7 +1324,7 @@ p {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   text-wrap: balance;
 }
-.productSpecs h3 {
+.productSpecs h2 {
   margin: 0 0 1em 0;
 }
 .productGallery {
