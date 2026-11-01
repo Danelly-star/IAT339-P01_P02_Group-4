@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout | LunarTech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600&family=Lunasima:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="templateMargins">
+    <header class="template-header">
+      <nav id="mainNavigation" aria-label="Main navigation">
+        <div class="leftAlignedNav">
+          <!-- LunarTech logo links to the style guide -->
+          <a href="index.html">
+            <h1>LunarTech</h1>
+          </a>
+
+          <div class="navLinks">
+            <p><a href="index.html#about">About</a></p>
+            <p><a href="product_listing.html">Products</a></p>
+            <p><a href="styleguide.html">Style Guide</a></p>
+          </div>
+        </div>
+
+        <div class="rightAlignedNav">
+          <!-- Search field -->
+          <form class="searchField" role="search">
+            <input type="text" placeholder="Search" aria-label="Search" />
+
+            <button type="submit">
+              <img
+                src="img/search_icon.webp"
+                alt="icon of search magnifying glass"
+              />
+            </button>
+          </form>
+
+          <!-- Shopping cart links to checkout -->
+          <a href="checkout.html" aria-label="View checkout">
+            <img class="icons" src="img/shoppingCart.png" alt="Shopping cart" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="template-main">
+      <div class="productOverview">
+        <div class="productImage">
+          <img
+            src="img/mouseLogitech1.png"
+            alt="black wireless mouse from logitech"
+          />
+        </div>
+        <div class="productRightSide">
+          <div class="productInfo">
+            <h2>Comfort Wireless Mouse</h2>
+            <h3>Mouse</h3>
+            <p>A comfortable, smooth, wireless mouse</p>
+            <h4>$70.99 CAD</h4>
+          </div>
+          <div>
+            <fieldset class="chooseOptions">
+              <legend>Colour:</legend>
+
+              <input
+                type="radio"
+                id="black"
+                name="colour-example"
+                value="black"
+              />
+              <label for="black">Black</label>
+              <input
+                type="radio"
+                id="white"
+                name="colour-example"
+                value="white"
+              />
+              <label for="white">White</label>
+              <input
+                type="radio"
+                id="grey"
+                name="colour-example"
+                value="grey"
+              />
+              <label for="grey">Grey</label>
+            </fieldset>
+            <a class="button-nav" href="checkout.html"> Add to Cart </a>
+          </div>
+        </div>
+      </div>
+      <div class="productSpecs">
+        <h3>Specs</h3>
+        <p>
+          lorem ipsum dolor sit amet consectetur adipiscing elit corrupti autem
+          iusto amet labore dignissimos occaecat ex ut nihil similique quis et
+          dolorum facilis elit id excepteur voluptas et est est exercitation
+          voluptatum quod et placeat in laboris sunt occaecat tempore occaecat
+          cum laboris consectetur et qui quo occaecat et corrupti
+        </p>
+      </div>
+      <div>
+        <hr />
+        <h3>Gallery</h3>
+        <div class="productGallery">
+          <img
+            src="img/mouseLogitech2.webp"
+            alt="black wireless mouse from logitech"
+          />
+          <img
+            src="img/mouseLogitech3.webp"
+            alt="black wireless mouse from logitech"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="template-footer home-footer">
+      <div class="home-footer-grid">
+        <!-- Company Information -->
+        <section>
+          <h2>LunarTech</h2>
+
+          <p>Gaming accessories with a calm, luminous touch.</p>
+        </section>
+
+        <!-- Explore Links -->
+        <section>
+          <h2>Explore</h2>
+
+          <a href="index.html">Home</a>
+          <a href="product_listing.html">Products</a>
+          <a href="checkout.html">Checkout</a>
+        </section>
+
+        <!-- Project Links -->
+        <section>
+          <h2>Project</h2>
+
+          <a href="styleguide.html">Style Guide</a>
+          <a href="styleguide.html#citations">Citations</a>
+          <a href="index.html#about">About LunarTech</a>
+        </section>
+
+        <!-- Stay in Touch -->
+        <section>
+          <h2>Stay in Touch</h2>
+
+          <p>More LunarTech updates coming soon.</p>
+        </section>
+      </div>
+
+      <!-- BOTTOM FOOTER -->
+      <div class="home-footer-bottom">
+        <p>© 2026 LunarTech — Group 04</p>
+
+        <p>Designed for IAT 339</p>
+      </div>
+    </footer>
+  </body>
+</html>
