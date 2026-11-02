@@ -1340,3 +1340,250 @@ p {
   object-fit: cover;
   border-radius: 5%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   CHECKOUT PROGRESS
+   Scoped to the four LunarTech checkout pages only.
+   ========================================================== */
+
+
+/* CHECKOUT PROGRESS INDICATOR */
+
+.lunar-checkout .checkout-progress {
+  margin: 1.5rem 0 2.5rem;
+  max-width: 100%;
+}
+
+.lunar-checkout .checkout-progress ol {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lunar-checkout .checkout-progress li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #a9b8d6;
+  font-size: 0.9rem;
+}
+
+
+/* CHECKOUT STEP CIRCLES */
+
+.lunar-checkout .checkout-progress li span {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #6c90c3;
+  background: #0c102c;
+  color: #c5daff;
+}
+
+
+/* ACTIVE CHECKOUT STEP */
+
+.lunar-checkout .checkout-progress li.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+.lunar-checkout .checkout-progress li.active span {
+  background: #274272;
+  box-shadow: 0 0 10px #6c90c3;
+}
+
+
+/* COMPLETED CHECKOUT STEPS */
+
+.lunar-checkout .checkout-progress li.done span {
+  background: #274272;
+}
+
+
+/* ==========================================================
+   CHECKOUT FORM LAYOUT
+   ========================================================== */
+
+
+/* CHECKOUT CONTENT CONTAINER */
+
+.lunar-checkout .checkout-stage {
+  min-height: 380px;
+}
+
+
+/* TWO-COLUMN SHIPPING FIELDS */
+
+.lunar-checkout .checkout-fields-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.lunar-checkout .checkout-fields-two > div {
+  min-width: 0;
+}
+
+.lunar-checkout .checkout-fields-two input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* CHECKOUT HELP TEXT */
+
+.lunar-checkout .checkout-help {
+  color: #b8d0f2;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+/* CHECKOUT NAVIGATION BUTTONS */
+
+.lunar-checkout .checkout-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.lunar-checkout .checkout-buttons .template-action {
+  display: inline-block;
+}
+
+
+/* ==========================================================
+   ORDER REVIEW SECTION
+   ========================================================== */
+
+
+/* REVIEW INFORMATION BLOCKS */
+
+.lunar-checkout .review-block {
+  border-bottom: 1px solid #274272;
+  padding: 1rem 0;
+}
+
+.lunar-checkout .review-block h3 {
+  margin: 0 0 0.5rem;
+  color: #6c90c3;
+}
+
+.lunar-checkout .review-block p {
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+
+.lunar-checkout .review-block a {
+  color: #b5d0ff;
+}
+
+
+/* ==========================================================
+   ORDER CONFIRMATION SECTION
+   ========================================================== */
+
+
+/* CONFIRMATION MESSAGE */
+
+.lunar-checkout .confirmation-message {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+
+/* CONFIRMATION ICON */
+
+.lunar-checkout .confirmation-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #b5d0ff;
+}
+
+
+/* CONFIRMATION DESCRIPTION */
+
+.lunar-checkout .confirmation-message p {
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   RESPONSIVE CHECKOUT LAYOUT
+   Screens 760px wide or smaller.
+   ========================================================== */
+
+@media (max-width: 760px) {
+
+  /* Allow checkout steps to wrap on smaller screens */
+  .lunar-checkout .checkout-progress ol {
+    flex-wrap: wrap;
+  }
+
+  /* Reduce checkout step text size */
+  .lunar-checkout .checkout-progress li {
+    font-size: 0.8rem;
+  }
+
+  /* Stack shipping form fields vertically */
+  .lunar-checkout .checkout-fields-two {
+    grid-template-columns: 1fr;
+  }
+
+}

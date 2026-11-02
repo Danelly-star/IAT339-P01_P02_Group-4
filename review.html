@@ -1,0 +1,308 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Review Your Order | LunarTech</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600&family=Lunasima:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="templateMargins">
+
+    <!-- HEADER -->
+    <header class="template-header">
+      <nav id="mainNavigation" aria-label="Main navigation">
+
+        <div class="leftAlignedNav">
+
+          <!-- LunarTech logo links to homepage -->
+          <a href="index.html">
+            <h1>LunarTech</h1>
+          </a>
+
+          <div class="navLinks">
+            <p><a href="index.html#about">About</a></p>
+            <p><a href="product_listing.html">Products</a></p>
+            <p><a href="styleguide.html">Style Guide</a></p>
+          </div>
+
+        </div>
+
+        <div class="rightAlignedNav">
+
+          <!-- Search field -->
+          <form class="searchField" role="search">
+            <input
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+
+            <button type="submit">
+              <img
+                src="img/search_icon.webp"
+                alt="icon of search magnifying glass"
+              />
+            </button>
+          </form>
+
+          <!-- Shopping cart links to checkout -->
+          <a href="checkout.html" aria-label="View checkout">
+            <img
+              class="icons"
+              src="img/shoppingCart.png"
+              alt="Shopping cart"
+            />
+          </a>
+
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CHECKOUT CONTENT -->
+    <main class="template-main lunar-checkout">
+
+      <h1>Checkout</h1>
+
+      <p class="template-intro">
+        A demonstration checkout — no real orders or payments.
+      </p>
+
+      <!-- CHECKOUT PROGRESS -->
+      <nav class="checkout-progress" aria-label="Checkout progress">
+        <ol>
+
+          <li class="done">
+            <span>✓</span>
+            Shipping
+          </li>
+
+          <li class="done">
+            <span>✓</span>
+            Payment
+          </li>
+
+          <li class="active" aria-current="step">
+            <span>3</span>
+            Review
+          </li>
+
+          <li>
+            <span>4</span>
+            Confirmation
+          </li>
+
+        </ol>
+      </nav>
+
+      <!-- CHECKOUT LAYOUT -->
+      <div class="checkout-layout">
+
+        <!-- REVIEW ORDER SECTION -->
+        <section aria-labelledby="payment-heading">
+
+          <h2 id="payment-heading">Review Your Order</h2>
+
+          <div class="payment-form checkout-stage">
+
+            <p class="checkout-help">
+              Review the sample checkout details below.
+              No personal information is needed for this demo.
+            </p>
+
+            <!-- Shipping Address -->
+            <div class="review-block">
+
+              <h3>Shipping Address</h3>
+
+              <p id="review-address">
+                Fake Street 121A
+              </p>
+
+              <a href="checkout.html">
+                Edit shipping
+              </a>
+
+            </div>
+
+            <!-- Email Address -->
+            <div class="review-block">
+
+              <h3>Email Address</h3>
+
+              <p id="review-email">
+                fakeemail1234@gmail.com
+              </p>
+
+            </div>
+
+            <!-- Payment Method -->
+            <div class="review-block">
+
+              <h3>Payment Method</h3>
+
+              <p id="review-payment">
+                Visa Credit Card
+              </p>
+
+              <a href="payment.html">
+                Edit payment
+              </a>
+
+            </div>
+
+            <!-- CHECKOUT NAVIGATION BUTTONS -->
+            <div class="checkout-buttons">
+
+              <a
+                class="template-action"
+                href="payment.html"
+              >
+                ← Previous
+              </a>
+
+              <a
+                class="submit-button"
+                href="confirmation.html"
+              >
+                Place Demo Order
+              </a>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ORDER SUMMARY SECTION -->
+        <section aria-labelledby="cart-heading">
+
+          <h2 id="cart-heading">Order Summary</h2>
+
+          <div class="checkout-cart">
+
+            <h3>Your Cart</h3>
+
+            <!-- Cart Item 1 -->
+            <div class="cart-item">
+
+              <img
+                class="cart-image"
+                src="img/mechkeyboard.jpg"
+                alt="Compact mechanical keyboard"
+              />
+
+              <div class="cart-info">
+                <h4>Compact Mechanical Keyboard</h4>
+                <p>Quantity: 1</p>
+              </div>
+
+              <p class="cart-price">$99.99 CAD</p>
+
+            </div>
+
+            <!-- Cart Item 2 -->
+            <div class="cart-item">
+
+              <img
+                class="cart-image"
+                src="img/ledmat.jpg"
+                alt="LED gaming desk mat"
+              />
+
+              <div class="cart-info">
+                <h4>LED Gaming Desk Mat</h4>
+                <p>Quantity: 1</p>
+              </div>
+
+              <p class="cart-price">$35.99 CAD</p>
+
+            </div>
+
+            <!-- Cart Total -->
+            <div class="cart-total">
+
+              <p><strong>Subtotal:</strong></p>
+              <p><strong>$135.98 CAD</strong></p>
+
+            </div>
+
+            <!-- Continue Shopping -->
+            <a
+              class="template-action"
+              href="product_listing.html"
+            >
+              Continue Shopping
+            </a>
+
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="template-footer home-footer">
+
+      <div class="home-footer-grid">
+
+        <!-- Company Information -->
+        <section>
+          <h2>LunarTech</h2>
+
+          <p>
+            Gaming accessories with a calm, luminous touch.
+          </p>
+        </section>
+
+        <!-- Explore Links -->
+        <section>
+          <h2>Explore</h2>
+
+          <a href="index.html">Home</a>
+          <a href="product_listing.html">Products</a>
+          <a href="checkout.html">Checkout</a>
+        </section>
+
+        <!-- Project Links -->
+        <section>
+          <h2>Project</h2>
+
+          <a href="styleguide.html">Style Guide</a>
+          <a href="styleguide.html#citations">Citations</a>
+          <a href="index.html#about">About LunarTech</a>
+        </section>
+
+        <!-- Stay in Touch -->
+        <section>
+          <h2>Stay in Touch</h2>
+
+          <p>More LunarTech updates coming soon.</p>
+        </section>
+
+      </div>
+
+      <!-- BOTTOM FOOTER -->
+      <div class="home-footer-bottom">
+
+        <p>© 2026 LunarTech — Group 04</p>
+
+        <p>Designed for IAT 339</p>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
