@@ -1458,20 +1458,6 @@ p {
 
 
 
-/* CHECKOUT NAVIGATION BUTTONS */
-
-.lunar-checkout .checkout-buttons {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 1.5rem;
-}
-
-.lunar-checkout .checkout-buttons .template-action {
-  display: inline-block;
-}
-
 
 /*ORDER REVIEW SECTION*/
 
@@ -1549,3 +1535,67 @@ p {
   }
 
 }
+
+
+
+/* CHECKOUT PROGRESS BUTTON ALIGNMENT ADDITIONS */
+.lunar-checkout .checkout-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+.lunar-checkout .checkout-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  transition: background-color 0.2s ease;
+}
+
+
+.lunar-checkout .checkout-buttons .template-action {
+  background-color: #192653;
+  color: #eee;
+  border: 1px solid #6c90c3;
+}
+
+
+.lunar-checkout .checkout-buttons .template-action:hover {
+  background-color: #274272;
+  text-decoration: none;
+}
+
+
+.lunar-checkout .checkout-buttons .submit-button {
+  background-color: #274272;
+  color: #fff;
+  border: 1px solid #274272;
+}
+
+
+.lunar-checkout .checkout-buttons .submit-button:hover {
+  background-color: #6c90c3;
+  color: #0c102c;
+  text-decoration: none;
+}
+
+
+.lunar-checkout .checkout-buttons a:focus-visible {
+  outline: 2px solid #6c90c3;
+  outline-offset: 3px;
+}
+
