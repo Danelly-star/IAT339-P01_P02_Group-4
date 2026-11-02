@@ -1365,29 +1365,7 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================
-   CHECKOUT PROGRESS
-   Scoped to the four LunarTech checkout pages only.
-   ========================================================== */
+/*CHECKOUT PROGRESS CSS ADDITIONS*/
 
 
 /* CHECKOUT PROGRESS INDICATOR */
@@ -1450,9 +1428,7 @@ p {
 }
 
 
-/* ==========================================================
-   CHECKOUT FORM LAYOUT
-   ========================================================== */
+/*CHECKOUT FORM LAYOUT*/
 
 
 /* CHECKOUT CONTENT CONTAINER */
@@ -1504,9 +1480,7 @@ p {
 }
 
 
-/* ==========================================================
-   ORDER REVIEW SECTION
-   ========================================================== */
+/*ORDER REVIEW SECTION*/
 
 
 /* REVIEW INFORMATION BLOCKS */
@@ -1531,9 +1505,7 @@ p {
 }
 
 
-/* ==========================================================
-   ORDER CONFIRMATION SECTION
-   ========================================================== */
+/*ORDER CONFIRMATION SECTION*/
 
 
 /* CONFIRMATION MESSAGE */
@@ -1564,10 +1536,7 @@ p {
 }
 
 
-/* ==========================================================
-   RESPONSIVE CHECKOUT LAYOUT
-   Screens 760px wide or smaller.
-   ========================================================== */
+/* RESPONSIVE CHECKOUT LAYOUT*/
 
 @media (max-width: 760px) {
 
