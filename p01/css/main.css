@@ -1258,26 +1258,46 @@ p {
 .productOverview {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
   max-width: 100%;
   gap: 2em;
   margin: 5em 0 2em 0;
   padding: 0;
 }
-.productOverview .productImage {
+.productOverview .productLeftSide {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   max-width: 100%;
-  gap: 1em;
-  margin: auto 0 0 0;
+  margin: 0 0 0 0;
   padding: 0;
-  align-self: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.productOverview .productMainImage {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.productGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5em;
+  max-width: 100%;
+}
+.productGallery img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .productOverview .productRightSide {
-  flex: 1;
+  flex: 1.25;
   max-width: 100%;
   max-height: fit-content;
   align-self: flex-start;
+  justify-content: flex-start;
   margin: 0 0 0 auto;
 }
 .productOverview .productInfo {
@@ -1316,7 +1336,7 @@ p {
   max-width: 100%;
   max-height: fit-content;
   align-self: flex-start;
-  margin: 0 0 3em 0;
+  margin: 2em 0 3em 0;
   border: 1px solid #274272;
   padding: 2em 2rem;
   border-radius: 20px;
@@ -1327,46 +1347,8 @@ p {
 .productSpecs h2 {
   margin: 0 0 1em 0;
 }
-.productGallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
-  max-width: 100%;
-  overflow: hidden;
-}
-.productGallery img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: cover;
-  border-radius: 5%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*CHECKOUT PROGRESS CSS ADDITIONS*/
-
 
 /* CHECKOUT PROGRESS INDICATOR */
 
@@ -1392,7 +1374,6 @@ p {
   font-size: 0.9rem;
 }
 
-
 /* CHECKOUT STEP CIRCLES */
 
 .lunar-checkout .checkout-progress li span {
@@ -1407,7 +1388,6 @@ p {
   color: #c5daff;
 }
 
-
 /* ACTIVE CHECKOUT STEP */
 
 .lunar-checkout .checkout-progress li.active {
@@ -1420,23 +1400,19 @@ p {
   box-shadow: 0 0 10px #6c90c3;
 }
 
-
 /* COMPLETED CHECKOUT STEPS */
 
 .lunar-checkout .checkout-progress li.done span {
   background: #274272;
 }
 
-
 /*CHECKOUT FORM LAYOUT*/
-
 
 /* CHECKOUT CONTENT CONTAINER */
 
 .lunar-checkout .checkout-stage {
   min-height: 380px;
 }
-
 
 /* TWO-COLUMN SHIPPING FIELDS */
 
@@ -1455,12 +1431,7 @@ p {
   box-sizing: border-box;
 }
 
-
-
-
-
 /*ORDER REVIEW SECTION*/
-
 
 /* REVIEW INFORMATION BLOCKS */
 
@@ -1483,9 +1454,7 @@ p {
   color: #b5d0ff;
 }
 
-
 /*ORDER CONFIRMATION SECTION*/
-
 
 /* CONFIRMATION MESSAGE */
 
@@ -1493,7 +1462,6 @@ p {
   text-align: center;
   padding: 2rem 0;
 }
-
 
 /* CONFIRMATION ICON */
 
@@ -1507,18 +1475,15 @@ p {
   color: #b5d0ff;
 }
 
-
 /* CONFIRMATION DESCRIPTION */
 
 .lunar-checkout .confirmation-message p {
   line-height: 1.7;
 }
 
-
 /* RESPONSIVE CHECKOUT LAYOUT*/
 
 @media (max-width: 760px) {
-
   /* Allow checkout steps to wrap on smaller screens */
   .lunar-checkout .checkout-progress ol {
     flex-wrap: wrap;
@@ -1533,10 +1498,7 @@ p {
   .lunar-checkout .checkout-fields-two {
     grid-template-columns: 1fr;
   }
-
 }
-
-
 
 /* CHECKOUT PROGRESS BUTTON ALIGNMENT ADDITIONS */
 .lunar-checkout .checkout-buttons {
@@ -1547,7 +1509,6 @@ p {
   gap: 1rem;
   margin-top: 2rem;
 }
-
 
 .lunar-checkout .checkout-buttons a {
   display: inline-flex;
@@ -1566,19 +1527,16 @@ p {
   transition: background-color 0.2s ease;
 }
 
-
 .lunar-checkout .checkout-buttons .template-action {
   background-color: #192653;
   color: #eee;
   border: 1px solid #6c90c3;
 }
 
-
 .lunar-checkout .checkout-buttons .template-action:hover {
   background-color: #274272;
   text-decoration: none;
 }
-
 
 .lunar-checkout .checkout-buttons .submit-button {
   background-color: #274272;
@@ -1586,16 +1544,13 @@ p {
   border: 1px solid #274272;
 }
 
-
 .lunar-checkout .checkout-buttons .submit-button:hover {
   background-color: #6c90c3;
   color: #0c102c;
   text-decoration: none;
 }
 
-
 .lunar-checkout .checkout-buttons a:focus-visible {
   outline: 2px solid #6c90c3;
   outline-offset: 3px;
 }
-
