@@ -1306,6 +1306,10 @@ p {
   align-items: flex-start;
   justify-content: flex-start;
 }
+.productOverview .productBreadcrumbs {
+  display: flex;
+  margin-bottom: 2em;
+}
 .productOverview .productMainImage {
   max-width: 100%;
   max-height: 100%;
@@ -1331,7 +1335,7 @@ p {
   max-height: fit-content;
   align-self: flex-start;
   justify-content: flex-start;
-  margin: 0 0 0 auto;
+  margin: 3em 0 0 auto;
 }
 .productOverview .productInfo {
   border: 1px solid #274272;
@@ -1361,9 +1365,19 @@ p {
 }
 .productOverview h3 {
   color: #eee;
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-top: 2em;
   margin-bottom: 0;
+}
+.productOverview hr {
+  color: #6c90c3;
+  margin: 2em 0;
+}
+.productOverview .chooseOptions {
+  margin: 1em 0;
+}
+.productOverview .button-nav {
+  padding: 1em 10em;
 }
 .productSpecs {
   max-width: 100%;
