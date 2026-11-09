@@ -576,7 +576,7 @@ p {
 .productsCard > h3:hover a,
 h3:focus a {
   color: #08fffb;
-  text-shadow: 0 0 15px #6c90c3;
+  text-shadow: 0 0 10px #6c90c3;
 }
 .productsCard h3 {
   font-weight: 700;
@@ -870,7 +870,7 @@ h3:focus a {
 }
 
 .template-main section {
-  padding-top: 0em;
+  padding-top: 0;
   margin-top: 0;
 }
 
@@ -1389,7 +1389,7 @@ h3:focus a {
 .productOverview .chooseOptions {
   margin: 1em 0;
 }
-.productOverview .button-nav {
+.productOverview .button-nav2 {
   max-width: 100%;
   display: block;
 }
