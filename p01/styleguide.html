@@ -22,23 +22,23 @@
 
   <body>
     <header>
-      <h1>LunarTech</h1>
+      <h1>LunarTech Style Guide</h1>
 
       <nav>
         <div id="styleGuideNav">
-          <a class="button-nav2" href="../index.html">Home</a>
-          <a class="button-nav2" href="#interactive_elements"
+          <a id="returnToHomeNav" class="button-nav" href="../index.html">Return to Home</a>
+          <a class="button-nav" href="#interactive_elements"
             >Interactive Elements</a
           >
-          <a class="button-nav2" href="#text_elements">Text Elements</a>
-          <a class="button-nav2" href="#combined_elements">Combined Elements</a>
-          <a class="button-nav2" href="template_listing.html"
+          <a class="button-nav" href="#text_elements">Text Elements</a>
+          <a class="button-nav" href="#combined_elements">Combined Elements</a>
+          <a class="button-nav" href="template_listing.html"
             >Product Listing Template</a
           >
-          <a class="button-nav2" href="template_checkout.html"
+          <a class="button-nav" href="template_checkout.html"
             >Checkout Template</a
           >
-          <a class="button-nav2" href="#citations">Citations</a>
+          <a class="button-nav" href="#citations">Citations</a>
         </div>
       </nav>
     </header>
@@ -74,14 +74,14 @@
         <h3>Navigation Link</h3>
 
         <h4>CSS selector:</h4>
-        <p>.button-nav, .button-nav2</p>
+        <p>.button-nav, .button2</p>
 
         <h4>Sample code:</h4>
         <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
         <a class="button-nav" href="#">Default Button</a>
-        <a class="button-nav2" href="#">Default Button</a>
+        <a class="button2" href="#">Default Button</a>
       </section>
 
       <section class="element">
@@ -353,7 +353,7 @@
       <section class="element">
         <h3>Product/Service Listing</h3>
         <h4>CSS selector:</h4>
-        <p>.productsListing, .productsCard, .prodctImage, .imgLink, .template-action</p>
+        <p>.productsListing, .productsCard, .prodctImage, .imgLink, .button2, .template-action</p>
         <h4>Sample code:</h4>
         <code>
           &lt;section class="template-products" aria-label="Product listings"&gt;
@@ -366,7 +366,7 @@
           &lt;h3&gt;&lt;a href=""&gt;Green Keyboard&lt;/a&gt;&lt;/h3&gt;
           &lt;h4&gt;Keyboards&lt;/h4&gt;
           &lt;div class="productPricing"&gt;&lt;p&gt;$97.99 CAD&lt;/p&gt;&lt;/div&gt;
-          &lt;a class="template-action" href="template_checkout.html"&gt;
+          &lt;a class="template-action button2" href="template_checkout.html"&gt;
             Add to Cart
           &lt;/a&gt;
         &lt;/article&gt;
@@ -382,7 +382,7 @@
           &lt;h3&gt;&lt;a href=""&gt;Compact Mechanical Keyboard&lt;/a&gt;&lt;/h3&gt;
           &lt;h4&gt;Keyboards&lt;/h4&gt;
           &lt;div class="productPricing"&gt;&lt;p&gt;$99.99 CAD&lt;/p&gt;&lt;/div&gt;
-          &lt;a class="template-action" href="template_checkout.html"&gt;
+          &lt;a class="template-action button2" href="template_checkout.html"&gt;
             Add to Cart
           &lt;/a&gt;
         &lt;/article&gt;
@@ -395,7 +395,7 @@
           &lt;h3&gt;&lt;a href=""&gt;LED Gaming Desk Mat&lt;/a&gt;&lt;/h3&gt;
           &lt;h4&gt;Desk Mats&lt;/h4&gt;
           &lt;div class="productPricing"&gt;&lt;p&gt;$35.99 CAD&lt;/p&gt;&lt;/div&gt;
-          &lt;a class="template-action" href="template_checkout.html"&gt;
+          &lt;a class="template-action button2" href="template_checkout.html"&gt;
             Add to Cart
           &lt;/a&gt;
         &lt;/article&gt;
@@ -408,7 +408,7 @@
           &lt;h3&gt;&lt;a href=""&gt;Eternal Audio Headset&lt;/a&gt;&lt;/h3&gt;
           &lt;h4&gt;Headphones&lt;/h4&gt;
           &lt;div class="productPricing"&gt;&lt;p&gt;$79.99 CAD&lt;/p&gt;&lt;/div&gt;
-          &lt;a class="template-action" href="template_checkout.html"&gt;
+          &lt;a class="template-action button2" href="template_checkout.html"&gt;
             Add to Cart
           &lt;/a&gt;
         &lt;/article&gt;
@@ -424,7 +424,7 @@
           &lt;h3&gt;&lt;a href=""&gt;8KHz Wireless Gaming Mouse&lt;/a&gt;&lt;/h3&gt;
           &lt;h4&gt;Mouse&lt;/h4&gt;
           &lt;div class="productPricing"&gt;&lt;p&gt;$100.99 CAD&lt;/p&gt;&lt;/div&gt;
-          &lt;a class="template-action" href="template_checkout.html"&gt;
+          &lt;a class="template-action button2" href="template_checkout.html"&gt;
             Add to Cart
           &lt;/a&gt;
         &lt;/article&gt;
@@ -443,7 +443,7 @@
           <h4>Keyboards</h4>
           <div class="productPricing"><p>$97.99 CAD</p></div>
 
-          <a class="template-action" href="template_checkout.html">
+          <a class="template-action button2" href="template_checkout.html">
             Add to Cart
           </a>
         </article>
@@ -462,7 +462,7 @@
           <h4>Keyboards</h4>
           <div class="productPricing"><p>$99.99 CAD</p></div>
 
-          <a class="template-action" href="template_checkout.html">
+          <a class="template-action button2" href="template_checkout.html">
             Add to Cart
           </a>
         </article>
@@ -478,7 +478,7 @@
           <h4>Desk Mats</h4>
           <div class="productPricing"><p>$35.99 CAD</p></div>
 
-          <a class="template-action" href="template_checkout.html">
+          <a class="template-action button2" href="template_checkout.html">
             Add to Cart
           </a>
         </article>
@@ -494,7 +494,7 @@
           <h4>Headphones</h4>
           <div class="productPricing"><p>$79.99 CAD</p></div>
 
-          <a class="template-action" href="template_checkout.html">
+          <a class="template-action button2" href="template_checkout.html">
             Add to Cart
           </a>
         </article>
@@ -513,7 +513,7 @@
           <h4>Mouse</h4>
           <div class="productPricing"><p>$100.99 CAD</p></div>
 
-          <a class="template-action" href="template_checkout.html">
+          <a class="template-action button2" href="template_checkout.html">
             Add to Cart
           </a>
         </article>

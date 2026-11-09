@@ -219,7 +219,14 @@ code {
   display: flex;
   max-width: fit-content;
   flex-wrap: wrap;
+  column-gap: 1em;
   row-gap: 0.5em;
+}
+
+#returnToHomeNav {
+  display: block;
+  background-color: #849dc7;
+  color: #000;
 }
 
 /* 
@@ -245,8 +252,8 @@ code {
   color: #0d1433;
 }
 
-/*Second nav option*/
-.button-nav2 {
+/*button used in nav and action buttons*/
+.button2 {
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -257,10 +264,10 @@ code {
   z-index: 0;
   border-radius: 10px;
   text-decoration: none;
-  margin-right: 1rem;
+  margin-right: 0;
 }
 
-.button-nav2::before {
+.button2::before {
   content: "";
   background: linear-gradient(135deg, #08fffb, #862fe3);
   position: absolute;
@@ -277,8 +284,8 @@ code {
   transition: opacity 0.3s ease-in-out;
 }
 
-.button-nav2:hover::before,
-.button-nav2:focus::before {
+.button2:hover::before,
+.button2:focus::before {
   opacity: 1;
   color: #08fffb;
 }
@@ -297,7 +304,7 @@ code {
   }
 }
 
-.button-nav2::after {
+.button2::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -309,12 +316,12 @@ code {
   z-index: -1;
 }
 
-.button-nav2:hover::after,
-.button-nav2:focus::after {
+.button2:hover::after,
+.button2:focus::after {
   background: #6c90c3;
 }
-.button-nav2:hover,
-.button-nav2:focus {
+.button2:hover,
+.button2:focus {
   box-shadow: 0 2px 5px 0 #08fffb84;
   background-color: #6c90c3;
   color: #0d1433;
@@ -1069,7 +1076,7 @@ h3:focus a {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.homepage-content .button-nav2 {
+.homepage-content .button2 {
   display: inline-block;
   margin: 1rem 0 0 0;
 }
@@ -1132,7 +1139,7 @@ h3:focus a {
   margin: 1rem 0;
 }
 
-.home-about .button-nav2 {
+.home-about .button2 {
   display: inline-block;
   margin: 1rem 0 0 0;
 }
@@ -1279,8 +1286,8 @@ h3:focus a {
   color: #eee;
 }
 
-.home-hero .button-nav2,
-.home-about .button-nav2 {
+.home-hero .button2,
+.home-about .button2 {
   margin-top: 0.75rem;
 }
 
@@ -1389,7 +1396,7 @@ h3:focus a {
 .productOverview .chooseOptions {
   margin: 1em 0;
 }
-.productOverview .button-nav2 {
+.productOverview .button2 {
   max-width: 100%;
   display: block;
 }
@@ -1769,7 +1776,7 @@ h3:focus a {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   align-items: start;
-
+  gap: 5em;
   padding: 3rem;
   background: #0c102c;
   border: 1px solid #274272;
