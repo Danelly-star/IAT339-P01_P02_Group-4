@@ -272,219 +272,251 @@
         <p>#mainNavigation, .leftAlignedNav, .rightAlignedNav, .navLinks</p>
         <h4>Sample code:</h4>
         <code>
-          &lt;nav id="mainNavigation"&gt; <br />
-          &lt;div class="leftAlignedNav"&gt; <br />
-          &lt;!--the site logo/title sends back to home--&gt;<br />
-          &lt;a
-          href="../index.html"&gt;&lt;h1&gt;LunarTech&lt;/h1&gt;&lt;/a&gt;<br />
-          &lt;div class="navLinks"&gt;<br />
-          &lt;p&gt; &lt;a href="#"&gt;About&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a
-          href="#"&gt;Products&lt;/a&gt; &lt;/p&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;div class="rightAlignedNav"&gt;<br />
-          &lt;form class="searchField"&gt;<br />
-          &lt;input type="text" placeholder="Search"&gt;&lt;/input&gt;<br />
-          &lt;button type="submit"&gt; <br />
-          &lt;img src="../img/search_icon.webp" alt="icon of search magnifying
-          glass" /&gt; <br />
-          &lt;/button&gt; <br />
-          &lt;/form&gt;<br />
-          &lt;a href="#"&gt;&lt;img class="icons" src="../img/shoppingCart.png"
-          alt="icon of shopping cart"&gt;&lt;/a&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;/nav&gt;<br />
+          &lt;nav id="mainNavigation" aria-label="Main navigation"&gt;
+        &lt;div class="leftAlignedNav"&gt;
+          &lt;!-- LunarTech logo links to the style guide --&gt;
+          &lt;a href="../index.html"&gt;
+            &lt;h1&gt;LunarTech&lt;/h1&gt;
+          &lt;/a&gt;
+          &lt;div class="navLinks"&gt;
+            &lt;p&gt;&lt;a href="styleguide.html#branding_definition"&gt;About&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href="template_listing.html"&gt;Products (Template)&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href="styleguide.html"&gt;Style Guide&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="rightAlignedNav"&gt;
+          &lt;!-- Search field --&gt;
+          &lt;form class="searchField" role="search"&gt;
+            &lt;input type="text" placeholder="Search" aria-label="Search" /&gt;
+
+
+            &lt;button type="submit"&gt;
+              &lt;img
+                src="../img/search_icon.webp"
+                alt="icon of search magnifying glass"
+              /&gt;
+            &lt;/button&gt;
+          &lt;/form&gt;
+          &lt;!-- Shopping cart links to checkout --&gt;
+          &lt;a href="template_checkout.html" aria-label="View checkout"&gt;
+            &lt;img
+              class="icons"
+              src="../img/shoppingCart.png"
+              alt="Shopping cart"
+            /&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+
         </code>
         <h4>Rendered element:</h4>
         <!-- temporarily have it linked to this section -->
-        <nav id="mainNavigation">
-          <div class="leftAlignedNav">
-            <!--the site logo/title sends back to home-->
-            <a href="../index.html"><h1>LunarTech</h1></a>
+        <nav id="mainNavigation" aria-label="Main navigation">
+        <div class="leftAlignedNav">
+          <!-- LunarTech logo links to the style guide -->
+          <a href="../index.html">
+            <h1>LunarTech</h1>
+          </a>
 
-            <div class="navLinks">
-              <p><a href="#branding_definition">About</a></p>
-              <p><a href="template_listing.html">Products</a></p>
-              <p><a href="styleguide.html">Style Guide</a></p>
-            </div>
+          <div class="navLinks">
+            <p><a href="styleguide.html#branding_definition">About</a></p>
+            <p><a href="template_listing.html">Products (Template)</a></p>
+            <p><a href="styleguide.html">Style Guide</a></p>
           </div>
-          <div class="rightAlignedNav">
-            <form class="searchField">
-              <input type="text" placeholder="Search" />
-              <button type="submit">
-                <img
-                  src="../img/search_icon.webp"
-                  alt="icon of search magnifying glass"
-                />
-              </button>
-            </form>
-            <a href="template_checkout.html"
-              ><img
-                class="icons"
-                src="../img/shoppingCart.png"
-                alt="icon of shopping cart"
-            /></a>
-          </div>
-        </nav>
+        </div>
+
+        <div class="rightAlignedNav">
+          <!-- Search field -->
+          <form class="searchField" role="search">
+            <input type="text" placeholder="Search" aria-label="Search" />
+
+            <button type="submit">
+              <img
+                src="../img/search_icon.webp"
+                alt="icon of search magnifying glass"
+              />
+            </button>
+          </form>
+
+          <!-- Shopping cart links to checkout -->
+          <a href="template_checkout.html" aria-label="View checkout">
+            <img
+              class="icons"
+              src="../img/shoppingCart.png"
+              alt="Shopping cart"
+            />
+          </a>
+        </div>
+      </nav>
       </section>
 
       <section class="element">
         <h3>Product/Service Listing</h3>
         <h4>CSS selector:</h4>
-        <p>.productsListing, .productsCard</p>
+        <p>.productsListing, .productsCard, .prodctImage, .imgLink, .template-action</p>
         <h4>Sample code:</h4>
         <code>
-          &lt;section class="productsListing"&gt;<br />
-          &lt;div class="productsCard"&gt;<br />
-          &lt;a
-          href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP"
-          target="_blank" &gt;<br />
-          &lt;div class="productImage"&gt;<br />
-          &lt;img class="imgLink" src="../img/greenKeyboard.png" alt="image of
-          green keyboard" /&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;h3&gt;Green Keyboard&lt;/h3&gt;<br />
-          &lt;h4&gt;Keyboards&lt;/h4&gt;<br />
-          &lt;div class="productPricing"&gt;&lt;p&gt;$97.99
-          CAD&lt;/p&gt;&lt;/div&gt;<br />
-          &lt;/a&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;div class="productsCard"&gt;<br />
-          &lt;a href="template_listing.html"&gt;<br />
-          &lt;div class="productImage"&gt;<br />
-          &lt;img class="imgLink" src="../img/mechkeyboard.jpg" alt="image of
-          LED keyboard" /&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;h3&gt;Compact Mechanical Keyboard&lt;/h3&gt;<br />
-          &lt;h4&gt;Keyboards&lt;/h4&gt;<br />
-          &lt;div class="productPricing"&gt;&lt;p&gt;$99.99
-          CAD&lt;/p&gt;&lt;/div&gt;<br />
-          &lt;/a&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;div class="productsCard"&gt;<br />
-          &lt;a href="template_listing.html"&gt;<br />
-          &lt;div class="productImage"&gt;<br />
-          &lt;img class="imgLink" src="../img/ledmat.jpg" alt="image of pink
-          desk mat" /&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;h3&gt;LED Gaming Desk Mat&lt;/h3&gt;<br />
-          &lt;h4&gt;Desk Mats&lt;/h4&gt;<br />
-          &lt;div class="productPricing"&gt;&lt;p&gt;$35.99
-          CAD&lt;/p&gt;&lt;/div&gt;<br />
-          &lt;/a&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;div class="productsCard"&gt;<br />
-          &lt;a
-          href="https://www.gloriousgaming.com/en-ca/products/ghs-eternal-audio-headset"
-          target="_blank" &gt;<br />
-          &lt;div class="productImage"&gt;<br />
-          &lt;img class="imgLink" src="../img/headsetOrange.webp" alt="image of
-          orange headset" /&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;h3&gt;Eternal Audio Headset&lt;/h3&gt;<br />
-          &lt;h4&gt;Headphones&lt;/h4&gt;<br />
-          &lt;div class="productPricing"&gt;&lt;p&gt;$79.99
-          CAD&lt;/p&gt;&lt;/div&gt;<br />
-          &lt;/a&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;div class="productsCard"&gt;<br />
-          &lt;a
-          href="https://attackshark.ca/products/attack-shark-v5-8khz-wireless-paw3950max-gaming-mouse-with-c06-ultra-cable"
-          target="_blank" &gt;<br />
-          &lt;div class="productImage"&gt;<br />
-          &lt;img class="imgLink" src="../img/gamingMouseWhite.webp" alt="image
-          of white gaming mouse" /&gt;<br />
-          &lt;/div&gt;<br />
-          &lt;h3&gt;8KHz Wireless Gaming Mouse&lt;/h3&gt;<br />
-          &lt;h4&gt;Mouse&lt;/h4&gt;<br />
-          &lt;div class="productPricing"&gt;&lt;p&gt;$100.99
-          CAD&lt;/p&gt;&lt;/div&gt;<br />
-          &lt;/a&gt;<br />
-          &lt;/div&gt; <br />
-          &lt;/section&gt;
+          &lt;section class="template-products" aria-label="Product listings"&gt;
+        &lt;article class="productsCard"&gt;
+          &lt;div class="productImage"&gt;
+            &lt;a href="" class="imgLink"&gt;
+              &lt;img src="../img/greenKeyboard.png" alt="Green gaming keyboard" /&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;h3&gt;&lt;a href=""&gt;Green Keyboard&lt;/a&gt;&lt;/h3&gt;
+          &lt;h4&gt;Keyboards&lt;/h4&gt;
+          &lt;div class="productPricing"&gt;&lt;p&gt;$97.99 CAD&lt;/p&gt;&lt;/div&gt;
+          &lt;a class="template-action" href="template_checkout.html"&gt;
+            Add to Cart
+          &lt;/a&gt;
+        &lt;/article&gt;
+        &lt;article class="productsCard"&gt;
+          &lt;div class="productImage"&gt;
+            &lt;a href="" class="imgLink"&gt;
+              &lt;img
+                src="../img/mechkeyboard.jpg"
+                alt="Compact mechanical gaming keyboard"
+              /&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;h3&gt;&lt;a href=""&gt;Compact Mechanical Keyboard&lt;/a&gt;&lt;/h3&gt;
+          &lt;h4&gt;Keyboards&lt;/h4&gt;
+          &lt;div class="productPricing"&gt;&lt;p&gt;$99.99 CAD&lt;/p&gt;&lt;/div&gt;
+          &lt;a class="template-action" href="template_checkout.html"&gt;
+            Add to Cart
+          &lt;/a&gt;
+        &lt;/article&gt;
+        &lt;article class="productsCard"&gt;
+          &lt;div class="productImage"&gt;
+            &lt;a href="" class="imgLink"&gt;
+            &lt;img src="../img/ledmat.jpg" alt="LED gaming desk mat" /&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;h3&gt;&lt;a href=""&gt;LED Gaming Desk Mat&lt;/a&gt;&lt;/h3&gt;
+          &lt;h4&gt;Desk Mats&lt;/h4&gt;
+          &lt;div class="productPricing"&gt;&lt;p&gt;$35.99 CAD&lt;/p&gt;&lt;/div&gt;
+          &lt;a class="template-action" href="template_checkout.html"&gt;
+            Add to Cart
+          &lt;/a&gt;
+        &lt;/article&gt;
+        &lt;article class="productsCard"&gt;
+          &lt;div class="productImage"&gt;
+            &lt;a href="" class="imgLink"&gt;
+              &lt;img src="../img/headsetOrange.webp" alt="Orange gaming headset" /&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;h3&gt;&lt;a href=""&gt;Eternal Audio Headset&lt;/a&gt;&lt;/h3&gt;
+          &lt;h4&gt;Headphones&lt;/h4&gt;
+          &lt;div class="productPricing"&gt;&lt;p&gt;$79.99 CAD&lt;/p&gt;&lt;/div&gt;
+          &lt;a class="template-action" href="template_checkout.html"&gt;
+            Add to Cart
+          &lt;/a&gt;
+        &lt;/article&gt;
+        &lt;article class="productsCard"&gt;
+          &lt;div class="productImage"&gt;
+            &lt;a href="" class="imgLink"&gt;
+              &lt;img
+                src="../img/gamingMouseWhite.webp"
+                alt="White wireless gaming mouse"
+              /&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;h3&gt;&lt;a href=""&gt;8KHz Wireless Gaming Mouse&lt;/a&gt;&lt;/h3&gt;
+          &lt;h4&gt;Mouse&lt;/h4&gt;
+          &lt;div class="productPricing"&gt;&lt;p&gt;$100.99 CAD&lt;/p&gt;&lt;/div&gt;
+          &lt;a class="template-action" href="template_checkout.html"&gt;
+            Add to Cart
+          &lt;/a&gt;
+        &lt;/article&gt;
+      &lt;/section&gt;
         </code>
         <h4>Rendered element:</h4>
-        <section class="productsListing">
-          <div class="productsCard">
-            <a
-              href="https://www.newegg.ca/p/173-0885-000H6?srsltid=AU7gw4WDIUhhbPWX-lJSij6ddmy2E_CPGjA2Xv4-X3sDzlIEJm_0LutP"
-              target="_blank"
-            >
-              <div class="productImage">
-                <img
-                  class="imgLink"
-                  src="../img/greenKeyboard.png"
-                  alt="image of green keyboard"
-                />
-              </div>
-              <h3>Green Keyboard</h3>
-              <h4>Keyboards</h4>
-              <div class="productPricing"><p>$97.99 CAD</p></div>
+        <section class="template-products" aria-label="Product listings">
+        <article class="productsCard">
+          <div class="productImage">
+            <a href="" class="imgLink">
+              <img src="../img/greenKeyboard.png" alt="Green gaming keyboard" />
             </a>
           </div>
-          <div class="productsCard">
-            <a href="template_listing.html">
-              <div class="productImage">
-                <img
-                  class="imgLink"
-                  src="../img/mechkeyboard.jpg"
-                  alt="image of LED keyboard"
-                />
-              </div>
-              <h3>Compact Mechanical Keyboard</h3>
-              <h4>Keyboards</h4>
-              <div class="productPricing"><p>$99.99 CAD</p></div>
+
+          <h3><a href="">Green Keyboard</a></h3>
+          <h4>Keyboards</h4>
+          <div class="productPricing"><p>$97.99 CAD</p></div>
+
+          <a class="template-action" href="template_checkout.html">
+            Add to Cart
+          </a>
+        </article>
+
+        <article class="productsCard">
+          <div class="productImage">
+            <a href="" class="imgLink">
+              <img
+                src="../img/mechkeyboard.jpg"
+                alt="Compact mechanical gaming keyboard"
+              />
             </a>
           </div>
-          <div class="productsCard">
-            <a href="template_listing.html">
-              <div class="productImage">
-                <img
-                  class="imgLink"
-                  src="../img/ledmat.jpg"
-                  alt="image of pink desk mat"
-                />
-              </div>
-              <h3>LED Gaming Desk Mat</h3>
-              <h4>Desk Mats</h4>
-              <div class="productPricing"><p>$35.99 CAD</p></div>
+
+          <h3><a href="">Compact Mechanical Keyboard</a></h3>
+          <h4>Keyboards</h4>
+          <div class="productPricing"><p>$99.99 CAD</p></div>
+
+          <a class="template-action" href="template_checkout.html">
+            Add to Cart
+          </a>
+        </article>
+
+        <article class="productsCard">
+          <div class="productImage">
+            <a href="" class="imgLink">
+            <img src="../img/ledmat.jpg" alt="LED gaming desk mat" />
             </a>
           </div>
-          <div class="productsCard">
-            <a
-              href="https://www.gloriousgaming.com/en-ca/products/ghs-eternal-audio-headset"
-              target="_blank"
-            >
-              <div class="productImage">
-                <img
-                  class="imgLink"
-                  src="../img/headsetOrange.webp"
-                  alt="image of orange headset"
-                />
-              </div>
-              <h3>Eternal Audio Headset</h3>
-              <h4>Headphones</h4>
-              <div class="productPricing"><p>$79.99 CAD</p></div>
+
+          <h3><a href="">LED Gaming Desk Mat</a></h3>
+          <h4>Desk Mats</h4>
+          <div class="productPricing"><p>$35.99 CAD</p></div>
+
+          <a class="template-action" href="template_checkout.html">
+            Add to Cart
+          </a>
+        </article>
+
+        <article class="productsCard">
+          <div class="productImage">
+            <a href="" class="imgLink">
+              <img src="../img/headsetOrange.webp" alt="Orange gaming headset" />
             </a>
           </div>
-          <div class="productsCard">
-            <a
-              href="https://attackshark.ca/products/attack-shark-v5-8khz-wireless-paw3950max-gaming-mouse-with-c06-ultra-cable"
-              target="_blank"
-            >
-              <div class="productImage">
-                <img
-                  class="imgLink"
-                  src="../img/gamingMouseWhite.webp"
-                  alt="image of white gaming mouse"
-                />
-              </div>
-              <h3>8KHz Wireless Gaming Mouse</h3>
-              <h4>Mouse</h4>
-              <div class="productPricing"><p>$100.99 CAD</p></div>
+
+          <h3><a href="">Eternal Audio Headset</a></h3>
+          <h4>Headphones</h4>
+          <div class="productPricing"><p>$79.99 CAD</p></div>
+
+          <a class="template-action" href="template_checkout.html">
+            Add to Cart
+          </a>
+        </article>
+
+        <article class="productsCard">
+          <div class="productImage">
+            <a href="" class="imgLink">
+              <img
+                src="../img/gamingMouseWhite.webp"
+                alt="White wireless gaming mouse"
+              />
             </a>
           </div>
-        </section>
+
+          <h3><a href="">8KHz Wireless Gaming Mouse</a></h3>
+          <h4>Mouse</h4>
+          <div class="productPricing"><p>$100.99 CAD</p></div>
+
+          <a class="template-action" href="template_checkout.html">
+            Add to Cart
+          </a>
+        </article>
       </section>
 
       <section class="element">
