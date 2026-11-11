@@ -232,6 +232,10 @@ code {
   color: #000;
 }
 
+hr {
+  border-color: #91b9ff;
+}
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -493,8 +497,6 @@ code {
   /*reference for drop shadow https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Add_a_shadow*/
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap-reverse;
-
-  animation: none !important;
 }
 
 #mainNavigation div {
@@ -894,10 +896,6 @@ h3:focus a {
   margin-top: 0;
 }
 
-.template-main hr {
-  border-color: #91b9ff;
-}
-
 .template-intro {
   margin-bottom: 2rem;
 }
@@ -1138,23 +1136,27 @@ h3:focus a {
 
 .home-about {
   padding: 2rem;
+  align-items: center;
+  justify-items: center;
   background: #0c102c;
   box-shadow: 0 2px 3px 0 #08fffb84;
   border-radius: 0.5rem;
 }
 
 .home-about h2 {
-  padding: 1em 0 0 0;
+  padding: 2em 0 0 0;
 }
 
 .home-about p {
+  text-align: center;
   max-width: 65ch;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
 }
 
 .home-about .button2 {
-  display: inline-block;
-  margin: 1rem 0 0 0;
+  display: block;
+  justify-self: center;
+  margin: 2rem 0;
 }
 
 .home-footer {
@@ -1403,7 +1405,6 @@ h3:focus a {
   margin-bottom: 0;
 }
 .productOverview hr {
-  color: #6c90c3;
   margin: 2em 0;
 }
 .productOverview .chooseOptions {
@@ -1928,4 +1929,120 @@ h3:focus a {
 /* FIX: Contact form top spacing cause for some reason there is no padding at the top of the box */
 .home-contact {
   padding-top: 4rem !important;
+}
+
+/* about page styles */
+.about-main hr {
+  margin: 0 0 3em 0;
+}
+.about-main h2,
+.about-main p {
+  display: inline-block;
+  margin: 2em 0 1em 0;
+}
+.about-boxes {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 2rem 3rem;
+  margin-bottom: 3em;
+  align-items: center;
+  justify-items: left;
+  background: #0c102c;
+  box-shadow: 0 2px 3px 0 #08fffb84;
+  border-radius: 0.5rem;
+}
+.services-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  padding: 1rem 3rem;
+  margin-bottom: 2em;
+  align-items: first baseline;
+  justify-items: center;
+}
+.fourPointsAbout {
+  flex: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2em;
+  padding: 2rem 2em 0 2em;
+  margin: 0 0 3em auto;
+  align-items: flex-start;
+}
+.quick-facts h3 {
+  margin: 0;
+  padding: 0;
+}
+.quick-facts p {
+  margin: 1em 0;
+}
+.team-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2rem 3rem;
+  margin-bottom: 3em;
+  align-items: center;
+  justify-items: center;
+  background: #0c102c;
+  box-shadow: 0 2px 3px 0 #08fffb84;
+  border-radius: 0.5rem;
+}
+.teamPortraits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3em;
+}
+.teamPortraits img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+.individualTeamMember {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.individualTeamMember h3,
+.individualTeamMember p {
+  text-align: center;
+  margin: 0;
+}
+@media (max-width: 936px) {
+  .about-boxes {
+    display: flex;
+    flex-direction: column;
+  }
+  .teamPortraits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+  }
+}
+@media (max-width: 900px) {
+  .services-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fourPointsAbout {
+    flex: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .quick-facts h3,
+  .quick-facts p {
+    text-align: center;
+  }
+}
+@media (max-width: 554px) {
+  .teamPortraits {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3em;
+  }
 }
