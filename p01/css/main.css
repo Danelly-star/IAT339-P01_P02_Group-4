@@ -3,7 +3,10 @@
   Default styling for the style guide 
 */
 
-body {
+body > *:not(header) {
+  /* references for removing animation on the header only:
+  https://stackoverflow.com/questions/18238339/disable-css-transitions-for-a-single-style 
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:not */
   animation: fadeUp 0.8s ease-out;
 }
 
@@ -471,19 +474,29 @@ code {
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  /* reference: https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
   height: auto;
   padding-left: 2em;
   padding-right: 2em;
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: #6c90c3;
-  max-width: 100%;
   border-radius: 0 0 5px 5px;
   background-color: #0d1433;
   /*reference for drop shadow https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Add_a_shadow*/
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap-reverse;
+
+  animation: none !important;
 }
+
 #mainNavigation div {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -815,7 +828,7 @@ h3:focus a {
 }
 
 .templateMargins {
-  margin-top: 0;
+  margin-top: 8em;
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
