@@ -1784,7 +1784,7 @@ h3:focus a {
   }
 }
 
-/* HOMEPAGE CONTACT SECTION - index.html only */
+/* HOMEPAGE CONTACT SECTION - contactus.html only */
 
 .home-contact {
   display: grid;
@@ -1794,7 +1794,7 @@ h3:focus a {
   padding: 3rem;
   background: #0c102c;
   border: 1px solid #274272;
-  border-radius: 20px;
+  border-radius: 0.5rem;
   color: #eee;
   font-family: "Outfit", sans-serif;
 }
@@ -1935,8 +1935,13 @@ h3:focus a {
 .about-main hr {
   margin: 0 0 3em 0;
 }
-.about-main h2,
-.about-main p {
+.about-main h2 {
+  display: inline-block;
+  margin: 2em 0 1em 0;
+}
+.about-boxes p,
+.services-section p,
+.team-section p {
   display: inline-block;
   margin: 2em 0 1em 0;
 }
@@ -1951,7 +1956,7 @@ h3:focus a {
   box-shadow: 0 2px 3px 0 #08fffb84;
   border-radius: 0.5rem;
 }
-.services-boxes {
+.services-section {
   display: flex;
   flex-direction: row;
   gap: 2em;
@@ -1977,11 +1982,11 @@ h3:focus a {
 .quick-facts p {
   margin: 1em 0;
 }
-.team-boxes {
+.team-section {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 3rem 3rem;
   margin-bottom: 3em;
   align-items: center;
   justify-items: center;
@@ -2020,11 +2025,10 @@ h3:focus a {
   .teamPortraits {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3em;
   }
 }
 @media (max-width: 900px) {
-  .services-boxes {
+  .services-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2043,6 +2047,5 @@ h3:focus a {
   .teamPortraits {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3em;
   }
 }
