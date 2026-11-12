@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,76 +6,339 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Events | LunarTech</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600&family=Lunasima:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Main CSS -->
     <link href="p01/css/main.css" rel="stylesheet" />
   </head>
 
   <body class="templateMargins">
+    <!-- HEADER -->
     <header class="template-header">
       <nav id="mainNavigation" aria-label="Main navigation">
         <div class="leftAlignedNav">
-          <!-- LunarTech logo links to the style guide -->
+          <!-- LunarTech Logo -->
           <a href="index.html">
             <h1>LunarTech</h1>
           </a>
 
+          <!-- Navigation Links -->
           <div class="navLinks">
-            <p><a href="about.html">About</a></p>
             <p>
-              <a href="product_listing.html" aria-current="page">Products</a>
+              <a href="about.html">About</a>
             </p>
+
+            <p>
+              <a href="product_listing.html">Products</a>
+            </p>
+
             <p>
               <a href="events.html" aria-current="page">Events</a>
             </p>
+
             <p>
-              <a href="contactus.html" aria-current="page">Contact Us</a>
+              <a href="contactus.html">Contact Us</a>
             </p>
           </div>
         </div>
 
         <div class="rightAlignedNav">
-          <!-- Search field -->
+          <!-- Search Field -->
           <form class="searchField" role="search">
-            <input type="text" placeholder="Search" aria-label="Search" />
+            <input
+              type="search"
+              name="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
 
-            <button type="submit">
+            <button type="submit" aria-label="Submit search">
               <img
                 src="img/search_icon.webp"
-                alt="icon of search magnifying glass"
+                alt=""
               />
             </button>
           </form>
 
-          <!-- Shopping cart links to checkout -->
+          <!-- Shopping Cart -->
           <a href="checkout.html" aria-label="View checkout">
-            <img class="icons" src="img/shoppingCart.png" alt="Shopping cart" />
+            <img
+              class="icons"
+              src="img/shoppingCart.png"
+              alt=""
+            />
           </a>
         </div>
       </nav>
     </header>
 
-    <!-- EVENTS PAGE CONTENT -->
-    <main class="template-main home-main">
-      <!-- ADD INFO -->
+    <!-- MAIN EVENTS CONTENT -->
+    <main class="template-main events-main" id="top">
+
+      <!-- EVENTS HERO -->
+      <section
+        class="events-hero"
+        aria-labelledby="events-heading"
+      >
+        <div class="events-hero-copy">
+          <p class="events-eyebrow">
+            LUNARTECH EVENTS 
+          </p>
+
+          <h1 id="events-heading">
+            Beyond the <span>Setup.</span>
+          </h1>
+
+          <p>
+            There's more to gaming than the gear. Join our
+            community for new product reveals, friendly
+            competitions, and creative challenges.
+          </p>
+
+          <a class="button-nav" href="#upcoming-events">
+            Explore Events
+          </a>
+        </div>
+
+        <img
+          src="img/BeyondTheSetup.jpg"
+          alt="Gaming accessories with purple and blue lighting, including a headset, keyboard, and controller"
+        />
+      </section>
+
+      <!-- FEATURED EVENT -->
+      <section
+        class="events-section"
+        aria-labelledby="featured-title"
+      >
+        <div class="events-section-heading">
+          <div>
+            <p class="events-eyebrow">
+              DON'T MISS OUT
+            </p>
+
+            <h2 id="featured-title">
+              Featured Event
+            </h2>
+          </div>
+
+          <span class="events-section-note">
+            What's new at LunarTech
+          </span>
+        </div>
+
+        <article
+          class="events-featured-card"
+          id="moonlight-launch"
+        >
+          <img
+            src="img/moonlightserieslaunch.jpg"
+            alt="Blue-lit gaming desk with dual screens and glowing wall lights"
+          />
+
+          <div class="events-featured-content">
+            <span class="events-tag">
+              PRODUCT LAUNCH
+            </span>
+
+            <h3>Moonlight Series Launch</h3>
+
+            <p>
+              Meet our newest collection of sleek gaming
+              essentials. Discover thoughtful designs,
+              cool-toned lighting, and accessories built
+              for your next session.
+            </p>
+
+            <div class="events-meta">
+              <span>December 5, 2026</span>
+              <span>Online showcase</span>
+            </div>
+
+            <a
+              class="button-nav"
+              href="product_listing.html"
+            >
+              Explore Our Gear
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- UPCOMING EVENTS -->
+      <section
+        class="events-section"
+        id="upcoming-events"
+        aria-labelledby="upcoming-title"
+      >
+        <div class="events-section-heading">
+          <div>
+            <p class="events-eyebrow">
+              MARK YOUR CALENDAR
+            </p>
+
+            <h2 id="upcoming-title">
+              Upcoming Events
+            </h2>
+          </div>
+
+          <span class="events-section-note">
+            Join in from wherever you play
+          </span>
+        </div>
+
+        <div class="events-card-grid">
+
+          <!-- LUNAR CLASH -->
+          <article class="events-card">
+            <img
+              src="img/lunarclash.jpg"
+              alt="Gamers wearing headsets competing at computers under blue lighting"
+              loading="lazy"
+            />
+
+            <div class="events-card-content">
+              <span class="events-tag">
+                GAMING TOURNAMENT
+              </span>
+
+              <h3>Lunar Clash</h3>
+
+              <p>
+                Jump into a friendly online gaming
+                competition and connect with players
+                across the LunarTech community.
+              </p>
+
+              <div class="events-meta">
+                <span>December 12, 2026</span>
+                <span>Online</span>
+              </div>
+
+              <a
+                class="button-nav"
+                href="contactus.html"
+              >
+                Ask About Joining
+              </a>
+            </div>
+          </article>
+
+          <!-- SHOW US YOUR SETUP -->
+          <article class="events-card">
+            <img
+              src="img/showussetup.jpg"
+              alt="Gaming setup with a pink keyboard and RGB-lit desktop computer"
+              loading="lazy"
+            />
+
+            <div class="events-card-content">
+              <span class="events-tag">
+                COMMUNITY CHALLENGE
+              </span>
+
+              <h3>Show Us Your Setup</h3>
+
+              <p>
+                Share your favourite gaming corner,
+                get inspired by other setups, and
+                celebrate creative desk spaces.
+              </p>
+
+              <div class="events-meta">
+                <span>December 19, 2026</span>
+                <span>Online</span>
+              </div>
+
+              <a
+                class="button-nav"
+                href="contactus.html"
+              >
+                Get in Touch
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- PAST EVENTS -->
+      <section
+        class="events-section"
+        aria-labelledby="past-title"
+      >
+        <div class="events-section-heading">
+          <div>
+            <p class="events-eyebrow">
+              LOOKING BACK
+            </p>
+
+            <h2 id="past-title">
+              Past Events
+            </h2>
+          </div>
+        </div>
+
+        <article class="events-past-card">
+          <img
+            src="img/lunarExperienceDay.jpg"
+            alt="Gaming controller photographed in blue and purple light"
+            loading="lazy"
+          />
+
+          <div>
+            <span class="events-tag">
+              GEAR SHOWCASE
+            </span>
+
+            <h3>LunarTech Experience Day</h3>
+
+            <p>
+              A look back at a hands-on showcase of
+              gaming accessories, setup inspiration,
+              and community favourites.
+            </p>
+
+            <div class="events-meta">
+              <span>October 24, 2026</span>
+              <span>Community showcase</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      
     </main>
+
+
+
+
 
     <!-- FOOTER -->
     <footer class="template-footer home-footer">
       <div class="home-footer-grid">
-        <!-- Company Information -->
+
+        <!-- COMPANY INFORMATION -->
         <section>
           <h2>LunarTech</h2>
 
-          <p>Gaming accessories with a calm, luminous touch.</p>
+          <p>
+            Gaming accessories with a calm,
+            luminous touch.
+          </p>
         </section>
 
-        <!-- Explore Links -->
+        <!-- EXPLORE LINKS -->
         <section>
           <h2>Explore</h2>
 
@@ -86,30 +350,40 @@
           <a href="contactus.html">Contact Us</a>
         </section>
 
-        <!-- Project Links -->
+        <!-- PROJECT LINKS -->
         <section>
           <h2>Project</h2>
 
-          <a href="p01/styleguide.html">Style Guide</a>
-          <a href="https://github.com/Danelly-star/IAT339-P01_P02_Group-4"
-            >GitHub</a
-          >
-          <a href="p01/styleguide.html#citations">Citations</a>
-          <a href="index.html#about">About LunarTech</a>
+          <a href="p01/styleguide.html">
+            Style Guide
+          </a>
+
+          <a href="https://github.com/Danelly-star/IAT339-P01_P02_Group-4">
+            GitHub
+          </a>
+
+          <a href="p01/styleguide.html#citations">
+            Citations
+          </a>
+
+          <a href="index.html#about">
+            About LunarTech
+          </a>
         </section>
 
-        <!-- Stay in Touch -->
+        <!-- STAY IN TOUCH -->
         <section>
           <h2>Stay in Touch</h2>
 
-          <p>More LunarTech updates coming soon.</p>
+          <p>
+            More LunarTech updates coming soon.
+          </p>
         </section>
       </div>
 
       <!-- BOTTOM FOOTER -->
       <div class="home-footer-bottom">
         <p>© 2026 LunarTech — Group 04</p>
-
         <p>Designed for IAT 339</p>
       </div>
     </footer>

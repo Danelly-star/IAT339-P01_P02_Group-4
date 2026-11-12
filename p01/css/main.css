@@ -2049,3 +2049,292 @@ h3:focus a {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN LAYOUT */
+.events-main {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 5rem;
+  color: #eee;
+}
+
+.events-main section {
+  margin-bottom: 4.5rem;
+}
+
+.events-main h1,
+.events-main h2,
+.events-main h3 {
+  color: #9bbfff;
+}
+
+.events-main p {
+  line-height: 1.6;
+}
+
+.events-eyebrow {
+  color: #b5d0ff;
+  letter-spacing: 0.13em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0 0.7rem;
+}
+
+
+.events-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 3rem;
+  border: 1px solid #6c90c3;
+  border-radius: 20px;
+  background: linear-gradient(120deg, #0c102c, #274272);
+}
+
+.events-hero h1 {
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1.13;
+  margin: 0.4rem 0 1rem;
+}
+
+.events-hero h1 span {
+  color: #eee;
+}
+
+.events-hero-copy > p:not(.events-eyebrow) {
+  max-width: 34rem;
+  margin-bottom: 1.8rem;
+}
+
+.events-hero img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  object-position: center 48%;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  filter: brightness(0.92) saturate(0.9);
+}
+
+
+.events-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.events-section-heading h2 {
+  font-size: clamp(1.7rem, 2.6vw, 2.5rem);
+  margin: 0;
+}
+
+.events-section-note {
+  color: #b5c5e3;
+  font-size: 0.9rem;
+}
+
+
+
+.events-featured-card,
+.events-card,
+.events-past-card {
+  overflow: hidden;
+  background: #111b3b;
+  border: 1px solid #274272;
+  border-radius: 20px;
+}
+
+
+
+.events-featured-card {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+}
+
+.events-featured-card > img {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  object-fit: cover;
+  object-position: center 57%;
+  filter: brightness(0.92) saturate(0.9);
+}
+
+.events-featured-content {
+  padding: clamp(1.5rem, 3vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.events-featured-content h3 {
+  font-size: 2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+
+
+.events-tag {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid #6c90c3;
+  border-radius: 30px;
+  color: #b5d0ff;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.events-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.3rem;
+  margin: 1rem 0 1.5rem;
+  color: #c4d3ed;
+  font-size: 0.88rem;
+}
+
+
+
+.events-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.events-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.events-card > img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  filter: brightness(0.92) saturate(0.9);
+}
+
+/* Lunar Clash Image */
+.events-card:first-child > img {
+  object-position: center 45%;
+}
+
+/* Show Us Your Setup Image */
+.events-card:nth-child(2) > img {
+  object-position: center 56%;
+}
+
+.events-card-content {
+  padding: 1.6rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+}
+
+.events-card h3,
+.events-past-card h3 {
+  font-size: 1.5rem;
+  margin: 0.85rem 0 0.4rem;
+}
+
+.events-card .events-meta {
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+
+.events-past-card {
+  display: grid;
+  grid-template-columns: minmax(200px, 0.7fr) 1.3fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.events-past-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: center 56%;
+  border-radius: 12px;
+  filter: brightness(0.92) saturate(0.9);
+}
+
+
+@media (max-width: 800px) {
+  .events-hero,
+  .events-featured-card,
+  .events-past-card {
+    grid-template-columns: 1fr;
+  }
+
+  .events-hero {
+    padding: 1.6rem;
+  }
+
+  .events-hero img {
+    height: 250px;
+  }
+
+  .events-featured-card > img {
+    height: 260px;
+    min-height: 0;
+  }
+
+  .events-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events-section-note {
+    display: none;
+  }
+
+  .events-past-card img {
+    height: 230px;
+  }
+}
+
+
+
