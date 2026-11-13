@@ -20,7 +20,7 @@
     <link href="css/main.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="pageMargins">
     <header>
       <h1>LunarTech Style Guide</h1>
 
@@ -74,14 +74,14 @@
         <h3>Navigation Link</h3>
 
         <h4>CSS selector:</h4>
-        <p>.button-nav, .button2</p>
+        <p>.button-nav, .main-button</p>
 
         <h4>Sample code:</h4>
         <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
         <a class="button-nav" href="#">Default Button</a>
-        <a class="button2" href="#">Default Button</a>
+        <a class="main-button" href="#">Default Button</a>
       </section>
 
       <section class="element">
@@ -279,9 +279,9 @@
             &lt;h1&gt;LunarTech&lt;/h1&gt;
           &lt;/a&gt;
           &lt;div class="navLinks"&gt;
-            &lt;p&gt;&lt;a href="styleguide.html#branding_definition"&gt;About&lt;/a&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;a href="template_listing.html"&gt;Products (Template)&lt;/a&gt;&lt;/p&gt;
             &lt;p&gt;&lt;a href="styleguide.html"&gt;Style Guide&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href="template_listing.html"&gt;Products (Template)&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href="template_checkout.html"&gt;Checkout (Template)&lt;/a&gt;&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class="rightAlignedNav"&gt;
@@ -319,9 +319,9 @@
           </a>
 
           <div class="navLinks">
-            <p><a href="styleguide.html#branding_definition">About</a></p>
-            <p><a href="template_listing.html">Products (Template)</a></p>
             <p><a href="styleguide.html">Style Guide</a></p>
+            <p><a href="template_listing.html">Products (Template)</a></p>
+            <p><a href="template_checkout.html">Checkout (Template)</a></p>
           </div>
         </div>
 
@@ -353,10 +353,10 @@
       <section class="element">
         <h3>Product/Service Listing</h3>
         <h4>CSS selector:</h4>
-        <p>.productsListing, .productsCard, .prodctImage, .imgLink, .button2, .template-action</p>
+        <p>.productsListing, .productsCard, .prodctImage, .imgLink, .main-button, .template-action</p>
         <h4>Sample code:</h4>
         <code>
-          &lt;section class="template-products" aria-label="Product listings"&gt;
+          &lt;section class="products-grid" aria-label="Product listings"&gt;
         &lt;article class="productsCard"&gt;
           &lt;div class="productImage"&gt;
             &lt;a href="" class="imgLink"&gt;
@@ -366,7 +366,7 @@
           &lt;h3&gt;&lt;a href=""&gt;Green Keyboard&lt;/a&gt;&lt;/h3&gt;
           &lt;h4&gt;Keyboards&lt;/h4&gt;
           &lt;div class="productPricing"&gt;&lt;p&gt;$97.99 CAD&lt;/p&gt;&lt;/div&gt;
-          &lt;a class="template-action button2" href="template_checkout.html"&gt;
+          &lt;a class="template-action main-button" href="template_checkout.html"&gt;
             Add to Cart
           &lt;/a&gt;
         &lt;/article&gt;
@@ -382,7 +382,7 @@
           &lt;h3&gt;&lt;a href=""&gt;Compact Mechanical Keyboard&lt;/a&gt;&lt;/h3&gt;
           &lt;h4&gt;Keyboards&lt;/h4&gt;
           &lt;div class="productPricing"&gt;&lt;p&gt;$99.99 CAD&lt;/p&gt;&lt;/div&gt;
-          &lt;a class="template-action button2" href="template_checkout.html"&gt;
+          &lt;a class="template-action main-button" href="template_checkout.html"&gt;
             Add to Cart
           &lt;/a&gt;
         &lt;/article&gt;
@@ -395,7 +395,7 @@
           &lt;h3&gt;&lt;a href=""&gt;LED Gaming Desk Mat&lt;/a&gt;&lt;/h3&gt;
           &lt;h4&gt;Desk Mats&lt;/h4&gt;
           &lt;div class="productPricing"&gt;&lt;p&gt;$35.99 CAD&lt;/p&gt;&lt;/div&gt;
-          &lt;a class="template-action button2" href="template_checkout.html"&gt;
+          &lt;a class="template-action main-button" href="template_checkout.html"&gt;
             Add to Cart
           &lt;/a&gt;
         &lt;/article&gt;
@@ -408,7 +408,7 @@
           &lt;h3&gt;&lt;a href=""&gt;Eternal Audio Headset&lt;/a&gt;&lt;/h3&gt;
           &lt;h4&gt;Headphones&lt;/h4&gt;
           &lt;div class="productPricing"&gt;&lt;p&gt;$79.99 CAD&lt;/p&gt;&lt;/div&gt;
-          &lt;a class="template-action button2" href="template_checkout.html"&gt;
+          &lt;a class="template-action main-button" href="template_checkout.html"&gt;
             Add to Cart
           &lt;/a&gt;
         &lt;/article&gt;
@@ -424,14 +424,14 @@
           &lt;h3&gt;&lt;a href=""&gt;8KHz Wireless Gaming Mouse&lt;/a&gt;&lt;/h3&gt;
           &lt;h4&gt;Mouse&lt;/h4&gt;
           &lt;div class="productPricing"&gt;&lt;p&gt;$100.99 CAD&lt;/p&gt;&lt;/div&gt;
-          &lt;a class="template-action button2" href="template_checkout.html"&gt;
+          &lt;a class="template-action main-button" href="template_checkout.html"&gt;
             Add to Cart
           &lt;/a&gt;
         &lt;/article&gt;
       &lt;/section&gt;
         </code>
         <h4>Rendered element:</h4>
-        <section class="template-products" aria-label="Product listings">
+        <section class="products-grid" aria-label="Product listings">
         <article class="productsCard">
           <div class="productImage">
             <a href="" class="imgLink">
@@ -443,7 +443,7 @@
           <h4>Keyboards</h4>
           <div class="productPricing"><p>$97.99 CAD</p></div>
 
-          <a class="template-action button2" href="template_checkout.html">
+          <a class="template-action main-button" href="template_checkout.html">
             Add to Cart
           </a>
         </article>
@@ -462,7 +462,7 @@
           <h4>Keyboards</h4>
           <div class="productPricing"><p>$99.99 CAD</p></div>
 
-          <a class="template-action button2" href="template_checkout.html">
+          <a class="template-action main-button" href="template_checkout.html">
             Add to Cart
           </a>
         </article>
@@ -478,7 +478,7 @@
           <h4>Desk Mats</h4>
           <div class="productPricing"><p>$35.99 CAD</p></div>
 
-          <a class="template-action button2" href="template_checkout.html">
+          <a class="template-action main-button" href="template_checkout.html">
             Add to Cart
           </a>
         </article>
@@ -494,7 +494,7 @@
           <h4>Headphones</h4>
           <div class="productPricing"><p>$79.99 CAD</p></div>
 
-          <a class="template-action button2" href="template_checkout.html">
+          <a class="template-action main-button" href="template_checkout.html">
             Add to Cart
           </a>
         </article>
@@ -513,7 +513,7 @@
           <h4>Mouse</h4>
           <div class="productPricing"><p>$100.99 CAD</p></div>
 
-          <a class="template-action button2" href="template_checkout.html">
+          <a class="template-action main-button" href="template_checkout.html">
             Add to Cart
           </a>
         </article>
@@ -1273,5 +1273,53 @@
         </li>
       </ul>
     </section>
+    <!-- FOOTER -->
+    <footer class="template-footer home-footer">
+      <div class="home-footer-grid">
+        <!-- Company Information -->
+        <section>
+          <h2>LunarTech</h2>
+
+          <p>Gaming accessories with a calm, luminous touch.</p>
+        </section>
+
+        <!-- Explore Links -->
+        <section>
+          <h2>Explore</h2>
+
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About</a>
+          <a href="../product_listing.html">Products</a>
+          <a href="../checkout.html">Checkout</a>
+          <a href="../events.html">Events</a>
+          <a href="../contactus.html">Contact Us</a>
+        </section>
+
+        <!-- Project Links -->
+        <section>
+          <h2>Project</h2>
+
+          <a href="styleguide.html">Style Guide</a>
+          <a href="https://github.com/Danelly-star/IAT339-P01_P02_Group-4"
+            >GitHub</a
+          >
+          <a href="styleguide.html#citations">Citations</a>
+        </section>
+
+        <!-- Stay in Touch -->
+        <section>
+          <h2>Stay in Touch</h2>
+
+          <p>More LunarTech updates coming soon.</p>
+        </section>
+      </div>
+
+      <!-- BOTTOM FOOTER -->
+      <div class="home-footer-bottom">
+        <p>© 2026 LunarTech — Group 04</p>
+
+        <p>Designed for IAT 339</p>
+      </div>
+    </footer>
   </body>
 </html>
