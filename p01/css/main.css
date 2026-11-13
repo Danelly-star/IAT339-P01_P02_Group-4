@@ -904,21 +904,21 @@ h3:focus a {
   outline-offset: 3px;
 }
 
-.template-main {
+.universal-main {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.template-main > h1 {
+.universal-main > h1 {
   margin-bottom: 0.5rem;
 }
 
-.template-main section {
+.universal-main section {
   padding-top: 0;
   margin-top: 0;
 }
 
-.template-intro {
+.intro-blurb {
   margin-bottom: 2rem;
 }
 
@@ -1086,7 +1086,9 @@ h3:focus a {
 }
 
 .homepage-content h1 {
-  line-height: 1.2;
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1;
+  margin: 0.4rem 0 1rem;
 }
 
 .homepage-content p {
@@ -1199,7 +1201,7 @@ h3:focus a {
   color: #c5daff;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
   .homepage-content {
     grid-template-columns: 1fr;
     padding: 1.5rem;
@@ -1208,10 +1210,15 @@ h3:focus a {
   .home-categories {
     grid-template-columns: 1fr;
   }
+  .homepage-introduction {
+    order: 2;
+    margin-top: 1em;
+  }
   .home-categories img {
-    height: 220px;
+    order: 1;
     padding: 0;
     margin: 0;
+    height: 250px;
   }
 }
 
@@ -1958,18 +1965,19 @@ h3:focus a {
 .about-main h2 {
   display: inline-block;
   padding: 0;
-  margin: 1em 0 1em 0;
+  margin: 1rem 0 1rem 0;
 }
 #about p,
 #services p,
 #team p {
   display: inline-block;
-  margin: 1em 0 1em 0;
+  margin: 1rem 0 1rem 0;
 }
 #about,
 #services,
 #team {
-  margin-bottom: 3em;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 #about {
   display: grid;
@@ -1983,12 +1991,12 @@ h3:focus a {
 }
 #about h2,
 #services h2 {
-  margin: 1em;
+  margin: 1rem;
 }
 #services {
   display: flex;
   flex-direction: row;
-  gap: 2em;
+  gap: 2rem;
   padding: 1rem 3rem;
   align-items: first baseline;
   justify-items: center;
@@ -1998,9 +2006,9 @@ h3:focus a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 2em;
-  padding: 2rem 2em 0 2em;
-  margin: 0 0 3em auto;
+  gap: 2rem;
+  padding: 2rem 2rem 0 2rem;
+  margin: 0 0 3rem auto;
   align-items: flex-start;
 }
 .quick-facts h3 {
@@ -2008,12 +2016,12 @@ h3:focus a {
   padding: 0;
 }
 .quick-facts p {
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 #team {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1rem;
   padding: 2rem 3rem 3rem 3rem;
   align-items: center;
   justify-items: center;
@@ -2024,15 +2032,15 @@ h3:focus a {
 .teamPortraits {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 3em;
+  gap: 3rem;
 }
 .teamPortraits img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
-  border-radius: 1em;
-  margin-bottom: 1em;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 .individualTeamMember {
   display: flex;
@@ -2064,10 +2072,13 @@ h3:focus a {
     flex: 3;
     display: grid;
     grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
   }
   .quick-facts h3,
   .quick-facts p {
     text-align: center;
+    max-width: 35ch;
   }
 }
 @media (max-width: 554px) {
@@ -2295,7 +2306,13 @@ h3:focus a {
   }
 
   .events-hero img {
+    order: 1;
     height: 250px;
+  }
+
+  .events-hero-copy {
+    order: 2;
+    margin-bottom: 1em;
   }
 
   .events-featured-card > img {
