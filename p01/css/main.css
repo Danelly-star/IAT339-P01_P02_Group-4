@@ -1110,6 +1110,7 @@ h3:focus a {
   object-fit: cover;
   border-radius: 0 0 16px 16px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  filter: saturate(0.95);
 }
 
 .homepage-content .main-button {
@@ -2040,6 +2041,7 @@ h3:focus a {
   overflow: hidden;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  filter: brightness(0.92);
 }
 .individualTeamMember {
   display: flex;
