@@ -545,6 +545,87 @@ p {
   gap: 1em;
 }
 
+
+
+
+
+/* ============================================================
+   LUNARTECH BRAND LOGO UPDATE — NAVBAR AND FOOTER (Nov 2026)
+   Shared across all pages; logo image lives in /img/.
+   ============================================================ */
+
+/* NAVBAR BRAND */
+#mainNavigation .lunar-nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  white-space: nowrap;
+}
+
+#mainNavigation .lunar-nav-logo {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+#mainNavigation .lunar-nav-name {
+  font-family: "Lunasima", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #9bbfff;
+  line-height: 1.2;
+}
+
+/* NAVBAR HOVER AND FOCUS */
+#mainNavigation a:hover .lunar-nav-name,
+#mainNavigation a:focus-visible .lunar-nav-name {
+  color: #eee;
+}
+
+/* FOOTER BRAND */
+.home-footer-grid .lunar-footer-brand {
+  margin: 0 0 0.5rem;
+}
+
+.home-footer-grid .lunar-footer-brand img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 600px) {
+  #mainNavigation .lunar-nav-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  #mainNavigation .lunar-nav-name {
+    font-size: 1.45rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .productsListing {
   display: flex;
   gap: 1em;
