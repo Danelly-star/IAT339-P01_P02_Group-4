@@ -1962,7 +1962,21 @@ h3:focus a {
   padding-top: 4rem !important;
 }
 
-/* about page styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT US PAGE */
 .about-main h2 {
   display: inline-block;
   padding: 0;
@@ -2088,6 +2102,24 @@ h3:focus a {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*EVENTS PAGE CODE*/
 
 
 .events-main {
@@ -2343,13 +2375,6 @@ h3:focus a {
 .events-social-links small {
   font-size: 0.76rem;
 }
-
-.events-social-note {
-  font-size: 0.78rem;
-  opacity: 0.8;
-  margin-top: 1.5rem;
-}
-
 
 
 .events-card:first-child > img {
