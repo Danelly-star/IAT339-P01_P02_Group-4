@@ -2076,7 +2076,7 @@ h3:focus a {
   margin-bottom: 5rem;
   background: #0c102c;
   border: 1px solid #274272;
-  border-radius: 0.5rem;
+  border-radius: 20px;
 }
 #about {
   display: grid;
@@ -2183,6 +2183,556 @@ h3:focus a {
     grid-template-columns: 1fr;
   }
 }
+
+
+.about-main {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 6rem;
+  color: #eee;
+  font-family: "Outfit", sans-serif;
+}
+
+.about-main section {
+  margin: 0 0 5rem;
+}
+
+.about-main h1,
+.about-main h2,
+.about-main h3 {
+  color: #9bbfff;
+  font-family: "Lunasima", sans-serif;
+}
+
+.about-main h1 {
+  font-size: clamp(2.5rem, 4.2vw, 4.2rem);
+  line-height: 1.12;
+  margin: 0.55rem 0 1rem;
+}
+
+.about-main h2 {
+  display: block;
+  font-size: clamp(1.9rem, 3vw, 2.65rem);
+  line-height: 1.2;
+  margin: 0.4rem 0 1rem;
+  padding: 0;
+}
+
+.about-main h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.7rem;
+}
+
+.about-main p {
+  display: block;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.about-main img {
+  display: block;
+  width: 100%;
+}
+
+.about-main .about-eyebrow {
+  color: #b5d0ff;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.about-main .about-panel {
+  border: 1px solid #274272;
+  background: #0c102c;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.about-main .about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: center;
+  min-height: 425px;
+  padding: 3.5rem 0;
+  background: transparent;
+  border: 20px;
+}
+
+.about-main .about-hero-copy {
+  padding: 1.5rem 0;
+}
+
+.about-main .about-tagline {
+  color: #dce8ff;
+  font-size: 1.25rem;
+  margin-bottom: 1.6rem;
+}
+
+.about-paragraph {
+  padding-bottom: 3rem;
+}
+
+.about-main .about-hero-copy > p:not(.about-eyebrow):not(.about-tagline) {
+  max-width: 55ch;
+  margin-bottom: 2.2rem;
+}
+
+/* Hero Image */
+
+.about-main .about-hero-photo {
+  min-width: 0;
+  overflow: hidden;
+  background: transparent;
+  padding: 0;
+  border-radius: 20px;
+  clip-path: none;
+  box-shadow: 0 12px 40px rgba(49, 65, 148, 0.25);
+}
+
+.about-main .about-hero-photo img {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  min-height: 345px;
+  aspect-ratio: 5 / 3.5;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  clip-path: none;
+}
+
+
+.about-main .about-mission {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: clamp(2rem, 4vw, 4.5rem);
+  align-items: center;
+  padding: clamp(1.5rem, 3vw, 3rem);
+}
+
+.about-main .about-mission-photo {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.about-main .about-mission-photo img {
+  aspect-ratio: 5 / 3.7;
+  object-fit: cover;
+}
+
+.about-main .about-mission-copy p:not(.about-eyebrow) {
+  margin-top: 1rem;
+  max-width: 60ch;
+}
+
+
+/* ============================================================
+   4. SHARED SECTION HEADINGS
+   ============================================================ */
+
+.about-main .about-section-heading {
+  text-align: center;
+  margin: 0 auto 2.5rem;
+  max-width: 720px;
+}
+
+.about-main .about-section-heading > p:not(.about-eyebrow) {
+  color: #d8e1f4;
+}
+
+.about-main .about-moon {
+  display: block;
+  color: #9bbfff;
+  font-size: 1.7rem;
+  letter-spacing: 0.3em;
+  margin-bottom: 0.5rem;
+}
+
+
+/* ============================================================
+   5. OUR VALUES SECTION
+   ============================================================ */
+
+.about-main .about-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.about-main .about-value-card {
+  background: #0c102c;
+  border: 1px solid #274272;
+  border-radius: 18px;
+  padding: 2.5rem 1.8rem;
+  text-align: center;
+  transition: none;
+}
+
+.about-main .about-value-icon {
+  display: block;
+  color: #9bbfff;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-main .about-value-card p {
+  max-width: 35ch;
+  margin: 0 auto;
+}
+
+/* Values cards remain stationary on hover */
+
+.about-main .about-value-card:hover {
+  transform: none;
+  border-color: #274272;
+  box-shadow: none;
+}
+
+
+/* ============================================================
+   6. MEET OUR TEAM SECTION
+   ============================================================ */
+
+.about-main .about-team {
+  padding: clamp(2rem, 4vw, 3.5rem);
+}
+
+.about-main .about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.7rem;
+}
+
+.about-main .about-person {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #274272;
+  border-radius: 17px;
+  background: #121a3c;
+  text-align: center;
+  transition: none;
+}
+
+.about-main .about-person img {
+  aspect-ratio: 4 / 4.2;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.about-main .about-person-copy {
+  padding: 1.3rem 1rem 1.6rem;
+}
+
+.about-main .about-person-copy h3 {
+  margin-bottom: 0.4rem;
+}
+
+.about-main .about-person-copy p {
+  color: #e5e9f5;
+  font-size: 0.95rem;
+}
+
+/* Team cards remain stationary on hover */
+
+.about-main .about-person:hover {
+  transform: none;
+  border-color: #274272;
+  box-shadow: none;
+}
+
+
+/* ============================================================
+   7. WHAT YOU GET SECTION
+   ============================================================ */
+
+.about-main .about-benefits {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.78fr) minmax(0, 2.2fr);
+  align-items: start;
+  gap: clamp(2rem, 4vw, 4rem);
+  padding: clamp(2.5rem, 4vw, 4rem);
+}
+
+.about-main .about-benefits > h2 {
+  margin: 0.4rem 0 0;
+}
+
+/* Benefits Grid */
+
+.about-main .about-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(2rem, 4vw, 4rem);
+  row-gap: 3.25rem;
+}
+
+/* Individual Benefits */
+
+.about-main .about-benefit {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  text-align: left;
+  transition: none;
+  box-shadow: none;
+}
+
+.about-main .about-benefit-icon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: 0 0 0.7rem;
+  color: #9bbfff;
+}
+
+.about-main .about-benefit-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.about-main .about-benefit h3 {
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+
+.about-main .about-benefit p {
+  color: #eee;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* Benefits remain stationary on hover */
+
+.about-main .about-benefit:hover {
+  transform: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+
+/* ============================================================
+   8. YOUR SETUP, YOUR UNIVERSE SECTION
+   ============================================================ */
+
+.about-main .about-universe {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 360px;
+  padding: 4rem 2rem;
+  margin-bottom: 0;
+
+  border: 1px solid #6c90c3;
+  border-radius: 20px;
+
+  background: #0c102c url("../../img/Your_Universe.png")
+    center 54% / cover no-repeat;
+
+  text-align: center;
+}
+
+/* Background Overlay */
+
+.about-main .about-universe::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(12, 16, 44, 0.77),
+    rgba(12, 16, 44, 0.47),
+    rgba(12, 16, 44, 0.72)
+  );
+
+  z-index: -1;
+}
+
+/* Universe Content */
+
+.about-main .about-universe-content {
+  max-width: 720px;
+}
+
+.about-main .about-universe-content h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  text-shadow: 0 3px 15px #0c102c;
+}
+
+.about-main .about-universe-content > p:not(.about-eyebrow) {
+  margin: 0 auto 1.8rem;
+  max-width: 55ch;
+}
+
+
+/* ============================================================
+   9. RESPONSIVE DESIGN — TABLETS
+   Screens 950px and below
+   ============================================================ */
+
+@media (max-width: 950px) {
+
+  /* Hero Section */
+
+  .about-main .about-hero {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding-top: 1rem;
+  }
+
+  .about-main .about-hero-photo img {
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Mission Section */
+
+  .about-main .about-mission {
+    grid-template-columns: 1fr;
+  }
+
+  /* Benefits Section */
+
+  .about-main .about-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .about-main .about-benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* ============================================================
+   10. RESPONSIVE DESIGN — MOBILE
+   Screens 650px and below
+   ============================================================ */
+
+@media (max-width: 650px) {
+
+  /* General Page Layout */
+
+  .about-main {
+    padding: 1.5rem 1rem 4rem;
+  }
+
+  .about-main section {
+    margin-bottom: 3.5rem;
+  }
+
+  /* Hero Section */
+
+  .about-main .about-hero {
+    padding: 1.5rem 0;
+    gap: 1.5rem;
+  }
+
+  .about-main .about-hero-photo img {
+    min-height: 230px;
+  }
+
+  /* Values Section */
+
+  .about-main .about-value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-main .about-value-card {
+    padding: 2rem 1.5rem;
+  }
+
+  /* Mission Section */
+
+  .about-main .about-mission {
+    padding: 1.5rem;
+  }
+
+  /* Team Section */
+
+  .about-main .about-team {
+    padding: 1.5rem;
+  }
+
+  .about-main .about-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-main .about-person {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Benefits Section */
+
+  .about-main .about-benefits {
+    padding: 1.5rem;
+  }
+
+  .about-main .about-benefits-grid {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  /* Universe Section */
+
+  .about-main .about-universe {
+    min-height: 340px;
+    padding: 3rem 1.3rem;
+  }
+
+}
+
+
+/* ============================================================
+   11. ACCESSIBILITY — REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .about-main .about-value-card,
+  .about-main .about-person,
+  .about-main .about-benefit {
+    transition: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

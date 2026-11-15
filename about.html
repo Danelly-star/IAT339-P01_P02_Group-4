@@ -1,163 +1,453 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>About | LunarTech</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@400;500;600&family=Lunasima:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600&amp;family=Lunasima:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
 
+    <!-- Main Stylesheet -->
     <link href="p01/css/main.css" rel="stylesheet" />
   </head>
 
   <body class="pageMargins">
+
+    <!-- HEADER AND NAVIGATION -->
     <header class="template-header">
       <nav id="mainNavigation" aria-label="Main navigation">
+
         <div class="leftAlignedNav">
           <a href="index.html">
-           
             <span class="lunar-nav-brand">
-              <img class="lunar-nav-logo" src="img/LunarTech_Logo_Nav.png" alt="" />
+              <img
+                class="lunar-nav-logo"
+                src="img/LunarTech_Logo_Nav.png"
+                alt=""
+              />
               <span class="lunar-nav-name">LunarTech</span>
             </span>
           </a>
 
           <div class="navLinks">
-            <p><a href="about.html">About</a></p>
             <p>
-              <a href="product_listing.html" aria-current="page">Products</a>
+              <a href="about.html" aria-current="page">About</a>
             </p>
+
             <p>
-              <a href="events.html" aria-current="page">Events</a>
+              <a href="product_listing.html">Products</a>
             </p>
+
             <p>
-              <a href="contactus.html" aria-current="page">Contact Us</a>
+              <a href="events.html">Events</a>
+            </p>
+
+            <p>
+              <a href="contactus.html">Contact Us</a>
             </p>
           </div>
         </div>
 
         <div class="rightAlignedNav">
-          <!-- Search field -->
+
+          <!-- Search Field -->
           <form class="searchField" role="search">
-            <input type="text" placeholder="Search" aria-label="Search" />
+            <input
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
 
             <button type="submit">
               <img
                 src="img/search_icon.webp"
-                alt="icon of search magnifying glass"
+                alt="Search"
               />
             </button>
           </form>
 
-          <!-- Shopping cart links to checkout -->
+          <!-- Shopping Cart -->
           <a href="checkout.html" aria-label="View checkout">
-            <img class="icons" src="img/shoppingCart.png" alt="Shopping cart" />
+            <img
+              class="icons"
+              src="img/shoppingCart.png"
+              alt=""
+            />
           </a>
+
         </div>
       </nav>
     </header>
 
-    <!-- MAIN HOMEPAGE CONTENT -->
+    <!-- MAIN CONTENT -->
     <main class="universal-main about-main">
-      <h1>About LunarTech</h1>
-      <p class="intro-blurb">Dedicated to being out of this world.</p>
 
-      <!-- ABOUT LUNARTECH -->
-      <section id="about" aria-labelledby="about-title">
-        <h2 id="about-title">About Us</h2>
-        <div>
-          <p>
-            LunarTech is a gaming accessories company for people who spend a lot
-            of time gaming or using their computers and want to improve both the
-            function and appearance of their setup. At LunarTech, we believe
-            your gaming setup should feel as good as it looks. Explore
-            accessories with a calming, luminous aesthetic that makes every
-            space your own.
+      <!-- ABOUT HERO SECTION -->
+      <section
+        class="about-hero"
+        id="about"
+        aria-labelledby="about-heading"
+      >
+        <div class="about-hero-copy">
+          <p class="about-eyebrow">
+            WELCOME TO OUR UNIVERSE
+            <span aria-hidden="true">✦</span>
           </p>
+
+          <h1 id="about-heading">About LunarTech</h1>
+
+          <p class="about-tagline">
+            Dedicated to being out of this world.
+          </p>
+
+          <p class="about-paragraph">
+            LunarTech brings together gaming accessories for people
+            who want their setup to feel as good as it looks.
+            We combine everyday function with a calming, luminous
+            aesthetic that makes your space your own.
+          </p>
+
+          <a class="main-button" href="product_listing.html">
+            Explore Our Products
+          </a>
+        </div>
+
+        <div class="about-hero-photo">
+          <img
+            src="img/AboutUs_Pic.jpg"
+            alt="Gaming event with attendees and gaming stations under blue and purple lighting"
+          />
+        </div>
+      </section>
+
+      <!-- OUR MISSION SECTION -->
+      <section
+        class="about-mission about-panel"
+        aria-labelledby="mission-heading"
+      >
+        <div class="about-mission-photo">
+          <img
+            src="img/OurMission_Keyboard_New.jpg"
+            alt="Mechanical keyboard glowing with purple lighting"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="about-mission-copy">
+          <p class="about-eyebrow">
+            WHAT DRIVES US
+            <span aria-hidden="true">✦</span>
+          </p>
+
+          <h2 id="mission-heading">Our Mission</h2>
+
           <p>
-            The company offers keyboards, mice, headsets, desk mats,
-            controllers, keyboard covers, wrist cushions, controller stands, and
-            other setup accessories. LunarTech brings these products together
-            for a specific audience of computer and gaming users, making it
-            easier to build a coordinated setup in one place.
+            We believe a gaming setup should be more than functional.
+            It should reflect your personality, creativity, and
+            passion for gaming.
+          </p>
+
+          <p>
+            From keyboards and mice to headsets, desk mats,
+            controllers, and accessories, our goal is to help
+            you build a coordinated setup that feels uniquely yours.
           </p>
         </div>
       </section>
 
-      <!-- OUR TEAM -->
-      <section id="team" aria-labelledby="team-heading">
-        <h2 id="team-heading">Our Team</h2>
-        <div class="teamPortraits">
-          <div class="individualTeamMember">
-            <img src="img/portrait2.jpg" alt="corporate headshot of a man" />
-            <h3>Frank Smith</h3>
-            <p>Chief Financial Officer</p>
-          </div>
-          <div class="individualTeamMember">
-            <img src="img/portrait1.jpg" alt="corporate headshot of a woman" />
-            <h3>Nora Sharma</h3>
-            <p>Chairperson of the Board</p>
-          </div>
-          <div class="individualTeamMember">
-            <img src="img/portrait3.jpg" alt="corporate headshot of a woman" />
-            <h3>Julia Johansson</h3>
-            <p>Chief Executive Officer</p>
-          </div>
+      <!-- OUR VALUES SECTION -->
+      <section
+        class="about-values"
+        aria-labelledby="values-heading"
+      >
+        <div class="about-section-heading">
+          <span class="about-moon" aria-hidden="true">
+             ⋆⋅☽◯☾⋅⋆ 
+          </span>
+
+          <h2 id="values-heading">Our Values</h2>
+
+          <p>
+            Little details that make a setup feel extraordinary.
+          </p>
+        </div>
+
+        <div class="about-value-grid">
+
+          <!-- Performance -->
+          <article class="about-value-card">
+            <span class="about-value-icon" aria-hidden="true">
+              ✧
+            </span>
+
+            <h3>Performance</h3>
+
+            <p>
+              Accessories chosen to support the way you play,
+              create, and work.
+            </p>
+          </article>
+
+          <!-- Comfort -->
+          <article class="about-value-card">
+            <span class="about-value-icon" aria-hidden="true">
+              ☾
+            </span>
+
+            <h3>Comfort</h3>
+
+            <p>
+              Thoughtful setup essentials for longer,
+              more enjoyable sessions.
+            </p>
+          </article>
+
+          <!-- Creativity -->
+          <article class="about-value-card">
+            <span class="about-value-icon" aria-hidden="true">
+              ✦
+            </span>
+
+            <h3>Creativity</h3>
+
+            <p>
+              A luminous, lunar-inspired style that lets
+              your personality shine.
+            </p>
+          </article>
+
         </div>
       </section>
 
-      <!-- WHAT WE PROVIDE -->
-      <section id="services" aria-labelledby="services-heading">
+      <!-- MEET OUR TEAM SECTION -->
+      <section
+        class="about-team about-panel"
+        id="team"
+        aria-labelledby="team-heading"
+      >
+        <div class="about-section-heading">
+          <p class="about-eyebrow">
+            THE PEOPLE BEHIND THE BRAND
+            <span aria-hidden="true">✦</span>
+          </p>
+
+          <h2 id="team-heading">Meet Our Team</h2>
+
+          <p>
+            Meet the people helping bring the LunarTech vision to life.
+          </p>
+        </div>
+
+        <div class="about-team-grid">
+
+          <!-- Frank Smith -->
+          <article class="about-person">
+            <img
+              src="img/portrait2.jpg"
+              alt="Portrait of Frank Smith"
+              loading="lazy"
+            />
+
+            <div class="about-person-copy">
+              <h3>Frank Smith</h3>
+              <p>Chief Financial Officer</p>
+            </div>
+          </article>
+
+          <!-- Nora Sharma -->
+          <article class="about-person">
+            <img
+              src="img/portrait1.jpg"
+              alt="Portrait of Nora Sharma"
+              loading="lazy"
+            />
+
+            <div class="about-person-copy">
+              <h3>Nora Sharma</h3>
+              <p>Chairperson of the Board</p>
+            </div>
+          </article>
+
+          <!-- Julia Johansson -->
+          <article class="about-person">
+            <img
+              src="img/portrait3.jpg"
+              alt="Portrait of Julia Johansson"
+              loading="lazy"
+            />
+
+            <div class="about-person-copy">
+              <h3>Julia Johansson</h3>
+              <p>Chief Executive Officer</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- WHAT YOU GET SECTION -->
+      <section
+        class="about-benefits about-panel"
+        id="services"
+        aria-labelledby="services-heading"
+      >
         <h2 id="services-heading">What You Get</h2>
-        <div class="fourPointsAbout">
-          <div class="quick-facts">
+
+        <div class="about-benefits-grid">
+
+          <!-- Fast Shipping -->
+          <article class="about-benefit">
+            <span class="about-benefit-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 7h11v10H3zM14 10h4l3 4v3h-7" />
+                <circle cx="7" cy="18" r="2" />
+                <circle cx="18" cy="18" r="2" />
+              </svg>
+            </span>
+
             <h3>Fast Shipping</h3>
+
             <p>
-              Shipping from us to you, made quick and simple. No matter the
-              distance, our shipping is both quick and affordable.
+              Shipping from us to you, made quick and simple.
+              No matter the distance, our shipping is both
+              quick and affordable.
             </p>
-          </div>
-          <div class="quick-facts">
+          </article>
+
+          <!-- Guaranteed Warranty -->
+          <article class="about-benefit">
+            <span class="about-benefit-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 2 20 6v6c0 5-3 8-8 10-5-2-8-5-8-10V6z" />
+                <path d="m8 12 3 3 5-6" />
+              </svg>
+            </span>
+
             <h3>Guaranteed Warranty</h3>
+
             <p>
-              Something not working? All products come with guaranteed warranty
-              for up to 5 years.
+              Something not working? All products come with
+              guaranteed warranty for up to 5 years.
             </p>
-          </div>
-          <div class="quick-facts">
+          </article>
+
+          <!-- Exclusive Offers -->
+          <article class="about-benefit">
+            <span class="about-benefit-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12V4h8l10 10-8 8z" />
+                <circle cx="8" cy="8" r="1.5" />
+              </svg>
+            </span>
+
             <h3>Exclusive Offers</h3>
+
             <p>
-              Save big on our exclusive deals. Keep and eye out for all of our
-              events for the latest and greatest deals.
+              Save big on our exclusive deals. Keep an eye out
+              for all of our events for the latest and greatest deals.
             </p>
-          </div>
-          <div class="quick-facts">
+          </article>
+
+          <!-- Easy Returns -->
+          <article class="about-benefit">
+            <span class="about-benefit-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 7 12 3l8 4v10l-8 4-8-4zM4 7l8 4 8-4M12 11v10" />
+                <path d="M8 15H5m0 0 2-2m-2 2 2 2" />
+              </svg>
+            </span>
+
             <h3>Easy Returns</h3>
+
             <p>
-              Valid full refunds for returns within 30 days. Contact us to find
-              out how you can return any and all merchandises bought from our
-              store.
+              Valid full refunds for returns within 30 days.
+              Contact us to find out how you can return
+              merchandise bought from our store.
             </p>
-          </div>
+          </article>
+
         </div>
       </section>
+
+      <!-- YOUR SETUP, YOUR UNIVERSE SECTION -->
+      <section
+        class="about-universe"
+        aria-labelledby="universe-heading"
+      >
+        <div class="about-universe-content">
+          <p class="about-eyebrow">READY TO EXPLORE?</p>
+
+          <h2 id="universe-heading">
+            Your Setup. Your Universe.
+          </h2>
+
+          <p>
+            Discover accessories designed to bring comfort,
+            style, and personality to your space.
+          </p>
+
+          <a class="main-button" href="product_listing.html">
+            Explore Our Products
+          </a>
+        </div>
+      </section>
+
     </main>
 
     <!-- FOOTER -->
     <footer class="template-footer home-footer">
+
       <div class="home-footer-grid">
+
         <!-- Company Information -->
         <section>
           <h2 class="lunar-footer-brand">
-            <img src="img/LunarTech_Logo_Nav.png" alt="LunarTech moon and stars logo" />
+            <img
+              src="img/LunarTech_Logo_Nav.png"
+              alt="LunarTech moon and stars logo"
+            />
           </h2>
 
-          <p>Gaming accessories with a calm, luminous touch.</p>
+          <p>
+            Gaming accessories with a calm, luminous touch.
+          </p>
         </section>
 
         <!-- Explore Links -->
@@ -177,26 +467,34 @@
           <h2>Project</h2>
 
           <a href="p01/styleguide.html">Style Guide</a>
-          <a href="https://github.com/Danelly-star/IAT339-P01_P02_Group-4"
-            >GitHub</a
-          >
-          <a href="p01/styleguide.html#citations">Citations</a>
+
+          <a href="https://github.com/Danelly-star/IAT339-P01_P02_Group-4">
+            GitHub
+          </a>
+
+          <a href="p01/styleguide.html#citations">
+            Citations
+          </a>
         </section>
 
         <!-- Stay in Touch -->
         <section>
           <h2>Stay in Touch</h2>
 
-          <p>More LunarTech updates coming soon.</p>
+          <p>
+            More LunarTech updates coming soon.
+          </p>
         </section>
+
       </div>
 
       <!-- BOTTOM FOOTER -->
       <div class="home-footer-bottom">
         <p>© 2026 LunarTech — Group 04</p>
-
         <p>Designed for IAT 339</p>
       </div>
+
     </footer>
+
   </body>
 </html>
