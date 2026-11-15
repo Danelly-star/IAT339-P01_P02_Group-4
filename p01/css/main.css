@@ -2097,6 +2097,7 @@ h3:focus a {
   align-items: first baseline;
   justify-items: center;
   box-shadow: 0 2px 3px 0 #08fffb84;
+  padding:5rem;
 }
 .fourPointsAbout {
   flex: 3;
@@ -2329,10 +2330,6 @@ h3:focus a {
 }
 
 
-/* ============================================================
-   4. SHARED SECTION HEADINGS
-   ============================================================ */
-
 .about-main .about-section-heading {
   text-align: center;
   margin: 0 auto 2.5rem;
@@ -2352,9 +2349,6 @@ h3:focus a {
 }
 
 
-/* ============================================================
-   5. OUR VALUES SECTION
-   ============================================================ */
 
 .about-main .about-value-grid {
   display: grid;
@@ -2391,10 +2385,6 @@ h3:focus a {
   box-shadow: none;
 }
 
-
-/* ============================================================
-   6. MEET OUR TEAM SECTION
-   ============================================================ */
 
 .about-main .about-team {
   padding: clamp(2rem, 4vw, 3.5rem);
@@ -2435,7 +2425,7 @@ h3:focus a {
   font-size: 0.95rem;
 }
 
-/* Team cards remain stationary on hover */
+
 
 .about-main .about-person:hover {
   transform: none;
@@ -2444,9 +2434,6 @@ h3:focus a {
 }
 
 
-/* ============================================================
-   7. WHAT YOU GET SECTION
-   ============================================================ */
 
 .about-main .about-benefits {
   display: grid;
@@ -3126,3 +3113,6 @@ h3:focus a {
     transition: none;
   }
 }
+
+
+
