@@ -869,6 +869,7 @@ h3:focus a {
 }
 #citations a:hover {
   color: #08fffb;
+  text-shadow: 0 0 10px #6c90c3;
 }
 
 /* NEWLY ADDED RESPONSIVE WEBPAGE TEMPLATES FOR CHECK OUT AND PRODUCT LISTING WEBPAGES */
@@ -2877,22 +2878,6 @@ h3:focus a {
     transition: none;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ============================================================
    CITATIONS PAGE — Styles scoped to citations.html only
