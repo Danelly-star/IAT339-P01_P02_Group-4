@@ -124,6 +124,7 @@ h1 {
   color: #9bbfff;
   font-weight: 700;
   font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -595,13 +596,12 @@ p {
   object-fit: contain;
 }
 
-.productsListing {
-  display: flex;
-  gap: 1em;
-  flex-wrap: wrap;
-  padding: 1%;
-  max-width: fit-content;
-  border-radius: 30px;
+/* PRODUCTS LISTINGS */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+  gap: 1rem;
+  margin-bottom: 1em;
 }
 
 .productsCard {
@@ -748,7 +748,6 @@ h3:focus a {
 
 .checkout-cart > h4 {
   font-size: 1.2rem;
-  /*color: #6c90c3;*/
   margin-top: 0;
   margin-bottom: 1em;
 }
@@ -805,8 +804,7 @@ h3:focus a {
   font-size: 1.1rem;
 }
 
-/* branding section */
-
+/* BRANDING SECTION */
 #colourPalette {
   display: flex;
   flex-direction: row;
@@ -958,10 +956,6 @@ h3:focus a {
   margin: 0 auto;
 }
 
-.universal-main > h1 {
-  margin-bottom: 0.5rem;
-}
-
 .universal-main section {
   padding-top: 0;
   margin-top: 0;
@@ -969,13 +963,6 @@ h3:focus a {
 
 .intro-blurb {
   margin-bottom: 2rem;
-}
-
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
-  gap: 1rem;
-  margin-bottom: 1em;
 }
 
 .template-action {
@@ -1182,7 +1169,7 @@ h3:focus a {
 
 .homepage-content {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
   padding: 3rem;
@@ -1193,7 +1180,7 @@ h3:focus a {
 }
 
 .homepage-content h1 {
-  font-size: clamp(2.3rem, 4vw, 4rem);
+  font-size: clamp(2.2rem, 4vw, 4rem);
   line-height: 1;
   margin: 0.4rem 0 1rem;
 }
@@ -2084,6 +2071,7 @@ h3:focus a {
   border: 1px solid #6c90c3;
   border-radius: 20px;
   background: linear-gradient(120deg, #0c102c, #274272);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .about-main .about-hero-copy {
@@ -2430,7 +2418,7 @@ h3:focus a {
   /* Hero Section */
 
   .about-main .about-hero {
-    padding: 1.5rem 0;
+    padding: 1.5rem 1.5rem;
     gap: 1.5rem;
   }
 
@@ -2543,6 +2531,7 @@ h3:focus a {
   border: 1px solid #6c90c3;
   border-radius: 20px;
   background: linear-gradient(120deg, #0c102c, #274272);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .events-hero h1 {
