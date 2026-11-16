@@ -2877,3 +2877,102 @@ h3:focus a {
     transition: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================
+   CITATIONS PAGE — Styles scoped to citations.html only
+   ============================================================ */
+
+/* Main citations container */
+.citations-main {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 1.5rem 5rem;
+  color: #eee;
+  font-family: "Outfit", sans-serif;
+}
+
+/* Introduction section */
+.citations-intro {
+  margin-bottom: 2rem;
+}
+
+.citations-eyebrow {
+  color: #b5d0ff;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.citations-intro h1 {
+  color: #9bbfff;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  margin: 0.5rem 0 1rem;
+}
+
+.citations-intro > p:last-child {
+  color: #d0dcf5;
+  line-height: 1.6;
+}
+
+/* Citations panel */
+.citations-panel {
+  background: linear-gradient(120deg, #0c102c, #192b51);
+  border: 1px solid #274272;
+  border-radius: 20px;
+  padding: clamp(1.25rem, 3vw, 2.75rem);
+}
+
+.citations-panel h2 {
+  color: #9bbfff;
+  margin-top: 0;
+}
+
+/* Citation list */
+.citations-panel ul {
+  padding-left: 1.4rem;
+  margin: 0;
+}
+
+.citations-panel li {
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+/* Citation links */
+.citations-panel a {
+  color: #9bbfff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.citations-panel a:hover,
+.citations-panel a:focus-visible {
+  color: #eee;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN — Mobile screens
+   ============================================================ */
+
+@media (max-width: 600px) {
+  .citations-main {
+    padding: 2rem 1rem 3rem;
+  }
+}
