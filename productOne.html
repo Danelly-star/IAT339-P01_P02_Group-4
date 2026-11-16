@@ -22,7 +22,11 @@
           <!-- LunarTech logo links to the style guide -->
           <a href="index.html">
             <span class="lunar-nav-brand">
-              <img class="lunar-nav-logo" src="img/LunarTech_Logo_Nav.png" alt="" />
+              <img
+                class="lunar-nav-logo"
+                src="img/LunarTech_Logo_Nav.png"
+                alt=""
+              />
               <span class="lunar-nav-name">LunarTech</span>
             </span>
           </a>
@@ -63,77 +67,98 @@
     </header>
 
     <main class="universal-main">
-      <div aira-label="Breadcrumbs" class="productBreadcrumbs">
-            <p>
-              <a href="index.html">Home</a> / 
-              <a href="product_listing.html">Products</a> / 
-              <a href="product_listing.html#keyboards">Keyboards</a>
-            </p>
-      </div>
-      <div class="productOverview">
-        <div class="productLeftSide">
-          
-          <div aira-label="Main Image of Product" class="productMainImage">
-            <img src="img/whiteLEDKeyboard.png" alt="White gaming keyboard" />
-          </div>
-          <div aira-label="Sub Gallery of Product" class="productGallery">
-            <img src="img/whiteLEDKeyboard2.png" alt="White gaming keyboard" />
-            <img src="img/whiteLEDKeyboard3.jpg" alt="White gaming keyboard" />
-            <img src="img/whiteLEDKeyboard4.jpg" alt="White gaming keyboard" />
-          </div>
+      <section aria-label="Breadcrumbs">
+        <div class="productBreadcrumbs">
+          <p>
+            <a href="index.html">Home</a> /
+            <a href="product_listing.html">Products</a> /
+            <a href="product_listing.html#keyboards">Keyboards</a>
+          </p>
         </div>
-        <div class="productRightSide">
-          <div aira-label="Product Information" class="productInfo">
-            <h1>MINI Gaming Keyboard</h1>
-            <h2>Keyboards</h2>
-            <p>A compact mechanical gaming keyboard with vibrant LED lights.</p>
-            <h3>$97.99 CAD</h3>
-            <hr>
-            <fieldset class="chooseOptions">
-              <legend>Colour:</legend>
-              <input
-                type="radio"
-                id="white"
-                name="colour-example"
-                value="white"
+      </section>
+
+      <!-- PRODUCT OVERVIEW -->
+      <section aria-label="Overview of Product">
+        <div class="productOverview">
+          <div class="productLeftSide">
+            <div class="productMainImage">
+              <img src="img/whiteLEDKeyboard.png" alt="White gaming keyboard" />
+            </div>
+            <div class="productGallery">
+              <img
+                src="img/whiteLEDKeyboard2.png"
+                alt="White gaming keyboard"
               />
-              <label for="white">White</label>
-              <input
-                type="radio"
-                id="black"
-                name="colour-example"
-                value="black"
+              <img
+                src="img/whiteLEDKeyboard3.jpg"
+                alt="White gaming keyboard"
               />
-              <label for="black">Black</label>
-            </fieldset>
-            <a class="main-button" href="checkout.html"> Add to Cart </a>
+              <img
+                src="img/whiteLEDKeyboard4.jpg"
+                alt="White gaming keyboard"
+              />
+            </div>
           </div>
-          <div class="productSpecs">
-            <h2>Features</h2>
-            <p>
+          <div class="productRightSide">
+            <div class="productInfo">
+              <h1>MINI Gaming Keyboard</h1>
+              <h2>Keyboards</h2>
+              <p>
+                A compact mechanical gaming keyboard with vibrant LED lights.
+              </p>
+              <h3>$97.99 CAD</h3>
+              <hr />
+              <fieldset class="chooseOptions">
+                <legend>Colour:</legend>
+                <input
+                  type="radio"
+                  id="white"
+                  name="colour-example"
+                  value="white"
+                />
+                <label for="white">White</label>
+                <input
+                  type="radio"
+                  id="black"
+                  name="colour-example"
+                  value="black"
+                />
+                <label for="black">Black</label>
+              </fieldset>
+              <a class="main-button" href="checkout.html"> Add to Cart </a>
+            </div>
+            <div class="productSpecs">
+              <h2>Features</h2>
               <ul>
-                <li>Magnetic switches that can be diassembled for easy cleaning</li>
-                <li>Highspeed connection via USB or Bluetooth connection for ultra-responsive inputs</li>
-                <li>Waterproof and dust resistant for long lasting durability</li>
+                <li>
+                  Magnetic switches that can be diassembled for easy cleaning
+                </li>
+                <li>
+                  Highspeed connection via USB or Bluetooth connection for
+                  ultra-responsive inputs
+                </li>
+                <li>
+                  Waterproof and dust resistant for long lasting durability
+                </li>
                 <li>Full LED and keybinding customizations</li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-
-
-
-      
       <section class="lunar-reviews" aria-labelledby="customer-reviews-heading">
         <h2 id="customer-reviews-heading">Customer Reviews</h2>
-        <p class="lunar-review-note">Sample reviews for demonstration purposes.</p>
+        <p class="lunar-review-note">
+          Sample reviews for demonstration purposes.
+        </p>
 
         <div class="lunar-review-summary">
           <div class="lunar-review-score">
             <strong>4.8</strong>
-            <span class="lunar-stars" aria-label="4.8 out of 5 stars">★★★★★</span>
+            <span class="lunar-stars" aria-label="4.8 out of 5 stars"
+              >★★★★★</span
+            >
             <p>Based on 5 sample reviews</p>
           </div>
 
@@ -181,69 +206,82 @@
         </div>
 
         <div class="lunar-review-list">
-
           <article class="lunar-review">
             <div class="lunar-review-top">
-              <span class="lunar-stars" aria-label="5 out of 5 stars">★★★★★</span>
-              <time>Oct 24, 2026</time>
+              <span class="lunar-stars" aria-label="5 out of 5 stars"
+                >★★★★★</span
+              >
+              <time datetime="2026-10-24">Oct 24, 2026</time>
             </div>
             <h3>Great keyboard for a small desk</h3>
             <p class="lunar-review-author">Alex Morgan</p>
-            <p>The compact size leaves much more room for my mouse. The RGB lighting looks lovely at night and the keys feel responsive.</p>
+            <p>
+              The compact size leaves much more room for my mouse. The RGB
+              lighting looks lovely at night and the keys feel responsive.
+            </p>
           </article>
 
           <article class="lunar-review">
             <div class="lunar-review-top">
-              <span class="lunar-stars" aria-label="5 out of 5 stars">★★★★★</span>
-              <time>Oct 12, 2026</time>
+              <span class="lunar-stars" aria-label="5 out of 5 stars"
+                >★★★★★</span
+              >
+              <time datetime="2026-10-12">Oct 12, 2026</time>
             </div>
             <h3>Love the lighting</h3>
             <p class="lunar-review-author">Jamie Chen</p>
-            <p>Easy to set up and the colours look even better in person. I mostly use it for gaming and schoolwork.</p>
+            <p>
+              Easy to set up and the colours look even better in person. I
+              mostly use it for gaming and schoolwork.
+            </p>
           </article>
 
           <article class="lunar-review">
             <div class="lunar-review-top">
-              <span class="lunar-stars" aria-label="5 out of 5 stars">★★★★★</span>
-              <time>Sep 29, 2026</time>
+              <span class="lunar-stars" aria-label="5 out of 5 stars"
+                >★★★★★</span
+              >
+              <time datetime="2026-09-29">Sep 29, 2026</time>
             </div>
             <h3>Compact but comfortable</h3>
             <p class="lunar-review-author">Taylor Brooks</p>
-            <p>I was worried about switching to a smaller keyboard, but I adjusted quickly. It feels sturdy and fits my setup perfectly.</p>
+            <p>
+              I was worried about switching to a smaller keyboard, but I
+              adjusted quickly. It feels sturdy and fits my setup perfectly.
+            </p>
           </article>
 
           <article class="lunar-review">
             <div class="lunar-review-top">
-              <span class="lunar-stars" aria-label="4 out of 5 stars">★★★★☆</span>
-              <time>Sep 15, 2026</time>
+              <span class="lunar-stars" aria-label="4 out of 5 stars"
+                >★★★★☆</span
+              >
+              <time datetime="2026-09-15">Sep 15, 2026</time>
             </div>
             <h3>Good keyboard overall</h3>
             <p class="lunar-review-author">Priya Shah</p>
-            <p>The keys feel nice and the lighting is bright. I just wish it had dedicated arrow keys for some of my games.</p>
+            <p>
+              The keys feel nice and the lighting is bright. I just wish it had
+              dedicated arrow keys for some of my games.
+            </p>
           </article>
 
           <article class="lunar-review">
             <div class="lunar-review-top">
-              <span class="lunar-stars" aria-label="5 out of 5 stars">★★★★★</span>
-              <time>Aug 30, 2026</time>
+              <span class="lunar-stars" aria-label="5 out of 5 stars"
+                >★★★★★</span
+              >
+              <time datetime="2026-08-30">Aug 30, 2026</time>
             </div>
             <h3>Really happy with it</h3>
             <p class="lunar-review-author">Jordan Lee</p>
-            <p>Looks clean on my desk and responds quickly when gaming. The smaller layout took a day or two to get used to.</p>
+            <p>
+              Looks clean on my desk and responds quickly when gaming. The
+              smaller layout took a day or two to get used to.
+            </p>
           </article>
-
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
     </main>
 
     <!-- FOOTER -->
@@ -252,7 +290,10 @@
         <!-- Company Information -->
         <section>
           <h2 class="lunar-footer-brand">
-            <img src="img/LunarTech_Logo_Nav.png" alt="LunarTech moon and stars logo" />
+            <img
+              src="img/LunarTech_Logo_Nav.png"
+              alt="LunarTech moon and stars logo"
+            />
           </h2>
 
           <p>Gaming accessories with a calm, luminous touch.</p>
